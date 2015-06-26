@@ -23634,7 +23634,12 @@ return /******/ (function(modules) { // webpackBootstrap
 				return _react2["default"].createElement(
 					"div",
 					{ className: "Index" },
-					"dorp"
+					_react2["default"].createElement(
+						"h1",
+						null,
+						"By Implication"
+					),
+					_react2["default"].createElement("span", { id: "logo", className: "icon-bi-logo" })
 				);
 			}
 		}]);
@@ -23648,11 +23653,6 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ },
 /* 197 */
 /***/ function(module, exports, __webpack_require__) {
-
-	// import MainStyles from "../scss/Main.scss";
-	// import PrismStyles from "../scss/prism.css";
-	// import PopeyeStyles from "../../src/scss/Popeye.scss";
-	// import IconStyles from "../icons/style.css";
 
 	"use strict";
 
@@ -23670,6 +23670,17 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
+	var _scssMainScss = __webpack_require__(198);
+
+	var _scssMainScss2 = _interopRequireDefault(_scssMainScss);
+
+	// import PrismStyles from "../scss/prism.css";
+	// import PopeyeStyles from "../../src/scss/Popeye.scss";
+
+	var _iconsStyleCss = __webpack_require__(202);
+
+	var _iconsStyleCss2 = _interopRequireDefault(_iconsStyleCss);
+
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
@@ -23678,7 +23689,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _reactRouter2 = _interopRequireDefault(_reactRouter);
 
-	var _Toolbar = __webpack_require__(198);
+	var _Toolbar = __webpack_require__(210);
 
 	var _Toolbar2 = _interopRequireDefault(_Toolbar);
 
@@ -23708,6 +23719,7 @@ return /******/ (function(modules) { // webpackBootstrap
 							"By Implication"
 						),
 						_react2["default"].createElement("meta", { charSet: "utf-8" }),
+						_react2["default"].createElement("meta", { name: "viewport", content: "width=device-width, initial-scale=1" }),
 						_react2["default"].createElement("link", { href: "http://fonts.googleapis.com/css?family=Roboto:300,700,400", rel: "stylesheet", type: "text/css" }),
 						_react2["default"].createElement("link", { href: "/bundle.css", rel: "stylesheet", type: "text/css" })
 					),
@@ -23734,9 +23746,29 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 198 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	// import ToolbarStyle from "../scss/Toolbar.scss";
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 199 */,
+/* 200 */,
+/* 201 */,
+/* 202 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 203 */,
+/* 204 */,
+/* 205 */,
+/* 206 */,
+/* 207 */,
+/* 208 */,
+/* 209 */,
+/* 210 */
+/***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
@@ -23753,6 +23785,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
+
+	var _scssToolbarScss = __webpack_require__(211);
+
+	var _scssToolbarScss2 = _interopRequireDefault(_scssToolbarScss);
 
 	var _react = __webpack_require__(1);
 
@@ -23772,7 +23808,11 @@ return /******/ (function(modules) { // webpackBootstrap
 		_createClass(Toolbar, [{
 			key: "render",
 			value: function render() {
-				return _react2["default"].createElement("header", { className: "Toolbar" });
+				return _react2["default"].createElement(
+					"header",
+					{ className: "Toolbar" },
+					"wat"
+				);
 			}
 		}]);
 
@@ -23792,6 +23832,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	           Github
 	       	</a>
 				</div>*/
+
+/***/ },
+/* 211 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
 
 /***/ }
 /******/ ])
