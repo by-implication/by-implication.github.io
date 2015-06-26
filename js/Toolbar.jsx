@@ -1,4 +1,4 @@
-// import ToolbarStyle from "../scss/Toolbar.scss";
+import ToolbarStyle from "../scss/Toolbar.scss";
 
 import React from "react";
 import {Link} from "react-router";
@@ -7,6 +7,7 @@ export default class Toolbar extends React.Component {
 	render() {
 		return (
 			<header className="Toolbar">
+				wat
 				{/*<Link id="brand" to="/">
 								  <h1>Popeye <small>v0.0.1</small></h1>
 								</Link>

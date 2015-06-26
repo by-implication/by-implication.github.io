@@ -1,0 +1,63 @@
+{
+	"IcoMoonType": "selection",
+	"icons": [
+		{
+			"icon": {
+				"paths": [
+					"M438.089 0v129.81h-187.502v764.398h187.483v129.792h-185.819c-69.175 0-117.029-54.491-117.029-123.721v-199.771c0-69.211-57.691-125.312-129.81-125.312v-125.275c72.101 0 129.81-56.101 129.81-125.294v-199.808c0-69.193 47.854-124.818 117.029-124.818h185.838zM1144.777 324.626v-199.808c0-69.211-47.854-124.818-117.010-124.818h-185.856v129.81h187.502v764.398h-187.502v129.792h185.856c69.157 0 117.010-54.491 117.010-123.721v-199.771c0-69.211 57.673-125.312 129.81-125.312v-125.275c-72.082 0-129.81-56.101-129.81-125.294v0z"
+				],
+				"attrs": [
+					{}
+				],
+				"isMulticolor": false,
+				"width": 1280,
+				"grid": 0,
+				"tags": [
+					"bi-logo"
+				]
+			},
+			"attrs": [
+				{}
+			],
+			"properties": {
+				"order": 1,
+				"id": 0,
+				"prevSize": 32,
+				"code": 58880,
+				"name": "bi-logo"
+			},
+			"setIdx": 0,
+			"setId": 1,
+			"iconIdx": 0
+		}
+	],
+	"height": 1024,
+	"metadata": {
+		"name": "icomoon"
+	},
+	"preferences": {
+		"showGlyphs": true,
+		"showQuickUse": true,
+		"showQuickUse2": true,
+		"showSVGs": true,
+		"fontPref": {
+			"prefix": "icon-",
+			"metadata": {
+				"fontFamily": "icomoon"
+			},
+			"metrics": {
+				"emSize": 1024,
+				"baseline": 6.25,
+				"whitespace": 50
+			}
+		},
+		"imagePref": {
+			"prefix": "icon-",
+			"png": true,
+			"useClassSelector": true,
+			"color": 4473924,
+			"bgColor": 16777215
+		},
+		"historySize": 100
+	}
+}

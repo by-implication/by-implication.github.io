@@ -4,7 +4,8 @@ export default class Index extends React.Component {
 	render() {
 		return (
 			<div className="Index">
-				dorp
+				<h1>By Implication</h1>
+				<span id="logo" className="icon-bi-logo" />
 			</div>
 		)
 	}

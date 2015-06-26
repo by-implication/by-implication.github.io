@@ -1,7 +1,7 @@
-// import MainStyles from "../scss/Main.scss";
+import MainStyles from "../scss/Main.scss";
 // import PrismStyles from "../scss/prism.css";
 // import PopeyeStyles from "../../src/scss/Popeye.scss";
-// import IconStyles from "../icons/style.css";
+import IconStyles from "../icons/style.css";
 
 import React from "react";
 import Router, {RouteHandler} from "react-router";
@@ -15,6 +15,7 @@ class Wrapper extends React.Component {
 				<head>
 					<title>By Implication</title>
 					<meta charSet="utf-8" /> 
+					<meta name="viewport" content="width=device-width, initial-scale=1" />
 					<link href='http://fonts.googleapis.com/css?family=Roboto:300,700,400' rel='stylesheet' type='text/css' />
 					<link href="/bundle.css" rel='stylesheet' type='text/css' />
 				</head>
