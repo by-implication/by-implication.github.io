@@ -25,7 +25,7 @@ module.exports = {
 	entry: path.resolve(__dirname, "js/entry.jsx"),
 	output: {
 		filename: "bundle.js",
-		path: path.resolve(__dirname, "build"),
+		path: __dirname,
 		libraryTarget: "umd",
 		publicPath: "/"
 	},
