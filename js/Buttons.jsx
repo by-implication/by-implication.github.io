@@ -24,7 +24,7 @@ export class TextButton extends React.Component {
 			</div>
 		);
 		return React.createElement(
-			(this.props.href ? "a" : "button"), 
+			(this.props.component || "button"), 
 			_.assign(_.clone(this.props), {className: classnames("TextButton", "TouchTarget", this.props.className)}),
 			button
 		);

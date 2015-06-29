@@ -15,7 +15,7 @@ export default class Toolbar extends React.Component {
 				<TextButton>
 					Portfolio
 				</TextButton>
-				<TextButton href="/people/">
+				<TextButton component={ Link } to="people">
 					People
 				</TextButton>
 			</header>
