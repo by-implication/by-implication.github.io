@@ -9,10 +9,7 @@ export default class Toolbar extends React.Component {
 	render() {
 		return (
 			<header className="Toolbar">
-				{/*<IconButton>
-									<span className="icon-menu" />
-								</IconButton>*/}
-				<TextButton>
+				<TextButton component={ Link } to="index">
 					Portfolio
 				</TextButton>
 				<TextButton component={ Link } to="people">

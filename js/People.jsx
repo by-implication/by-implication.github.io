@@ -4,7 +4,8 @@ export default class People extends React.Component {
 	render() {
 		return (
 			<div>
-				yo
+				<h2>We have awesome people.</h2>
+				
 			</div>
 		);
 	}
