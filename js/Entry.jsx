@@ -1,14 +1,12 @@
 import React from "react";
 import Router, {DefaultRoute, Link, Route, RouteHandler} from "react-router";
 import Index from "./Index";
+import People from "./People";
 import Wrapper from "./Wrapper";
-// import Guide from "./Pages/Guide";
-
-// import BasicUsageGuide from "./Pages/BasicUsageGuide";
-// import OffsetGuide from "./Pages/OffsetGuide";
 
 let Routes = (
 	<Route path="/" handler={ Wrapper }>
+		<Route name="people" path="people/" handler={ People } />
 		<DefaultRoute name="index" handler={ Index } />
 	</Route>
 )

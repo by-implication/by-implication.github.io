@@ -17,7 +17,8 @@ styleLoaders.forEach(function(item) {
 });
 
 var routePaths = [
-  "/"
+  "/",
+  "/people/"
 ];
 
 module.exports = {

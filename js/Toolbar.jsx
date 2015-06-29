@@ -9,11 +9,14 @@ export default class Toolbar extends React.Component {
 	render() {
 		return (
 			<header className="Toolbar">
-				<IconButton>
-					<span className="icon-menu" />
-				</IconButton>
+				{/*<IconButton>
+									<span className="icon-menu" />
+								</IconButton>*/}
 				<TextButton>
 					Portfolio
+				</TextButton>
+				<TextButton href="/people/">
+					People
 				</TextButton>
 			</header>
 		)

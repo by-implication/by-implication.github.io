@@ -1,10 +1,12 @@
 import ButtonStyles from "../scss/Buttons.scss";
+import classnames from "classnames";
 import React from 'react';
+import _ from "lodash";
 
 export class IconButton extends React.Component {
 	render() {
 		return (
-			<button className="IconButton TouchTarget">
+			<button {...this.props} className={ classnames("IconButton", "TouchTarget", this.props.className) }>
 				<div className="Button">
 					{ this.props.children }
 				</div>
@@ -14,13 +16,17 @@ export class IconButton extends React.Component {
 }
 
 export class TextButton extends React.Component {
-	render() {
-		return (
-			<button className="TextButton TouchTarget">
-				<div className="Button">
-					{ this.props.children }
-				</div>
-			</button>
+	render() {	
+		// console.log(_.assign(_.clone(this.props), {className: classnames("TextButton", "TouchTarget", this.props.className)}));
+		const button = (
+			<div className="Button">
+				{ this.props.children }
+			</div>
+		);
+		return React.createElement(
+			(this.props.href ? "a" : "button"), 
+			_.assign(_.clone(this.props), {className: classnames("TextButton", "TouchTarget", this.props.className)}),
+			button
 		);
 	}
 }
