@@ -2,6 +2,39 @@
 @import "variables";
 
 .Toolbar {
+	@include display(flex);
+	@include align-items(center);
+	@include flex-shrink(0);
 	background-color: $main;
-	height: 56px;
+	color: $light;
+	height: 64px;
+	a {
+		display: block;
+		color: $light;
+		text-decoration: none;
+	}
+	.toolbar-group {
+		@include display(flex);
+		height: 100%;
+	}
+	.toolbar-item {
+		@include display(flex);
+		@include align-items(center);
+		text-transform: uppercase;
+		font-size: 14px;
+		height: 100%;
+		padding: 0px 8px;
+		margin: 0px 8px;
+		&.active {
+			box-shadow: 0px -4px 0px 0px $contrast1 inset;
+		}
+	}
+	.spacer {
+		@include flex(1);
+	}
+	#brand h1 {
+		font-size: 24px;
+		font-weight: 100;
+		margin: 0px 16px;
+	}
 }

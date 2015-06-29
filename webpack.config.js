@@ -1,6 +1,7 @@
 var webpack = require('webpack');
 var StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
 var bourbon = require('node-bourbon');
+var neat = require('node-neat');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var path = require("path");
 
