@@ -4,6 +4,7 @@
 body {
 	font-family: "Roboto";
 	margin: 0px;
+	background-color: white;
 }
 
 button {
@@ -11,9 +12,41 @@ button {
 }
 
 .Button {
-	color: white;
+	color: $light;
 }
 
 #logo {
 	font-size: 128px;
+}
+
+#hero {
+	background-color: $main;
+	color: white;
+	padding: 16px;
+	height: 480px;
+	h1 {
+		font-weight: 100;
+	}
+}
+
+.Toolbar {
+	background-color: $dark;
+	color: $light;
+	.Button {
+		color: $light;
+	}
+	#logo {
+		font-size: 16px;
+		margin-right: 8px;
+	}
+}
+
+.card-container {
+	@include display(flex);
+	@include flex-wrap(wrap);
+	@include justify-content(center);
+}
+
+.Portfolio {
+	padding: 16px;
 }
