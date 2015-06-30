@@ -1,5 +1,5 @@
-import ProjectCardStyles from "../scss/ProjectCard.scss";
 import React from 'react';
+// import ProjectCardStyles from "../scss/ProjectCard.scss";
 
 export default class ProjectCard extends React.Component {
 	render() {

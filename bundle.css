@@ -1,15 +1,71 @@
 body {
   font-family: "Roboto";
-  margin: 0px; }
+  margin: 0px;
+  background-color: white; }
 
 button {
   font-family: "Roboto"; }
 
 .Button {
-  color: white; }
+  color: #FFFBE8; }
 
 #logo {
   font-size: 128px; }
+
+#hero {
+  background-color: #9E2A2B;
+  color: white;
+  padding: 16px;
+  height: 480px; }
+  #hero h1 {
+    font-weight: 100; }
+
+.Toolbar {
+  background-color: #540B0E;
+  color: #FFFBE8; }
+  .Toolbar .Button {
+    color: #FFFBE8; }
+  .Toolbar #logo {
+    font-size: 16px;
+    margin-right: 8px; }
+
+.card-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center; }
+
+.Portfolio {
+  padding: 16px; }
+
+.ProjectCard {
+  background-color: white;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  width: 256px; }
+  .ProjectCard img {
+    width: 100%; }
+  .ProjectCard .info {
+    padding: 16px; }
 .Toolbar {
   display: -webkit-box;
   display: -moz-box;
@@ -31,13 +87,11 @@ button {
   -moz-flex-shrink: 0;
   flex-shrink: 0;
   -ms-flex-negative: 0;
-  background-color: #A8201A;
-  color: white;
   height: 64px;
   padding: 0px 12px; }
   .Toolbar a {
     display: block;
-    color: white;
+    color: #FFFBE8;
     text-decoration: none; }
   .Toolbar .toolbar-group {
     display: -webkit-box;
@@ -71,7 +125,7 @@ button {
     padding: 0px 8px;
     margin: 0px 8px; }
     .Toolbar .toolbar-item.active {
-      box-shadow: 0px -4px 0px 0px #0F8B8D inset; }
+      box-shadow: 0px -4px 0px 0px #E09F3E inset; }
   .Toolbar .spacer {
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
@@ -110,7 +164,7 @@ button {
       height: 36px;
       min-width: 64px;
       line-height: 36px;
-      font-size: 16px;
+      font-size: 14px;
       text-transform: uppercase;
       padding: 0px 8px; }
   .TouchTarget [class*="icon-"] {
