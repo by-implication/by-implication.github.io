@@ -83,7 +83,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _Portfolio2 = _interopRequireDefault(_Portfolio);
 
-	var _Wrapper = __webpack_require__(202);
+	var _Wrapper = __webpack_require__(203);
 
 	var _Wrapper2 = _interopRequireDefault(_Wrapper);
 
@@ -23851,7 +23851,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _ProjectCard2 = _interopRequireDefault(_ProjectCard);
 
-	var _dataPortfolioData = __webpack_require__(201);
+	var _ClientAndPartnerCard = __webpack_require__(201);
+
+	var _ClientAndPartnerCard2 = _interopRequireDefault(_ClientAndPartnerCard);
+
+	var _dataPortfolioData = __webpack_require__(202);
 
 	var Portfolio = (function (_React$Component) {
 		function Portfolio() {
@@ -23868,7 +23872,12 @@ return /******/ (function(modules) { // webpackBootstrap
 				var projects = _dataPortfolioData.projectsData.map(function (p) {
 					return _react2["default"].createElement(_ProjectCard2["default"], _extends({ key: p.name }, p));
 				});
-
+				var clientsAndPartners = _dataPortfolioData.clientsAndPartnersData.map(function (c) {
+					return _react2["default"].createElement(_ClientAndPartnerCard2["default"], _extends({ key: c.name }, c));
+				});
+				var secondDegree = _dataPortfolioData.secondDegreeData.map(function (p) {
+					return _react2["default"].createElement(_ProjectCard2["default"], _extends({ key: p.name }, p));
+				});
 				return _react2["default"].createElement(
 					"div",
 					{ className: "Portfolio" },
@@ -23878,7 +23887,26 @@ return /******/ (function(modules) { // webpackBootstrap
 						_react2["default"].createElement(
 							"h1",
 							null,
-							"Portfolio"
+							"Clients And Partners"
+						),
+						_react2["default"].createElement(
+							"p",
+							null,
+							"Our shit"
+						),
+						_react2["default"].createElement(
+							"div",
+							{ className: "card-container" },
+							clientsAndPartners
+						)
+					),
+					_react2["default"].createElement(
+						"section",
+						null,
+						_react2["default"].createElement(
+							"h1",
+							null,
+							"Our Work"
 						),
 						_react2["default"].createElement(
 							"p",
@@ -23903,6 +23931,11 @@ return /******/ (function(modules) { // webpackBootstrap
 							"p",
 							null,
 							"Work that individuals within By Implication have made."
+						),
+						_react2["default"].createElement(
+							"div",
+							{ className: "card-container" },
+							secondDegree
 						)
 					)
 				);
@@ -23956,7 +23989,11 @@ return /******/ (function(modules) { // webpackBootstrap
 				return _react2["default"].createElement(
 					"div",
 					{ className: "ProjectCard" },
-					this.props.imageSrc && _react2["default"].createElement("img", { src: this.props.imageSrc }),
+					this.props.imageSrc && _react2["default"].createElement(
+						"div",
+						{ className: "image" },
+						_react2["default"].createElement("img", { src: this.props.imageSrc })
+					),
 					_react2["default"].createElement(
 						"div",
 						{ className: "info" },
@@ -23993,31 +24030,6 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 201 */
-/***/ function(module, exports) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-	var projectsData = [{
-		name: "Sakay.ph",
-		url: "http://sakay.ph/",
-		description: "Sakay.ph is a blah blah blah",
-		imageSrc: "/data/portfolio/sakayph.png"
-	}, {
-		name: "Storylark",
-		url: "https://storylark.ph/",
-		description: "Storylark is a blah blah blah"
-	}, {
-		name: "Open Reconstruction",
-		url: "http://openreconstruction.gov.ph/",
-		description: "Open Reconstruction is a blah blah blah"
-	}];
-	exports.projectsData = projectsData;
-
-/***/ },
-/* 202 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -24036,7 +24048,108 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-	var _scssMainScss = __webpack_require__(203);
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var ClientAndPartnerCard = (function (_React$Component) {
+		function ClientAndPartnerCard() {
+			_classCallCheck(this, ClientAndPartnerCard);
+
+			_get(Object.getPrototypeOf(ClientAndPartnerCard.prototype), "constructor", this).apply(this, arguments);
+		}
+
+		_inherits(ClientAndPartnerCard, _React$Component);
+
+		_createClass(ClientAndPartnerCard, [{
+			key: "render",
+			value: function render() {
+				return _react2["default"].createElement(
+					"div",
+					{ className: "ClientAndPartnerCard" },
+					_react2["default"].createElement(
+						"div",
+						{ className: "image" },
+						_react2["default"].createElement("img", { src: this.props.imageSrc })
+					)
+				);
+			}
+		}]);
+
+		return ClientAndPartnerCard;
+	})(_react2["default"].Component);
+
+	exports["default"] = ClientAndPartnerCard;
+
+	ClientAndPartnerCard.propTypes = {
+		name: _react2["default"].PropTypes.string,
+		url: _react2["default"].PropTypes.string
+	};
+	module.exports = exports["default"];
+
+/***/ },
+/* 202 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	var projectsData = [{
+		name: "Sakay.ph",
+		url: "http://sakay.ph/",
+		description: "Sakay.ph is a blah blah blah",
+		imageSrc: "/data/portfolio/sakayph.png"
+	}, {
+		name: "Storylark",
+		url: "https://storylark.ph/",
+		description: "Storylark is a blah blah blah",
+		imageSrc: "/data/portfolio/storylark.png"
+	}, {
+		name: "Open Reconstruction",
+		url: "http://openreconstruction.gov.ph/",
+		description: "Open Reconstruction is a blah blah blah",
+		imageSrc: "/data/portfolio/openrecon.png"
+	}];
+
+	exports.projectsData = projectsData;
+	var clientsAndPartnersData = [{
+		name: "Department of Budget and Management",
+		url: "http://www.dbm.gov.ph/",
+		imageSrc: "/data/portfolio/DBM.png"
+	}];
+
+	exports.clientsAndPartnersData = clientsAndPartnersData;
+	var secondDegreeData = [{
+		name: "Plotypus",
+		url: "http://plotypus.levitanong.com/",
+		description: "Plotypus is a charting library",
+		imageSrc: "/data/portfolio/plotypus.png"
+	}];
+	exports.secondDegreeData = secondDegreeData;
+
+/***/ },
+/* 203 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
+
+	var _scssMainScss = __webpack_require__(204);
 
 	var _scssMainScss2 = _interopRequireDefault(_scssMainScss);
 
@@ -24050,7 +24163,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _reactRouter2 = _interopRequireDefault(_reactRouter);
 
-	var _Toolbar = __webpack_require__(207);
+	var _Toolbar = __webpack_require__(208);
 
 	var _Toolbar2 = _interopRequireDefault(_Toolbar);
 
@@ -24107,16 +24220,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports["default"];
 
 /***/ },
-/* 203 */
+/* 204 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 204 */,
 /* 205 */,
 /* 206 */,
-/* 207 */
+/* 207 */,
+/* 208 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -24135,7 +24248,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-	var _scssToolbarScss = __webpack_require__(208);
+	var _scssToolbarScss = __webpack_require__(209);
 
 	var _scssToolbarScss2 = _interopRequireDefault(_scssToolbarScss);
 
@@ -24145,7 +24258,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _reactRouter = __webpack_require__(159);
 
-	var _Buttons = __webpack_require__(210);
+	var _Buttons = __webpack_require__(211);
 
 	var Toolbar = (function (_React$Component) {
 		function Toolbar() {
@@ -24195,14 +24308,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports["default"];
 
 /***/ },
-/* 208 */
+/* 209 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 209 */,
-/* 210 */
+/* 210 */,
+/* 211 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -24223,11 +24336,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-	var _scssButtonsScss = __webpack_require__(211);
+	var _scssButtonsScss = __webpack_require__(212);
 
 	var _scssButtonsScss2 = _interopRequireDefault(_scssButtonsScss);
 
-	var _classnames = __webpack_require__(213);
+	var _classnames = __webpack_require__(214);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -24235,7 +24348,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _lodash = __webpack_require__(214);
+	var _lodash = __webpack_require__(215);
 
 	var _lodash2 = _interopRequireDefault(_lodash);
 
@@ -24296,14 +24409,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.TextButton = TextButton;
 
 /***/ },
-/* 211 */
+/* 212 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 212 */,
-/* 213 */
+/* 213 */,
+/* 214 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -24358,7 +24471,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 214 */
+/* 215 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(module, global) {/**
@@ -36597,10 +36710,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	}.call(this));
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(215)(module), (function() { return this; }())))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(216)(module), (function() { return this; }())))
 
 /***/ },
-/* 215 */
+/* 216 */
 /***/ function(module, exports) {
 
 	module.exports = function(module) {

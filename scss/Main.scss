@@ -44,7 +44,7 @@ button {
 .card-container {
 	@include display(flex);
 	@include flex-wrap(wrap);
-	@include justify-content(center);
+	// @include justify-content(center);
 }
 
 .Portfolio {
@@ -53,13 +53,41 @@ button {
 
 .ProjectCard {
 	background-color: white;
-	box-shadow: 0px 2px 2px rgba(black, 0.2);
+	// box-shadow: 0px 2px 2px rgba(black, 0.2);
 	margin: 8px;
 	width: 256px;
-	img {
+	.image {
+		@include display(flex);
+		@include align-items(center);
+		height: 128px;
 		width: 100%;
+		overflow: hidden;
+		img {
+			width: 100%;
+		}
 	}
 	.info {
 		padding: 16px;
+	}
+}
+
+.ClientAndPartnerCard {
+	.image {
+		@include display(flex);
+		@include align-items(center);
+		width: 128px;
+		height: 128px * 0.707;
+		img {
+			max-width: 128px;
+			max-height: 128px * 0.707;
+		}
+	}
+	img {
+		@include filter(grayscale(100%));
+	}
+	&:hover {
+		img {
+			@include filter(grayscale(0%));
+		}
 	}
 }

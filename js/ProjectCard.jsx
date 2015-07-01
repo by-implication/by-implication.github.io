@@ -6,7 +6,10 @@ export default class ProjectCard extends React.Component {
 		return (
 			<div className="ProjectCard">
 				{
-					this.props.imageSrc && <img src={ this.props.imageSrc } />
+					this.props.imageSrc && (
+						<div className="image">
+							<img src={ this.props.imageSrc } />
+						</div>)
 				}
 				<div className="info">
 					<h3>{ this.props.name }</h3>
