@@ -16,8 +16,25 @@ export const projectsData = [
 		url: "http://openreconstruction.gov.ph/",
 		description: "Open Reconstruction is a blah blah blah",
 		imageSrc: "/data/portfolio/openrecon.png"
-	}
-]
+	},
+	{
+		name: "Sari",
+		url: "http://sari.ph",
+		imageSrc: "/data/portfolio/sari.png"
+	},
+	{
+		name: "Plotypus",
+		url: "http://plotypus.levitanong.com/",
+		description: "Plotypus is a charting library",
+		imageSrc: "/data/portfolio/plotypus.png"
+	},
+	{
+		name: "Popeye",
+		url: "http://plotypus.levitanong.com/",
+		description: "Plotypus is a charting library",
+		imageSrc: "/data/portfolio/popeye.png"
+	},
+];
 
 export const clientsAndPartnersData = [
 	{
@@ -25,13 +42,4 @@ export const clientsAndPartnersData = [
 		url: "http://www.dbm.gov.ph/",
 		imageSrc: "/data/portfolio/DBM.png"
 	}
-]
-
-export const secondDegreeData = [
-	{
-		name: "Plotypus",
-		url: "http://plotypus.levitanong.com/",
-		description: "Plotypus is a charting library",
-		imageSrc: "/data/portfolio/plotypus.png"
-	}
-]
+];

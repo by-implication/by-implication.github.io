@@ -20,7 +20,7 @@ class Wrapper extends React.Component {
 				</head>
 				<body>
 					<main>
-						<Toolbar />
+						{/*<Toolbar />*/}
 						<RouteHandler />
 					</main>
 					<script src="/bundle.js" />

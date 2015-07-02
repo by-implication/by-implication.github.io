@@ -7,7 +7,8 @@ var path = require("path");
 
 var styleLoaders = [
   { test: /\.css$/, loader: "css" },
- 	{ test: /\.scss$/, loader: "css!sass?includePaths[]="+bourbon.includePaths }
+ 	{ test: /\.scss$/, loader: "css!sass?" 
+    + neat.includePaths.map(function(p){ return "includePaths[]=" + p}) }
 ]
 styleLoaders.forEach(function(item) {
 	if(Array.isArray(item.loader)) {

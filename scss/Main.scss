@@ -1,4 +1,5 @@
 @import "bourbon";
+@import "neat";
 @import "variables";
 
 body {
@@ -20,10 +21,10 @@ button {
 }
 
 #hero {
-	background-color: $main;
-	color: white;
+	// background-color: $main;
+	// color: white;
 	padding: 16px;
-	height: 480px;
+	// height: 480px;
 	h1 {
 		font-weight: 100;
 	}
@@ -48,26 +49,75 @@ button {
 }
 
 .Portfolio {
-	padding: 16px;
+	// padding: 16px;
 }
 
 .ProjectCard {
 	background-color: white;
 	// box-shadow: 0px 2px 2px rgba(black, 0.2);
-	margin: 8px;
-	width: 256px;
+	padding: 8px;
+	box-sizing: border-box;
+	@include media(min-width 769px) {
+		width: 24vw;
+		height: 24vw;
+	}
+	@include media(max-width 768px min-width 481px) {
+		width: 32vw;
+		height: 32vw;
+	}
+	@include media(max-width 480px) {
+		width: 100vw;
+		height: 100vw;
+	}
 	.image {
 		@include display(flex);
 		@include align-items(center);
-		height: 128px;
-		width: 100%;
+		// height: 256px;
+		min-height: 100%;
+		min-width: 100%;
+		background-size: cover;
+		background-position: center;
+		// width: 100%;
 		overflow: hidden;
+		// img {
+		// 	width: 100%;
+		// }
+	}
+	.info {
+		padding: 16px;
+	}
+}
+
+.SakayphSection {
+	@include display(flex);
+	background-color: #2a6d45;
+	height: 320px;
+	overflow: hidden;
+	padding-top: 16px;
+	.desktop-image {
+		width: 90%;
 		img {
 			width: 100%;
 		}
 	}
+	.mobile-image {
+		width: 40%;
+		position: absolute;
+		top: 72px;
+		right: 0px;
+	}
+	.images {
+		width: 67%;
+		position: relative;
+	}
 	.info {
-		padding: 16px;
+		width: 33%;
+		padding: 32px;
+		color: white;
+		box-sizing: border-box;
+		h1 {
+			font-weight: 100;
+		}
 	}
 }
 

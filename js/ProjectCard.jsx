@@ -7,19 +7,17 @@ export default class ProjectCard extends React.Component {
 			<div className="ProjectCard">
 				{
 					this.props.imageSrc && (
-						<div className="image">
-							<img src={ this.props.imageSrc } />
-						</div>)
+						<div className="image" style={ {backgroundImage: `url(${this.props.imageSrc})`} } />)
 				}
-				<div className="info">
-					<h3>{ this.props.name }</h3>
-					<a href={ this.props.url }>
-						Site
-					</a>
-					<p>
-						{ this.props.description }
-					</p>
-				</div>
+				{/*<div className="info">
+									<h3>{ this.props.name }</h3>
+									<a href={ this.props.url }>
+										Site
+									</a>
+									<p>
+										{ this.props.description }
+									</p>
+								</div>*/}
 			</div>
 		);
 	}
