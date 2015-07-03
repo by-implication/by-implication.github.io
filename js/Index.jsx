@@ -31,6 +31,11 @@ export default class Index extends React.Component {
 		const projects = projectsData
 			.filter(p => !this.state.resources.length || this.isFiltered("resources", p.resources))
 			.map(p => <ProjectCard key={ p.name } { ...p } />);
+
+		const Filter = function(filterName, displayName) {
+			return <span className={ classnames("filter", {active: _.contains(this.state.resources, resources[filterName])}) } onClick={ this.setFilter.bind(this, "resources", resources[filterName]) }>{ displayName }</span>
+		}.bind(this);
+
 		return (
 			<div className="Index">
 				<section id="hero">
@@ -39,7 +44,7 @@ export default class Index extends React.Component {
 					<div className="filter-group">
 						{/* USE THESE AS FILTERS */}
 						<p>
-							We are a group of <span className={ classnames("filter", {active: _.contains(this.state.resources, resources.art)}) } onClick={ this.setFilter.bind(this, "resources", resources.art) }>artists</span>, computer scientists, <span className={ classnames({active: _.contains(this.state.resources, resources.design)}) } onClick={ this.setFilter.bind(this, "resources", resources.design) }>designers</span>, business analysts and <span className={ classnames({active: _.contains(this.state.resources, resources.softeng)}) } onClick={ this.setFilter.bind(this, "resources", resources.softeng) }>engineers</span>.
+							We are a group of { Filter("art", "artists") } { Filter("compsci", "computer scientists") } { Filter("design", "designers") } { Filter("bizdev", "business analysts") } and { Filter("softeng", "engineers") }.
 						</p>
 						<p>
 							We like building things, sometimes alone, sometimes together. Below is the collection of our work.
