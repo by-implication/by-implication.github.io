@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/by-implication/by-implication.github.io",
   "dependencies": {
+    "chroma-js": "^1.0.1",
     "classnames": "^2.1.2",
     "lodash": "^3.9.3",
     "node-bourbon": "^4.2.3",

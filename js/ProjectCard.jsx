@@ -1,4 +1,5 @@
 import React from 'react';
+import chroma from "chroma-js";
 // import ProjectCardStyles from "../scss/ProjectCard.scss";
 
 export default class ProjectCard extends React.Component {
@@ -9,6 +10,15 @@ export default class ProjectCard extends React.Component {
 					this.props.imageSrc && (
 						<div className="image" style={ {backgroundImage: `url(${this.props.imageSrc})`} } />)
 				}
+				<div className="overlay">
+					{/*<h3>{ this.props.name }</h3>
+										<p>
+											{ this.props.description }
+										</p>*/}
+					<div className="more">
+						<h3>See More</h3>
+					</div>
+				</div>
 				{/*<div className="info">
 									<h3>{ this.props.name }</h3>
 									<a href={ this.props.url }>
@@ -18,6 +28,7 @@ export default class ProjectCard extends React.Component {
 										{ this.props.description }
 									</p>
 								</div>*/}
+
 			</div>
 		);
 	}

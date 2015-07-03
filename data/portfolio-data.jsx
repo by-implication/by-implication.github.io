@@ -1,39 +1,53 @@
+import {resources, involvement} from "../js/enums";
+
 export const projectsData = [
 	{
 		name: "Sakay.ph",
 		url: "http://sakay.ph/",
-		description: "Sakay.ph is a blah blah blah",
-		imageSrc: "/data/portfolio/sakayph.png"
+		imageSrc: "/data/portfolio/sakayph.svg",
+		resources: [resources.art, resources.design, resources.bizdev, resources.compsci, resources.softeng],
 	},
 	{
 		name: "Storylark",
 		url: "https://storylark.ph/",
-		description: "Storylark is a blah blah blah",
-		imageSrc: "/data/portfolio/storylark.png"
+		imageSrc: "/data/portfolio/storylark.png",
+		resources: [resources.art, resources.design, resources.bizdev, resources.compsci, resources.softeng],
 	},
 	{
 		name: "Open Reconstruction",
 		url: "http://openreconstruction.gov.ph/",
-		description: "Open Reconstruction is a blah blah blah",
-		imageSrc: "/data/portfolio/openrecon.png"
+		imageSrc: "/data/portfolio/openrecon.svg",
+		resources: [resources.design, resources.bizdev, resources.softeng],
+	},
+	{
+		name: "Wildfire",
+		imageSrc: "/data/portfolio/wildfire.svg",
+		resources: [resources.art, resources.design, resources.compsci, resources.softeng],
 	},
 	{
 		name: "Sari",
 		url: "http://sari.ph",
-		imageSrc: "/data/portfolio/sari.png"
+		imageSrc: "/data/portfolio/sari.svg",
+		resources: [resources.design, resources.bizdev, resources.compsci, resources.softeng],
 	},
 	{
 		name: "Plotypus",
 		url: "http://plotypus.levitanong.com/",
-		description: "Plotypus is a charting library",
-		imageSrc: "/data/portfolio/plotypus.png"
+		imageSrc: "/data/portfolio/plotypus.svg",
+		resources: [resources.design, resources.softeng],
+		accentColor: "#d6ece1"
 	},
 	{
 		name: "Popeye",
 		url: "http://plotypus.levitanong.com/",
-		description: "Plotypus is a charting library",
-		imageSrc: "/data/portfolio/popeye.png"
+		imageSrc: "/data/portfolio/popeye.svg",
+		resources: [resources.design, resources.softeng],
 	},
+	{
+		name: "Torch",
+		imageSrc: "/data/portfolio/torch.svg",
+		resources: [resources.design, resources.softeng],
+	}
 ];
 
 export const clientsAndPartnersData = [
