@@ -41,10 +41,15 @@ button {
 .filter-group {
 	font-weight: 100;
 	font-size: 24px;
+	line-height: 36px;
+	p {
+		margin: 16px 0px;
+	}
 	.filter {
 		display: inline-block;
 		border: 1px solid #333;
-		padding: 8px;
+		padding: 0px 8px;
+		margin-bottom: 4px;
 		cursor: pointer;
 		&.active {
 			background-color: $contrast1;

@@ -6,47 +6,62 @@ export const projectsData = [
 		url: "http://sakay.ph/",
 		imageSrc: "/data/portfolio/sakayph.svg",
 		resources: [resources.art, resources.design, resources.bizdev, resources.compsci, resources.softeng],
+		involvement: ["official"],
+		externalInvolvement: ["internal"]
 	},
 	{
 		name: "Storylark",
 		url: "https://storylark.ph/",
 		imageSrc: "/data/portfolio/storylark.png",
 		resources: [resources.art, resources.design, resources.bizdev, resources.compsci, resources.softeng],
+		involvement: ["official"],
+		externalInvolvement: ["internal"]
 	},
 	{
 		name: "Open Reconstruction",
 		url: "http://openreconstruction.gov.ph/",
 		imageSrc: "/data/portfolio/openrecon.svg",
 		resources: [resources.design, resources.bizdev, resources.softeng],
+		involvement: ["official"],
+		externalInvolvement: ["client"]
 	},
 	{
 		name: "Wildfire",
 		imageSrc: "/data/portfolio/wildfire.svg",
 		resources: [resources.art, resources.design, resources.compsci, resources.softeng],
+		involvement: ["official"],
+		externalInvolvement: ["internal"]
 	},
 	{
 		name: "Sari",
 		url: "http://sari.ph",
 		imageSrc: "/data/portfolio/sari.svg",
 		resources: [resources.design, resources.bizdev, resources.compsci, resources.softeng],
+		involvement: ["official"],
+		externalInvolvement: ["client", "partnership"]
 	},
 	{
 		name: "Plotypus",
 		url: "http://plotypus.levitanong.com/",
 		imageSrc: "/data/portfolio/plotypus.svg",
 		resources: [resources.design, resources.softeng],
-		accentColor: "#d6ece1"
+		involvement: ["unofficial"],
+		externalInvolvement: ["internal"]
 	},
 	{
 		name: "Popeye",
 		url: "http://plotypus.levitanong.com/",
 		imageSrc: "/data/portfolio/popeye.svg",
 		resources: [resources.design, resources.softeng],
+		involvement: ["unofficial"],
+		externalInvolvement: ["internal"]
 	},
 	{
 		name: "Torch",
 		imageSrc: "/data/portfolio/torch.svg",
 		resources: [resources.design, resources.softeng],
+		involvement: ["unofficial"],
+		externalInvolvement: ["internal"]
 	}
 ];
 
