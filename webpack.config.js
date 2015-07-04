@@ -19,7 +19,8 @@ styleLoaders.forEach(function(item) {
 
 var routePaths = [
   "/",
-  "/about/"
+  "/about/",
+  "/contact/"
 ];
 
 module.exports = {

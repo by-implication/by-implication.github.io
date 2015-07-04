@@ -5,12 +5,15 @@ import _ from "lodash";
 
 export class IconButton extends React.Component {
 	render() {
-		return (
-			<button {...this.props} className={ classnames("IconButton", "TouchTarget", this.props.className) }>
-				<div className="Button">
-					{ this.props.children }
-				</div>
-			</button>
+		const button = (
+			<div className="Button">
+				{ this.props.children }
+			</div>
+		)
+		return React.createElement(
+			(this.props.component || "button"),
+			_.assign(_.clone(this.props), {className: classnames("IconButton", "TouchTarget", this.props.className)}),
+			button
 		);
 	}
 }

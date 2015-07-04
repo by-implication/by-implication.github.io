@@ -19,8 +19,8 @@ class Wrapper extends React.Component {
 					<link href="/bundle.css" rel='stylesheet' type='text/css' />
 				</head>
 				<body>
+					<Toolbar />
 					<main>
-						<Toolbar />
 						<RouteHandler />
 					</main>
 					<script src="/bundle.js" />

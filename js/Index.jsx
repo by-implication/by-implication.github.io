@@ -42,13 +42,11 @@ export default class Index extends React.Component {
 
 		const Filter = function(filterSetName, filterName) {
 			const nameDict = {
-				"art": "artists",
-				"compsci": "computer scientists",
 				"design": "designers",
+				"dev": "developers",
 				"bizdev": "business analysts",
-				"softeng": "software engineers",
-				"unofficial": "play",
-				"official": "work",
+				"unofficial": "on our own",
+				"official": "together",
 				"internal": "ourselves",
 				"client": "clients",
 				"partnership": "partners"
@@ -73,13 +71,13 @@ export default class Index extends React.Component {
 										<h1>We are <span id="logotype">By Implication</span>.</h1>*/}
 					<div className="filter-group">
 						<p>
-							We are a group of { ResFilter("art") } { ResFilter("compsci") } { ResFilter("design") } { ResFilter("bizdev") } and { ResFilter("softeng") }.
+							We are a group of { ResFilter("design") }, { ResFilter("dev") } and { ResFilter("bizdev") }.
 						</p>
 						<p>
-							We like building things—whether for { InvFilter("official") } or for { InvFilter("unofficial") }. 
+							We like building things { InvFilter("unofficial") } and { InvFilter("official") }. 
 						</p>
 						<p>
-							Mostly, we build for { XInvFilter("internal") }, but sometimes we build for { XInvFilter("client") } and { XInvFilter("partnership") }. 
+							Mostly, we build for { XInvFilter("internal") }, but we build for { XInvFilter("client") } and { XInvFilter("partnership") } too. 
 						</p>
 					</div>
 				</section>

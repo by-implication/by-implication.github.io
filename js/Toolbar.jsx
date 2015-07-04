@@ -9,14 +9,14 @@ export default class Toolbar extends React.Component {
 	render() {
 		return (
 			<header className="Toolbar">
-				<span id="logo" className="icon-bi-logo" />
-				<span>By Implication</span>
-				<div className="spacer" />
-				<TextButton component={ Link } to="index">
-					Home
-				</TextButton>
 				<TextButton component={ Link } to="about">
 					About
+				</TextButton>
+				<IconButton component={ Link } id="logobutton" to="index">
+					<span id="logo" className="icon-bi-logo" />
+				</IconButton>
+				<TextButton component={ Link } to="contact">
+					Contact
 				</TextButton>
 			</header>
 		)

@@ -1,4 +1,4 @@
-const resources = {"art": "art", "design": "design", "bizdev": "bizdev", "softeng": "softeng", "compsci": "compsci"};
+const resources = {"design": "design", "bizdev": "bizdev", "dev": "dev"};
 const involvement = {"unofficial": "unofficial", "official": "official"};
 const externalInvolvement = {"internal": "internal", "partnership": "partnership", "client": "client"};
 
