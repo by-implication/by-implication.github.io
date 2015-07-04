@@ -15,11 +15,8 @@ export default class Toolbar extends React.Component {
 				<TextButton component={ Link } to="index">
 					Home
 				</TextButton>
-				<TextButton component={ Link } to="portfolio">
-					Portfolio
-				</TextButton>
-				<TextButton component={ Link } to="people">
-					People
+				<TextButton component={ Link } to="about">
+					About
 				</TextButton>
 			</header>
 		)

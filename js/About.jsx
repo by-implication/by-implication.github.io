@@ -1,7 +1,7 @@
 import React from 'react';
 import PersonCard from "./PersonCard";
 
-export default class People extends React.Component {
+export default class About extends React.Component {
 	render() {
 		const people = [
 			"Person McPerson"

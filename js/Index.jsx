@@ -76,13 +76,10 @@ export default class Index extends React.Component {
 							We are a group of { ResFilter("art") } { ResFilter("compsci") } { ResFilter("design") } { ResFilter("bizdev") } and { ResFilter("softeng") }.
 						</p>
 						<p>
-							We like building things, sometimes { InvFilter("unofficial") }, sometimes { InvFilter("official") }. 
+							We like building things—sometimes { InvFilter("unofficial") }, sometimes { InvFilter("official") }. 
 						</p>
 						<p>
 							Mostly, we build for { XInvFilter("internal") }, but sometimes we build for { XInvFilter("client") } and { XInvFilter("partnership") }. 
-						</p>
-						<p>
-							Below is the collection of our work.
 						</p>
 					</div>
 				</section>
