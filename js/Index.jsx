@@ -47,8 +47,8 @@ export default class Index extends React.Component {
 				"design": "designers",
 				"bizdev": "business analysts",
 				"softeng": "software engineers",
-				"unofficial": "alone",
-				"official": "together",
+				"unofficial": "play",
+				"official": "work",
 				"internal": "ourselves",
 				"client": "clients",
 				"partnership": "partners"
@@ -76,7 +76,7 @@ export default class Index extends React.Component {
 							We are a group of { ResFilter("art") } { ResFilter("compsci") } { ResFilter("design") } { ResFilter("bizdev") } and { ResFilter("softeng") }.
 						</p>
 						<p>
-							We like building things—sometimes { InvFilter("unofficial") }, sometimes { InvFilter("official") }. 
+							We like building things—whether for { InvFilter("official") } or for { InvFilter("unofficial") }. 
 						</p>
 						<p>
 							Mostly, we build for { XInvFilter("internal") }, but sometimes we build for { XInvFilter("client") } and { XInvFilter("partnership") }. 

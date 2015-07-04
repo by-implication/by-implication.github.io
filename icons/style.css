@@ -1,11 +1,11 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot?a2lh2u');
-	src:url('fonts/icomoon.eot?#iefixa2lh2u') format('embedded-opentype'),
-		url('fonts/icomoon.woff2?a2lh2u') format('woff2'),
-		url('fonts/icomoon.ttf?a2lh2u') format('truetype'),
-		url('fonts/icomoon.woff?a2lh2u') format('woff'),
-		url('fonts/icomoon.svg?a2lh2u#icomoon') format('svg');
+	src:url('fonts/icomoon.eot?s5ejf5');
+	src:url('fonts/icomoon.eot?#iefixs5ejf5') format('embedded-opentype'),
+		url('fonts/icomoon.woff2?s5ejf5') format('woff2'),
+		url('fonts/icomoon.ttf?s5ejf5') format('truetype'),
+		url('fonts/icomoon.woff?s5ejf5') format('woff'),
+		url('fonts/icomoon.svg?s5ejf5#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -26,4 +26,7 @@
 
 .icon-bi-logo:before {
 	content: "\e600";
+}
+.icon-menu:before {
+	content: "\e20e";
 }

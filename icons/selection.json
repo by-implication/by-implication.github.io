@@ -29,6 +29,36 @@
 			"setIdx": 0,
 			"setId": 1,
 			"iconIdx": 0
+		},
+		{
+			"icon": {
+				"paths": [
+					"M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"
+				],
+				"attrs": [
+					{}
+				],
+				"isMulticolor": false,
+				"tags": [
+					"menu"
+				],
+				"defaultCode": 57870,
+				"grid": 24
+			},
+			"attrs": [
+				{}
+			],
+			"properties": {
+				"order": 2,
+				"id": 526,
+				"prevSize": 24,
+				"code": 57870,
+				"name": "menu",
+				"ligatures": "menu"
+			},
+			"setIdx": 1,
+			"setId": 0,
+			"iconIdx": 526
 		}
 	],
 	"height": 1024,
@@ -49,7 +79,8 @@
 				"emSize": 1024,
 				"baseline": 6.25,
 				"whitespace": 50
-			}
+			},
+			"autoHost": true
 		},
 		"imagePref": {
 			"prefix": "icon-",
@@ -58,6 +89,10 @@
 			"color": 4473924,
 			"bgColor": 16777215
 		},
-		"historySize": 100
+		"historySize": 100,
+		"quickUsageToken": {
+			"ByImplication": false
+		},
+		"fontHostingName": false
 	}
 }
