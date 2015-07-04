@@ -35,7 +35,12 @@ module.exports = {
   },
   plugins: [
   	new ExtractTextPlugin("bundle.css"),
-  	new StaticSiteGeneratorPlugin("bundle.js", routePaths)
+  	new StaticSiteGeneratorPlugin("bundle.js", routePaths),
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false
+      }
+    }),
   ],
   module: {
     loaders: styleLoaders.concat([
