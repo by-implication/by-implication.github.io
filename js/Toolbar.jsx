@@ -30,7 +30,7 @@ export default class Toolbar extends React.Component {
 	}
 	render() {
 		return (
-			<header className={ classnames("Toolbar", {shadowed: this.state.scrollTop >= 8}) }>
+			<header className={ classnames("Toolbar", {scrolled: this.state.scrollTop >= 8}) }>
 				<TextButton component={ Link } to="about">
 					About
 				</TextButton>
