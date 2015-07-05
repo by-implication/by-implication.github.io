@@ -6,19 +6,32 @@
 body {
 	font-family: "Roboto";
 	margin: 0px;
-	background-color: #111;
+	// background-color: #111;
+	// color: white;
 }
 
 main {
 	padding-top: 64px;
 }
 
-button {
-	font-family: "Roboto";
+section#Contact {
+	@include display(flex);
+	@include flex-direction(column);
+	@include align-items(center);
+	@include justify-content(center);
+	padding: 80px 16px 16px 16px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	h1 {
+		font-weight: 100;
+		margin: 0px;
+	}
 }
 
-.Button {
-	color: $light;
+button {
+	font-family: "Roboto";
 }
 
 #logo {
@@ -36,7 +49,7 @@ button {
 	padding: 32px;
 	min-height: 24vw;
 	// background-color: #222;
-	color: rgba(white, 0.4);
+	color: rgba(black, 0.4);
 	h1 {
 		font-weight: 100;
 		margin-bottom: 0px;
@@ -56,12 +69,12 @@ button {
 	.filter {
 		@include transition(box-shadow, 0.2s);
 		display: inline-block;
-		box-shadow: 0px 1px 0px white;
-		color: white;
+		box-shadow: 0px 1px 0px #333;
+		color: #333;
 		margin-bottom: 4px;
 		cursor: pointer;
 		&:hover {
-			box-shadow: 0px 4px 0px white;		
+			box-shadow: 0px 4px 0px #333;		
 		}
 		&.active {
 			background-color: $contrast1;
@@ -70,34 +83,27 @@ button {
 }
 
 .Toolbar {
+	@include transition-property(box-shadow);
+	@include transition-duration(0.2s);
 	position: fixed;
 	z-index: 10;
 	width: 100%;
 	background-color: white;
-	box-shadow: 0px 1px 2px rgba(black, 0.1);
 	color: #333;
 	@include justify-content(center);
-	.Button {
-		color: #333;
-	}
 	#logo {
 		font-size: 16px;
 		line-height: 24px;
-		// margin: 0px 8px;
 	}
 	.active {
-		.Button {
-			color: $main;
-		}
+		color: $main;
 	}
-	// .logobutton {
-	// 	&.active {
-	// 		.Button {
-	// 			background-color $main;
-	// 			color: white;
-	// 		}
-	// 	}
-	// }
+	a {
+		color: #333;
+	}
+	&.shadowed {
+		box-shadow: 0px 1px 2px rgba(black, 0.1);
+	}
 }
 
 #logobutton.active .Button {
