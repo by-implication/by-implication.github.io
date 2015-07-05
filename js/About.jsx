@@ -29,7 +29,7 @@ export default class About extends React.Component {
 				name: "Pepe Bawagan"
 			},
 		].map(person => {
-			return <PersonCard {...person}/>
+			return <PersonCard key={ person.nickname } {...person}/>
 		});
 
 		return (
@@ -39,7 +39,7 @@ export default class About extends React.Component {
 					<p>We like making a difference in people's lives, in making information understandable.</p>
 					<h2>We have awesome people.</h2>
 				</section>
-				<section className="card-container">
+				<section className="card-container People">
 					{ people }
 				</section>
 			</div>

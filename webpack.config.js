@@ -12,7 +12,7 @@ var path = require("path");
 // ];
 var styleLoaders = [
   { test: /\.css$/, loader: "css" },
-  { test: /\.scss$/, loader: "css!sass?" + neat.includePaths.map(function(p){ return "includePaths[]=" + p}).join("&") }
+  { test: /\.scss$/, loader: "css!sass?" + neat.includePaths.map(function(p){ return "includePaths[]=" + path.resolve(__dirname, p)}).join("&") }
 ]
 styleLoaders.forEach(function(item) {
 	if(Array.isArray(item.loader)) {
@@ -40,6 +40,11 @@ module.exports = {
   },
   plugins: [
   	new ExtractTextPlugin("bundle.css"),
+    // new webpack.DefinePlugin({
+    //     "process.env": {
+    //         UV_THREADPOOL_SIZE: 100
+    //     }
+    // }),
   	new StaticSiteGeneratorPlugin("bundle.js", routePaths),
     // new webpack.optimize.UglifyJsPlugin({
     //   compress: {
