@@ -71,7 +71,7 @@ export default class Index extends React.Component {
 										<h1>We are <span id="logotype">By Implication</span>.</h1>*/}
 					<div className="filter-group">
 						<p>
-							We are a group of { ResFilter("design") }, { ResFilter("dev") } and { ResFilter("bizdev") }.
+							We are a group of { ResFilter("design") }, { ResFilter("dev") }, and { ResFilter("bizdev") }.
 						</p>
 						<p>
 							We like building things { InvFilter("unofficial") } and { InvFilter("official") }. 

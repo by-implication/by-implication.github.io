@@ -1,5 +1,4 @@
 @import "bourbon";
-// @import "variables";
 
 .Toolbar {
 	@include display(flex);
@@ -23,9 +22,6 @@
 		height: 100%;
 		padding: 0px 8px;
 		margin: 0px 8px;
-		// &.active {
-		// 	box-shadow: 0px -4px 0px 0px $contrast1 inset;
-		// }
 	}
 	.spacer {
 		@include flex(1);

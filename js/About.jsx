@@ -4,15 +4,44 @@ import PersonCard from "./PersonCard";
 export default class About extends React.Component {
 	render() {
 		const people = [
-			"Person McPerson"
-		].map(name => {
-			return <PersonCard name={ name } />
+			{
+				nickname: "Levi",
+				name: "Levi Tan Ong"
+			},
+			{
+				nickname: "Phi",
+				name: "Philip Cheang"
+			},
+			{
+				nickname: "Rodz",
+				name: "Rodrick Tan"
+			},
+			{
+				nickname: "Ken",
+				name: "Kenneth Yu"
+			},
+			{
+				nickname: "Wil",
+				name: "Wilhansen Li"
+			},
+			{
+				nickname: "Pepe",
+				name: "Pepe Bawagan"
+			},
+		].map(person => {
+			return <PersonCard {...person}/>
 		});
 
 		return (
-			<div>
-				<h2>We have awesome people.</h2>
-				{ people }
+			<div id="About">
+				<section>
+					<p>By Implication is a software development firm based in Metro Manila.</p>
+					<p>We like making a difference in people's lives, in making information understandable.</p>
+					<h2>We have awesome people.</h2>
+				</section>
+				<section className="card-container">
+					{ people }
+				</section>
 			</div>
 		);
 	}

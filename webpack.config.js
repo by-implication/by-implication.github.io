@@ -5,10 +5,14 @@ var neat = require('node-neat');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var path = require("path");
 
+// var styleLoaders = [
+//   { test: /\.css$/, loader: "css" },
+//  	{ test: /\.scss$/, loader: "css!sass?" 
+//     + "includePaths[]=" + neat.includePaths.join("&") }
+// ];
 var styleLoaders = [
   { test: /\.css$/, loader: "css" },
- 	{ test: /\.scss$/, loader: "css!sass?" 
-    + neat.includePaths.map(function(p){ return "includePaths[]=" + p}) }
+  { test: /\.scss$/, loader: "css!sass?" + neat.includePaths.map(function(p){ return "includePaths[]=" + p}).join("&") }
 ]
 styleLoaders.forEach(function(item) {
 	if(Array.isArray(item.loader)) {
