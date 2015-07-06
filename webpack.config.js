@@ -9,22 +9,6 @@ var postcssSimpleVars = require("postcss-simple-vars");
 var cssimport = require("postcss-import");
 var path = require("path");
 
-// var styleLoaders = [
-//   { test: /\.css$/, loader: "css" },
-//  	{ test: /\.scss$/, loader: "css!sass?" 
-//     + "includePaths[]=" + neat.includePaths.join("&") }
-// ];
-var styleLoaders = [
-  { test: /\.css$/, loader:  ExtractTextPlugin.extract("style-loader", "css-loader!postcss-loader") }
-];
-
-// styleLoaders.forEach(function(item) {
-// 	if(Array.isArray(item.loader)) {
-//     item.loader = item.loader.join("!");
-//   }
-//   item.loader = ExtractTextPlugin.extract('style-loader', item.loader);
-// });
-
 var routePaths = [
   "/",
   "/about/",
@@ -69,7 +53,8 @@ module.exports = {
     ]
   },
   module: {
-    loaders: styleLoaders.concat([
+    loaders: [
+      { test: /\.css$/, loader:  ExtractTextPlugin.extract("style-loader", "css-loader!postcss-loader") },
       { test: /\.html$/, loader: 'html' },
       { test: /\.jsx?$/, exclude: /node_modules/, loader: "babel-loader"},
       { test: /\.woff($|\?)/,   loader: "url?limit=10000&mimetype=application/font-woff" },
@@ -80,6 +65,6 @@ module.exports = {
       { test: /\.png($|\?)/,    loader: "url?limit=10000&mimetype=image/png" },
       { test: /\.jpg($|\?)/,    loader: "url?limit=10000&mimetype=image/jpeg" },
       { test: /\.ico($|\?)/,    loader: "url?limit=10000&mimetype=image/x-icon" }
-    ])
+    ]
   }
 }
