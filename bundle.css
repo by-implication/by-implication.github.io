@@ -180,6 +180,7 @@ main {
 
 section {
 	padding: 16px;
+	box-sizing: border-box;
 }
 
 section#Contact {
@@ -210,6 +211,35 @@ section#Contact {
 section#Contact h1 {
 	font-weight: 100;
 	margin: 0px;
+}
+
+footer {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	width: 100%;
+}
+
+footer blockquote {
+	max-width: 480px;
+	padding: 32px;
+	box-sizing: border-box;
+	font-weight: 100;
+}
+
+footer cite {
+	margin-top: 8px;
+	display: block;
 }
 
 button {
@@ -248,7 +278,7 @@ button {
 
 #hero h1 {
 	font-weight: 100;
-	margin-bottom: 0px;
+	/*margin-bottom: 0px;*/
 }
 
 .filter-group {
@@ -308,7 +338,7 @@ button {
 }
 
 .Toolbar.scrolled {
-	box-shadow: 0px 1px 2px rgba(black, 0.1);
+	box-shadow: 0px 8px 4px rgba(0,0,0,0.2);
 }
 
 .Toolbar.scrolled a {

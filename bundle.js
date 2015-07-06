@@ -171,7 +171,7 @@ return /******/ (function(modules) { // webpackBootstrap
 						"section",
 						{ id: "TheCompany" },
 						_react2["default"].createElement(
-							"h1",
+							"h2",
 							null,
 							"The Company"
 						),
@@ -183,21 +183,21 @@ return /******/ (function(modules) { // webpackBootstrap
 						_react2["default"].createElement(
 							"p",
 							null,
-							"We like making a difference in people's lives, making information understandable, and solving challenging problems."
+							"We care about making the world a better place, helping people understand that world, and solving the challenging problems it has to offer."
 						)
 					),
 					_react2["default"].createElement(
 						"section",
 						{ id: "ThePeople" },
 						_react2["default"].createElement(
-							"h1",
+							"h2",
 							null,
 							"The People"
 						),
 						_react2["default"].createElement(
 							"p",
 							null,
-							"Our people are some of the smartest, most talented, most arrogant sons of bitches we know. They're also weird."
+							"Our people are some of the smartest, most talented, most valuable, most self-aggrandizing people we know."
 						),
 						_react2["default"].createElement(
 							"div",
@@ -23975,6 +23975,11 @@ return /******/ (function(modules) { // webpackBootstrap
 						"section",
 						{ id: "hero" },
 						_reactAddons2["default"].createElement(
+							"h1",
+							null,
+							"We are By Implication."
+						),
+						_reactAddons2["default"].createElement(
 							"div",
 							{ className: "filter-group" },
 							_reactAddons2["default"].createElement(
@@ -24014,6 +24019,20 @@ return /******/ (function(modules) { // webpackBootstrap
 						ReactCSSTransitionGroup,
 						{ component: "div", className: "card-container", transitionName: "projects" },
 						projects
+					),
+					_reactAddons2["default"].createElement(
+						"footer",
+						null,
+						_reactAddons2["default"].createElement(
+							"blockquote",
+							null,
+							"Perfection is finally attained not when there is no longer anything to add, but when there is no longer anything to take away.",
+							_reactAddons2["default"].createElement(
+								"cite",
+								null,
+								"-Antoine de Saint Exupéry"
+							)
+						)
 					)
 				);
 			}
@@ -41090,14 +41109,24 @@ return /******/ (function(modules) { // webpackBootstrap
 					"section",
 					{ id: "Contact" },
 					_react2["default"].createElement(
-						"p",
+						"h1",
 						null,
-						"Drop us a line at"
+						"Drop us a line"
+					),
+					_react2["default"].createElement(
+						"h2",
+						null,
+						"example@email.com"
 					),
 					_react2["default"].createElement(
 						"h1",
 						null,
-						"example@email.com"
+						"Visit us"
+					),
+					_react2["default"].createElement(
+						"div",
+						null,
+						"map"
 					)
 				);
 			}
