@@ -81,7 +81,8 @@ export default class Index extends React.Component {
 						</p>
 					</div>
 				</section>
-				<ReactCSSTransitionGroup component="section" className="card-container" transitionName="projects">
+
+				<ReactCSSTransitionGroup component="div" className="card-container" transitionName="projects">
 					{ projects }
 				</ReactCSSTransitionGroup>
 			</div>

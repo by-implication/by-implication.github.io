@@ -1,8 +1,19 @@
 @import "variables.css";
 
 .PersonCard {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 	margin: 16px;
 	img {
 		border-radius: 50%;
+		margin-bottom: 8px;
+	}
+	h4 {
+		font-weight: 100;
+		margin: 0px;
+	}
+	h5 {
+		margin: 0;
 	}
 }
