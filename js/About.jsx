@@ -11,12 +11,12 @@ export default class About extends React.Component {
 		return (
 			<div id="About">
 				<section id="TheCompany">
-					<h1>The Company</h1>
+					<h2>The Company</h2>
 					<p>By Implication is a software development firm based in Metro Manila.</p>
 					<p>We like making a difference in people's lives, making information understandable, and solving challenging problems.</p>
 				</section>
 				<section id="ThePeople">
-					<h1>The People</h1>
+					<h2>The People</h2>
 					<p>Our people are some of the smartest, most talented, most arrogant sons of bitches we know. They're also weird.</p>
 					<div className="card-container People">
 						{ personnel }

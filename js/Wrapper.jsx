@@ -23,6 +23,10 @@ class Wrapper extends React.Component {
 					<main>
 						<RouteHandler />
 					</main>
+					<div>
+						<h4>Perfection is finally attained not when there is no longer anything to add, but when there is no longer anything to take away.</h4>
+						<p>-Antoine de Saint Exupéry</p>
+					</div>
 					<script src="/bundle.js" />
 				</body>
 			</html>
