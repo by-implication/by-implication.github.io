@@ -1,9 +1,32 @@
 .PersonCard {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	margin: 16px;
 }
 
 .PersonCard img {
 	border-radius: 50%;
+	margin-bottom: 8px;
+}
+
+.PersonCard h4 {
+	font-weight: 100;
+	margin: 0px;
+}
+
+.PersonCard h5 {
+	margin: 0;
 }.ProjectCard {
 	position: relative;
 	background-color: white;
@@ -130,7 +153,21 @@
 
 .ProjectCard:hover .overlay {
 	opacity: 1;
-}/*@import "typography";*/
+}h1 {
+	font-size: 56px;
+}
+h2 {
+	font-size: 45px;
+}
+h3 {
+	font-size: 34px;
+}
+h4 {
+	font-size: 24px;
+}
+body {
+	line-height: 1.4;
+}
 
 body {
 	font-family: "Roboto";
@@ -139,6 +176,10 @@ body {
 
 main {
 	padding-top: 64px;
+}
+
+section {
+	padding: 16px;
 }
 
 section#Contact {
@@ -221,7 +262,6 @@ button {
 }
 
 .filter-group .filter {
-
 	@include transition(box-shadow, 0.2s);
 	display: inline-block;
 	box-shadow: 0px 1px 0px black;
@@ -296,47 +336,28 @@ button {
 	-ms-flex-pack: center;
 	justify-content: center;
 }
-
-.SakayphSection {
+#About h1 {
+	text-align: center;
+}
+#About p {
+	font-size: 18px;
+	font-weight: 100;
+	max-width: 400px;
+}
+#About section {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	background-color: #2a6d45;
-	height: 320px;
-	overflow: hidden;
-	padding-top: 16px;
-}
-
-.SakayphSection .desktop-image {
-	width: 90%;
-}
-
-.SakayphSection .desktop-image img {
-	width: 100%;
-}
-
-.SakayphSection .mobile-image {
-	width: 40%;
-	position: absolute;
-	top: 72px;
-	right: 0px;
-}
-
-.SakayphSection .images {
-	width: 67%;
-	position: relative;
-}
-
-.SakayphSection .info {
-	width: 33%;
-	padding: 32px;
-	color: white;
-	box-sizing: border-box;
-}
-
-.SakayphSection .info h1 {
-	font-weight: 100;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 }
 
 .ClientAndPartnerCard {
@@ -448,6 +469,7 @@ button {
 	        flex-shrink: 0;
 	height: 64px;
 	padding: 0px 12px;
+	box-sizing: border-box;
 }
 .Toolbar a {
 	display: block;
