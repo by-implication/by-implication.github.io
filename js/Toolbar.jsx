@@ -1,4 +1,4 @@
-import ToolbarStyle from "../scss/Toolbar.scss";
+import ToolbarStyle from "../css/Toolbar.css";
 
 import React from "react";
 import classnames from "classnames";

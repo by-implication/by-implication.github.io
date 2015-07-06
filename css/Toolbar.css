@@ -1,9 +1,7 @@
-@import "bourbon";
-
 .Toolbar {
-	@include display(flex);
-	@include align-items(center);
-	@include flex-shrink(0);
+	display: flex;
+	align-items: center;
+	flex-shrink: 0;
 	height: 64px;
 	padding: 0px 12px;
 	a {
@@ -11,12 +9,12 @@
 		text-decoration: none;
 	}
 	.toolbar-group {
-		@include display(flex);
+		display: flex;
 		height: 100%;
 	}
 	.toolbar-item {
-		@include display(flex);
-		@include align-items(center);
+		display: flex;
+		align-items: center;
 		text-transform: uppercase;
 		font-size: 14px;
 		height: 100%;
@@ -24,7 +22,7 @@
 		margin: 0px 8px;
 	}
 	.spacer {
-		@include flex(1);
+		flex: 1;
 	}
 	#brand h1 {
 		font-size: 24px;

@@ -1,13 +1,9 @@
-@import "bourbon";
-@import "neat";
 @import "variables";
-@import "typography";
+/*@import "typography";*/
 
 body {
 	font-family: "Roboto";
 	margin: 0px;
-	// background-color: #111;
-	// color: white;
 }
 
 main {
@@ -15,10 +11,10 @@ main {
 }
 
 section#Contact {
-	@include display(flex);
-	@include flex-direction(column);
-	@include align-items(center);
-	@include justify-content(center);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	padding: 80px 16px 16px 16px;
 	position: absolute;
 	top: 0;
@@ -42,21 +38,17 @@ button {
 }
 
 #hero {
-	@include display(flex);
-	@include flex-direction(column);
-	@include align-items(center);
-	@include justify-content(center);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	padding: 32px;
 	min-height: 24vw;
-	// background-color: #222;
 	color: rgba(black, 0.4);
 	h1 {
 		font-weight: 100;
 		margin-bottom: 0px;
 	}
-	// #blurb {
-	// 	max-width: 768px;
-	// }
 }
 
 .filter-group {
@@ -83,14 +75,14 @@ button {
 }
 
 .Toolbar {
-	@include transition-property(box-shadow, background-color);
-	@include transition-duration(0.2s);
+	transition-property: box-shadow, background-color;
+	transition-duration: 0.2s;
 	position: fixed;
 	z-index: 10;
 	width: 100%;
 	background-color: white;
 	color: #333;
-	@include justify-content(center);
+	justify-content: center;
 	#logo {
 		font-size: 16px;
 		line-height: 24px;
@@ -102,8 +94,6 @@ button {
 		color: #333;
 	}
 	&.scrolled {
-		// background-color: white;
-		// color: #333;
 		box-shadow: 0px 1px 2px rgba(black, 0.1);
 		a {
 			color: #333;
@@ -111,45 +101,21 @@ button {
 	}
 }
 
-// .PersonCard {
-// 	// @include display(flex);
-// 	margin: 8px;
-
-// 	img {
-// 		border-radius: 50%;
-// 		// width: 100%;
-// 		// height: auto;
-// 	}
-// 	// @include media(min-width 769px) {
-// 	// 	width: calc(25% - 16px);
-// 	// 	// height: 24vw;
-// 	// }
-// 	// @include media(max-width 768px min-width 481px) {
-// 	// 	width: calc(33.33% - 16px);
-// 	// 	// height: 32vw;
-// 	// }
-// 	// @include media(max-width 480px) {
-// 	// 	width: calc(50% - 16px);
-// 	// 	// height: 49vw;
-// 	// }
-// }
-
 #logobutton.active .Button {
 	background-color: $main;
 	color: white;
 }
 
 .card-container {
-	@include display(flex);
-	@include flex-wrap(wrap);
+	display: flex;
+	flex-wrap: wrap;
 	&.People {
-		@include justify-content(center);
+		justify-content: center;
 	}
-	// @include justify-content(center);
 }
 
 .SakayphSection {
-	@include display(flex);
+	display: flex;
 	background-color: #2a6d45;
 	height: 320px;
 	overflow: hidden;
@@ -183,8 +149,8 @@ button {
 
 .ClientAndPartnerCard {
 	.image {
-		@include display(flex);
-		@include align-items(center);
+		display: flex;
+		align-items: center;
 		width: 128px;
 		height: 128px * 0.707;
 		img {
@@ -192,38 +158,36 @@ button {
 			max-height: 128px * 0.707;
 		}
 	}
-	img {
+	/*img {
 		@include filter(grayscale(100%));
 	}
 	&:hover {
 		img {
 			@include filter(grayscale(0%));
 		}
-	}
+	}*/
 }
 
 .projects-enter {
-	@include transition-property(transform, opacity);
-	@include transition-duration(0.3s);
-	@include transform(scale(0));
+	transition-property: transform, opacity;
+	transition-duration: 0.3s;
+	transform: scale(0);
   opacity: 0.01;
-  // transition: opacity .5s ease-in;
 }
 
 .projects-enter.projects-enter-active {
-  @include transform(scale(1));
+  transform: scale(1);
   opacity: 1;
 }
 
 .projects-leave {
-	@include transition-property(transform, opacity);
-	@include transition-duration(0.3s);
-  @include transform(scale(1));
+	transition-property: transform, opacity;
+	transition-duration: 0.3s;
+  transform: scale(1);
   opacity: 1;
-  // transition: opacity .5s ease-in;
 }
 
 .projects-leave.projects-leave-active {
-	@include transform(scale(0));
+	transform: scale(0);
   opacity: 0.01;
 }

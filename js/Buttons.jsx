@@ -1,4 +1,4 @@
-import ButtonStyles from "../scss/Buttons.scss";
+import ButtonStyles from "../css/Buttons.css";
 import classnames from "classnames";
 import React from 'react';
 import _ from "lodash";

@@ -15,15 +15,15 @@ var path = require("path");
 //     + "includePaths[]=" + neat.includePaths.join("&") }
 // ];
 var styleLoaders = [
-  { test: /\.css$/, loader: "css-loader!postcss-loader" },
-  { test: /\.scss$/, loader: "css!sass?" + neat.includePaths.map(function(p){ return "includePaths[]=" + path.resolve(__dirname, p)}).join("&") }
-]
-styleLoaders.forEach(function(item) {
-	if(Array.isArray(item.loader)) {
-    item.loader = item.loader.join("!");
-  }
-  item.loader = ExtractTextPlugin.extract('style-loader', item.loader);
-});
+  { test: /\.css$/, loader:  ExtractTextPlugin.extract("style-loader", "css-loader!postcss-loader") }
+];
+
+// styleLoaders.forEach(function(item) {
+// 	if(Array.isArray(item.loader)) {
+//     item.loader = item.loader.join("!");
+//   }
+//   item.loader = ExtractTextPlugin.extract('style-loader', item.loader);
+// });
 
 var routePaths = [
   "/",
@@ -60,10 +60,8 @@ module.exports = {
     return [
       cssimport({
         onImport: function(files){
-          console.log(files);
           files.forEach(this.addDependency);
-        }.bind(this),
-        path: path.resolve(__dirname, "css")
+        }.bind(this)
       }),
       autoprefixer, 
       postcssNested, 

@@ -69,15 +69,13 @@
 		padding: 16px;
 		box-sizing: border-box;
 	}
-	/*
-	
 	
 	&:hover {
 		.more {
-			@include transform(scale(1));
+			transform: scale(1);
 		}
 		.overlay {
 			opacity: 1;
 		}
-	}*/
+	}
 }

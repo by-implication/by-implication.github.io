@@ -1,4 +1,4 @@
-import MainStyles from "../scss/Main.scss";
+import MainStyles from "../css/Main.css";
 import IconStyles from "../icons/style.css";
 
 import React from "react";
