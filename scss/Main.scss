@@ -111,28 +111,28 @@ button {
 	}
 }
 
-.PersonCard {
-	// @include display(flex);
-	margin: 8px;
+// .PersonCard {
+// 	// @include display(flex);
+// 	margin: 8px;
 
-	img {
-		border-radius: 50%;
-		// width: 100%;
-		// height: auto;
-	}
-	// @include media(min-width 769px) {
-	// 	width: calc(25% - 16px);
-	// 	// height: 24vw;
-	// }
-	// @include media(max-width 768px min-width 481px) {
-	// 	width: calc(33.33% - 16px);
-	// 	// height: 32vw;
-	// }
-	// @include media(max-width 480px) {
-	// 	width: calc(50% - 16px);
-	// 	// height: 49vw;
-	// }
-}
+// 	img {
+// 		border-radius: 50%;
+// 		// width: 100%;
+// 		// height: auto;
+// 	}
+// 	// @include media(min-width 769px) {
+// 	// 	width: calc(25% - 16px);
+// 	// 	// height: 24vw;
+// 	// }
+// 	// @include media(max-width 768px min-width 481px) {
+// 	// 	width: calc(33.33% - 16px);
+// 	// 	// height: 32vw;
+// 	// }
+// 	// @include media(max-width 480px) {
+// 	// 	width: calc(50% - 16px);
+// 	// 	// height: 49vw;
+// 	// }
+// }
 
 #logobutton.active .Button {
 	background-color: $main;

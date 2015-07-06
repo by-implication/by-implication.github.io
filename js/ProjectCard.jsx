@@ -1,4 +1,4 @@
-import ProjectCardStyles from "../scss/ProjectCard.scss";
+import ProjectCardStyles from "../css/ProjectCard.css";
 import React from 'react';
 import chroma from "chroma-js";
 

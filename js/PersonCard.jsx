@@ -1,4 +1,4 @@
-import PersonCardStyle from "../scss/PersonCard.scss";
+import PersonCardStyle from "../css/PersonCard.css";
 import React from 'react';
 
 export default class PersonCard extends React.Component {

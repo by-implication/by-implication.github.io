@@ -3,6 +3,10 @@ var StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
 var bourbon = require('node-bourbon');
 var neat = require('node-neat');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var autoprefixer = require('autoprefixer-core');
+var postcssNested = require("postcss-nested");
+var postcssSimpleVars = require("postcss-simple-vars");
+var cssimport = require("postcss-import");
 var path = require("path");
 
 // var styleLoaders = [
@@ -11,7 +15,7 @@ var path = require("path");
 //     + "includePaths[]=" + neat.includePaths.join("&") }
 // ];
 var styleLoaders = [
-  { test: /\.css$/, loader: "css" },
+  { test: /\.css$/, loader: "css-loader!postcss-loader" },
   { test: /\.scss$/, loader: "css!sass?" + neat.includePaths.map(function(p){ return "includePaths[]=" + path.resolve(__dirname, p)}).join("&") }
 ]
 styleLoaders.forEach(function(item) {
@@ -52,6 +56,20 @@ module.exports = {
     //   }
     // }),
   ],
+  postcss: function(){
+    return [
+      cssimport({
+        onImport: function(files){
+          console.log(files);
+          files.forEach(this.addDependency);
+        }.bind(this),
+        path: path.resolve(__dirname, "css")
+      }),
+      autoprefixer, 
+      postcssNested, 
+      postcssSimpleVars
+    ]
+  },
   module: {
     loaders: styleLoaders.concat([
       { test: /\.html$/, loader: 'html' },

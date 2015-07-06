@@ -1,0 +1,8 @@
+@import "variables.css";
+
+.PersonCard {
+	margin: 16px;
+	img {
+		border-radius: 50%;
+	}
+}
