@@ -271,7 +271,7 @@ button {
 	-webkit-justify-content: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
-	padding: 32px;
+	padding: 32px 32px 64px 32px;
 	min-height: 24vw;
 	color: rgba(black, 0.4);
 }

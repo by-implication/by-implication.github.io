@@ -41109,17 +41109,17 @@ return /******/ (function(modules) { // webpackBootstrap
 					"section",
 					{ id: "Contact" },
 					_react2["default"].createElement(
-						"h1",
+						"h2",
 						null,
 						"Drop us a line"
 					),
 					_react2["default"].createElement(
-						"h2",
+						"h3",
 						null,
 						"example@email.com"
 					),
 					_react2["default"].createElement(
-						"h1",
+						"h2",
 						null,
 						"Visit us"
 					),
