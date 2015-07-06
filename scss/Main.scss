@@ -6,8 +6,8 @@
 body {
 	font-family: "Roboto";
 	margin: 0px;
-	background-color: #111;
-	color: white;
+	// background-color: #111;
+	// color: white;
 }
 
 main {
@@ -49,7 +49,7 @@ button {
 	padding: 32px;
 	min-height: 24vw;
 	// background-color: #222;
-	color: rgba(white, 0.4);
+	color: rgba(black, 0.4);
 	h1 {
 		font-weight: 100;
 		margin-bottom: 0px;
@@ -69,12 +69,12 @@ button {
 	.filter {
 		@include transition(box-shadow, 0.2s);
 		display: inline-block;
-		box-shadow: 0px 1px 0px white;
-		color: white;
+		box-shadow: 0px 1px 0px black;
+		color: black;
 		margin-bottom: 4px;
 		cursor: pointer;
 		&:hover {
-			box-shadow: 0px 4px 0px white;		
+			box-shadow: 0px 4px 0px black;		
 		}
 		&.active {
 			background-color: $contrast1;
@@ -88,8 +88,8 @@ button {
 	position: fixed;
 	z-index: 10;
 	width: 100%;
-	background-color: #111;
-	color: white;
+	background-color: white;
+	color: #333;
 	@include justify-content(center);
 	#logo {
 		font-size: 16px;
@@ -99,11 +99,11 @@ button {
 		color: $main;
 	}
 	a {
-		color: white;
+		color: #333;
 	}
 	&.scrolled {
-		background-color: white;
-		color: #333;
+		// background-color: white;
+		// color: #333;
 		box-shadow: 0px 1px 2px rgba(black, 0.1);
 		a {
 			color: #333;
