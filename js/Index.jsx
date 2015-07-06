@@ -69,6 +69,7 @@ export default class Index extends React.Component {
 				<section id="hero">
 					{/*<span id="logo" className="icon-bi-logo" />
 										<h1>We are <span id="logotype">By Implication</span>.</h1>*/}
+					<h1>We are By Implication.</h1>
 					<div className="filter-group">
 						<p>
 							We are a group of { ResFilter("design") }, { ResFilter("dev") }, and { ResFilter("bizdev") }.
@@ -85,6 +86,13 @@ export default class Index extends React.Component {
 				<ReactCSSTransitionGroup component="div" className="card-container" transitionName="projects">
 					{ projects }
 				</ReactCSSTransitionGroup>
+
+				<footer>
+					<blockquote>
+						Perfection is finally attained not when there is no longer anything to add, but when there is no longer anything to take away.
+						<cite>-Antoine de Saint Exupéry</cite>
+					</blockquote>
+				</footer>
 			</div>
 		)
 	}

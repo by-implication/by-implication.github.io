@@ -4,8 +4,12 @@ export default class Contact extends React.Component {
 	render() {
 		return (
 			<section id="Contact">
-				<p>Drop us a line at</p>
-				<h1>example@email.com</h1>
+				<h1>Drop us a line</h1>
+				<h2>example@email.com</h2>
+				<h1>Visit us</h1>
+				<div>
+					map
+				</div>
 			</section>
 		);
 	}

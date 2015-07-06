@@ -31,6 +31,23 @@ section#Contact {
 	}
 }
 
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	blockquote {
+		max-width: 480px;
+		padding: 32px;
+		box-sizing: border-box;
+		font-weight: 100;
+	}
+	cite {
+		margin-top: 8px;
+		display: block;
+	}
+}
+
 button {
 	font-family: "Roboto";
 }
@@ -52,7 +69,7 @@ button {
 	color: rgba(black, 0.4);
 	h1 {
 		font-weight: 100;
-		margin-bottom: 0px;
+		/*margin-bottom: 0px;*/
 	}
 }
 
