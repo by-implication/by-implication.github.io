@@ -1,3 +1,4 @@
+import classnames from "classnames";
 import ProjectCardStyles from "../css/ProjectCard.css";
 import React from 'react';
 import chroma from "chroma-js";
@@ -5,7 +6,7 @@ import chroma from "chroma-js";
 export default class ProjectCard extends React.Component {
 	render() {
 		return (
-			<div className="ProjectCard">
+			<div className={ classnames("ProjectCard", this.props.className) }>
 				{
 					this.props.imageSrc && (
 						<div className="image" style={ {backgroundImage: `url(${this.props.imageSrc})`} } />)

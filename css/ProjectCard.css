@@ -1,10 +1,17 @@
 @import "variables.css";
 
 .ProjectCard {
+	transition-property: opacity, transform;
+	transition-duration: 0.2s;
 	position: relative;
 	background-color: white;
 	overflow: hidden;
 	box-sizing: border-box;
+
+	&.dimmed {
+		opacity: 0.2;
+		transform: scale(0.8);
+	}
 	
 	@media (min-width: 769px) {
 		width: 25%;

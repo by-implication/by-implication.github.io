@@ -13,6 +13,10 @@ let Routes = (
 	</Route>
 )
 
+// <Route name="portfolio" path="portfolio/">
+// 	<Route path="website/" />
+// </Route>
+
 let PopeyeRouter = Router.create({
 	routes: Routes
 });

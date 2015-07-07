@@ -2,10 +2,10 @@ import {resources, involvement} from "../js/enums";
 
 export const projectsData = [
 	{
-		name: "Sakay.ph",
-		url: "http://sakay.ph/",
-		imageSrc: "/data/portfolio/sakayph.svg",
-		resources: [resources.design, resources.bizdev, resources.dev],
+		name: "This Website",
+		url: "/",
+		imageSrc: "/data/portfolio/website.svg",
+		resources: [resources.design, resources.dev],
 		involvement: ["official"],
 		externalInvolvement: ["internal"]
 	},
@@ -13,6 +13,14 @@ export const projectsData = [
 		name: "Storylark",
 		url: "https://storylark.ph/",
 		imageSrc: "/data/portfolio/storylark.png",
+		resources: [resources.design, resources.bizdev, resources.dev],
+		involvement: ["official"],
+		externalInvolvement: ["internal"]
+	},
+	{
+		name: "Sakay.ph",
+		url: "http://sakay.ph/",
+		imageSrc: "/data/portfolio/sakayph.svg",
 		resources: [resources.design, resources.bizdev, resources.dev],
 		involvement: ["official"],
 		externalInvolvement: ["internal"]

@@ -6,7 +6,8 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var autoprefixer = require('autoprefixer-core');
 var postcssNested = require("postcss-nested");
 var postcssSimpleVars = require("postcss-simple-vars");
-var cssimport = require("postcss-import");
+var postcssimport = require("postcss-import");
+var postcsscolor = require("postcss-color-function");
 var path = require("path");
 
 var routePaths = [
@@ -28,28 +29,24 @@ module.exports = {
   },
   plugins: [
   	new ExtractTextPlugin("bundle.css"),
-    // new webpack.DefinePlugin({
-    //     "process.env": {
-    //         UV_THREADPOOL_SIZE: 100
-    //     }
-    // }),
   	new StaticSiteGeneratorPlugin("bundle.js", routePaths),
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: false
-      }
-    }),
+    // new webpack.optimize.UglifyJsPlugin({
+    //   compress: {
+    //     warnings: false
+    //   }
+    // }),
   ],
   postcss: function(){
     return [
-      cssimport({
+      postcssimport({
         onImport: function(files){
           files.forEach(this.addDependency);
         }.bind(this)
       }),
       autoprefixer, 
       postcssNested, 
-      postcssSimpleVars
+      postcssSimpleVars,
+      postcsscolor
     ]
   },
   module: {

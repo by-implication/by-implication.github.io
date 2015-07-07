@@ -1,11 +1,9 @@
-import React from "react/addons";
+import React from "react";
 import _ from "lodash";
 import classnames from "classnames";
 import ProjectCard from "./ProjectCard";
 import {projectsData, clientsAndPartnersData} from "../data/portfolio-data";
 import enums, {resources, involvement, externalInvolvement} from "./enums";
-
-const ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
 
 const someSubset = function(superset, subset) {
 	return _.some(subset.map(se => {
@@ -37,8 +35,7 @@ export default class Index extends React.Component {
 	}
 	render() {
 		const projects = projectsData
-			.filter(p => this.isFiltered(p))
-			.map(p => <ProjectCard key={ p.name } { ...p } />);
+			.map(p => <ProjectCard className={classnames({dimmed: !this.isFiltered(p)})} key={ p.name } { ...p } />);
 
 		const Filter = function(filterSetName, filterName) {
 			const nameDict = {
@@ -67,8 +64,6 @@ export default class Index extends React.Component {
 		return (
 			<div id="Index">
 				<section id="hero">
-					{/*<span id="logo" className="icon-bi-logo" />
-										<h1>We are <span id="logotype">By Implication</span>.</h1>*/}
 					<h1>We are By Implication.</h1>
 					<div className="filter-group">
 						<p>
@@ -83,9 +78,9 @@ export default class Index extends React.Component {
 					</div>
 				</section>
 
-				<ReactCSSTransitionGroup component="div" className="card-container" transitionName="projects">
+				<div className="card-container">
 					{ projects }
-				</ReactCSSTransitionGroup>
+				</div>
 			</div>
 		)
 	}
