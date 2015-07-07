@@ -23,6 +23,12 @@ class Wrapper extends React.Component {
 					<main>
 						<RouteHandler />
 					</main>
+					<footer>
+						<blockquote>
+							Perfection is finally attained not when there is no longer anything to add, but when there is no longer anything to take away.
+							<cite>-Antoine de Saint Exupéry</cite>
+						</blockquote>
+					</footer>
 					<script src="/bundle.js" />
 				</body>
 			</html>
