@@ -7,7 +7,7 @@ body {
 }
 
 main {
-	padding-top: 64px;
+	/*padding-top: 64px;*/
 }
 
 section {
@@ -16,19 +16,39 @@ section {
 }
 
 section#Contact {
+	padding: 64px 0px 0px 0px;
+	/*padding: 0px;*/
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: 80px 16px 16px 16px;
-	position: absolute;
-	top: 0;
-	bottom: 0;
+	/*padding: 80px 16px 16px 16px;*/
+	/*position: absolute;*/
+	/*top: 0;*/
+	/*bottom: 0;*/
 	width: 100%;
-	h1 {
-		font-weight: 100;
+	.contact-methods {	
+		list-style: none;
+		padding: 0px;
 		margin: 0px;
+		font-size: 24px;
+		font-weight: 100;
+		margin: 32px;
+		li {
+			margin-bottom: 32px;
+			.icon {
+				margin-right: 16px;
+			}
+			a {
+				color: $contrast2;
+				text-decoration: none;
+			}
+		}
 	}
+}
+
+#Index {
+	padding-top: 64px;
 }
 
 footer {
@@ -64,7 +84,7 @@ button {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: 32px 32px 64px 32px;
+	/*padding: 32px 32px 64px 32px;*/
 	min-height: 24vw;
 	color: rgba(black, 0.4);
 	h1 {
@@ -77,6 +97,7 @@ button {
 	font-weight: 100;
 	font-size: 24px;
 	line-height: 32px;
+	margin-bottom: 64px;
 	p {
 		margin: 16px 0px;
 	}
@@ -103,6 +124,7 @@ button {
 	z-index: 10;
 	width: 100%;
 	background-color: white;
+	/*background-color: rgba(255,255,255,0.9);*/
 	color: #333;
 	justify-content: center;
 	#logo {

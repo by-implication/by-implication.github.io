@@ -1,3 +1,5 @@
+import AboutStyle from "../css/About.css";
+
 import React from 'react';
 import PersonCard from "./PersonCard";
 import people from "../data/people-data";

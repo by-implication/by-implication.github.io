@@ -1,11 +1,11 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot?s5ejf5');
-	src:url('fonts/icomoon.eot?#iefixs5ejf5') format('embedded-opentype'),
-		url('fonts/icomoon.woff2?s5ejf5') format('woff2'),
-		url('fonts/icomoon.ttf?s5ejf5') format('truetype'),
-		url('fonts/icomoon.woff?s5ejf5') format('woff'),
-		url('fonts/icomoon.svg?s5ejf5#icomoon') format('svg');
+	src:url('fonts/icomoon.eot?71g5g8');
+	src:url('fonts/icomoon.eot?#iefix71g5g8') format('embedded-opentype'),
+		url('fonts/icomoon.woff2?71g5g8') format('woff2'),
+		url('fonts/icomoon.ttf?71g5g8') format('truetype'),
+		url('fonts/icomoon.woff?71g5g8') format('woff'),
+		url('fonts/icomoon.svg?71g5g8#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -24,8 +24,20 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-facebook-square:before {
+	content: "\e602";
+}
+.icon-twitter:before {
+	content: "\e601";
+}
 .icon-bi-logo:before {
 	content: "\e600";
+}
+.icon-email:before {
+	content: "\e04c";
+}
+.icon-map:before {
+	content: "\e1f3";
 }
 .icon-menu:before {
 	content: "\e20e";

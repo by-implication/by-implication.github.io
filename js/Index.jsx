@@ -65,7 +65,7 @@ export default class Index extends React.Component {
 		const XInvFilter = Filter.bind(this, "externalInvolvement");
 
 		return (
-			<div className="Index">
+			<div id="Index">
 				<section id="hero">
 					{/*<span id="logo" className="icon-bi-logo" />
 										<h1>We are <span id="logotype">By Implication</span>.</h1>*/}
