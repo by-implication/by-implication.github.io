@@ -1,17 +1,18 @@
 import {resources, involvement} from "../js/enums";
 
-export const projectsData = [
-	{
+export default {
+	website: {
 		name: "This Website",
 		id: "website",
 		url: "/",
 		imageSrc: "/data/portfolio/website.svg",
-		caseStudySrc: "/data/portfolio-casestudy/website/casestudy.md",
+		caseStudy: require("./portfolio-casestudy/website/casestudy.md"),
+		headerImg: require("./portfolio-casestudy/website/header.png"),
 		resources: [resources.design, resources.dev],
 		involvement: ["official"],
 		externalInvolvement: ["internal"]
 	},
-	{
+	storylark: {
 		name: "Storylark",
 		id: "storylark",
 		url: "https://storylark.ph/",
@@ -20,7 +21,7 @@ export const projectsData = [
 		involvement: ["official"],
 		externalInvolvement: ["internal"]
 	},
-	{
+	sakay: {
 		name: "Sakay.ph",
 		id: "sakay",
 		url: "http://sakay.ph/",
@@ -29,7 +30,7 @@ export const projectsData = [
 		involvement: ["official"],
 		externalInvolvement: ["internal"]
 	},
-	{
+	openrecon: {
 		name: "Open Reconstruction",
 		id: "openrecon",
 		url: "http://openreconstruction.gov.ph/",
@@ -38,7 +39,7 @@ export const projectsData = [
 		involvement: ["official"],
 		externalInvolvement: ["client"]
 	},
-	{
+	wildfire: {
 		name: "Wildfire",
 		id: "wildfire",
 		imageSrc: "/data/portfolio/wildfire.svg",
@@ -46,7 +47,7 @@ export const projectsData = [
 		involvement: ["official"],
 		externalInvolvement: ["internal"]
 	},
-	{
+	sari: {
 		name: "Sari",
 		id: "sari",
 		url: "http://sari.ph",
@@ -55,7 +56,7 @@ export const projectsData = [
 		involvement: ["official"],
 		externalInvolvement: ["client", "partnership"]
 	},
-	{
+	plotypus: {
 		name: "Plotypus",
 		id: "plotypus",
 		url: "http://plotypus.levitanong.com/",
@@ -64,7 +65,7 @@ export const projectsData = [
 		involvement: ["unofficial"],
 		externalInvolvement: ["internal"]
 	},
-	{
+	popeye: {
 		name: "Popeye",
 		id: "popeye",
 		url: "http://plotypus.levitanong.com/",
@@ -73,7 +74,7 @@ export const projectsData = [
 		involvement: ["unofficial"],
 		externalInvolvement: ["internal"]
 	},
-	{
+	torch: {
 		name: "Torch",
 		id: "torch",
 		imageSrc: "/data/portfolio/torch.svg",
@@ -81,12 +82,4 @@ export const projectsData = [
 		involvement: ["unofficial"],
 		externalInvolvement: ["internal"]
 	}
-];
-
-export const clientsAndPartnersData = [
-	{
-		name: "Department of Budget and Management",
-		url: "http://www.dbm.gov.ph/",
-		imageSrc: "/data/portfolio/DBM.png"
-	}
-];
+};

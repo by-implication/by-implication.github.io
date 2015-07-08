@@ -1,0 +1,17 @@
+.CaseStudy {
+	.headerimg {
+		width: 100%;
+	}
+	.content {
+		display: flex;
+	}
+	aside {
+		width: 25%;
+		padding: 16px;
+	}
+	article {
+		width: 75%;
+		padding: 16px;
+		
+	}
+}

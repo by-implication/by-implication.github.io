@@ -2,7 +2,7 @@ import React from "react";
 import _ from "lodash";
 import classnames from "classnames";
 import ProjectCard from "./ProjectCard";
-import {projectsData, clientsAndPartnersData} from "../data/portfolio-data";
+import projectsData from "../data/portfolio-data";
 import enums, {resources, involvement, externalInvolvement} from "./enums";
 
 // import websitemd from "../data/portfolio-md/website/writeup.md";
@@ -36,8 +36,7 @@ export default class Index extends React.Component {
 		}));
 	}
 	render() {
-		const projects = projectsData
-			.map(p => <ProjectCard className={classnames({dimmed: !this.isFiltered(p)})} key={ p.name } { ...p } />);
+		const projects = _.map(projectsData, p => <ProjectCard className={classnames({dimmed: !this.isFiltered(p)})} key={ p.name } { ...p } />);
 
 		const Filter = function(filterSetName, filterName) {
 			const nameDict = {
