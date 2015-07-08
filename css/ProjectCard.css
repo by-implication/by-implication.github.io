@@ -51,6 +51,8 @@
 		width: 50%;
 		border-radius: 50%;
 		background-color: $main;
+		color: white;
+		text-decoration: none;
 		h3 {
 			width: 100%;
 			text-align: center;

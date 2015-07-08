@@ -4,22 +4,16 @@ import Index from "./Index";
 import About from "./About";
 import Contact from "./Contact";
 import Wrapper from "./Wrapper";
+import CaseStudy from "./CaseStudy";
 
-let Routes = (
+const Routes = (
 	<Route path="/" handler={ Wrapper }>
 		<Route name="about" path="about/" handler={ About } />
 		<Route name="contact" path="contact/" handler={ Contact } />
+		<Route name="caseStudy" path="/portfolio/:id/" handler={ CaseStudy } />
 		<DefaultRoute name="index" handler={ Index } />
 	</Route>
 )
-
-// <Route name="portfolio" path="portfolio/">
-// 	<Route path="website/" />
-// </Route>
-
-let PopeyeRouter = Router.create({
-	routes: Routes
-});
 
 if (typeof document !== "undefined") {
 	Router.run(Routes, Router.HistoryLocation, Handler => {

@@ -147,6 +147,7 @@ button {
 .card-container {
 	display: flex;
 	flex-wrap: wrap;
+	overflow: visible;
 	&.People {
 		justify-content: center;
 	}

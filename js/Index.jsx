@@ -5,6 +5,8 @@ import ProjectCard from "./ProjectCard";
 import {projectsData, clientsAndPartnersData} from "../data/portfolio-data";
 import enums, {resources, involvement, externalInvolvement} from "./enums";
 
+// import websitemd from "../data/portfolio-md/website/writeup.md";
+
 const someSubset = function(superset, subset) {
 	return _.some(subset.map(se => {
 		return _.contains(superset, se);

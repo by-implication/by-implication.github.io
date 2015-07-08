@@ -13,7 +13,8 @@ var path = require("path");
 var routePaths = [
   "/",
   "/about/",
-  "/contact/"
+  "/contact/",
+  "/portfolio/website/"
 ];
 
 module.exports = {
@@ -30,11 +31,11 @@ module.exports = {
   plugins: [
   	new ExtractTextPlugin("bundle.css"),
   	new StaticSiteGeneratorPlugin("bundle.js", routePaths),
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: false
-      }
-    }),
+    // new webpack.optimize.UglifyJsPlugin({
+    //   compress: {
+    //     warnings: false
+    //   }
+    // }),
   ],
   postcss: function(){
     return [
@@ -52,7 +53,8 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.css$/, loader:  ExtractTextPlugin.extract("style-loader", "css-loader!postcss-loader") },
-      { test: /\.html$/, loader: 'html' },
+      { test: /\.md$/, loader: "html!markdown" },
+      { test: /\.html$/, loader: "html" },
       { test: /\.jsx?$/, exclude: /node_modules/, loader: "babel-loader"},
       { test: /\.woff($|\?)/,   loader: "url?limit=10000&mimetype=application/font-woff" },
       { test: /\.woff2($|\?)/,  loader: "url?limit=10000&mimetype=application/font-woff2" },
