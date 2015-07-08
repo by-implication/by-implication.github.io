@@ -31,11 +31,11 @@ module.exports = {
   plugins: [
   	new ExtractTextPlugin("bundle.css"),
   	new StaticSiteGeneratorPlugin("bundle.js", routePaths),
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: false
-      }
-    }),
+    // new webpack.optimize.UglifyJsPlugin({
+    //   compress: {
+    //     warnings: false
+    //   }
+    // }),
   ],
   postcss: function(){
     return [

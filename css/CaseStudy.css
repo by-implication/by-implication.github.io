@@ -1,9 +1,14 @@
 .CaseStudy {
+	line-height: 1.5;
 	.headerimg {
 		width: 100%;
 	}
 	.content {
-		display: flex;
+		max-width: 960px;
+		margin: 0px auto;
+		@media (min-width: 640px) {
+			display: flex;
+		}
 	}
 	aside {
 		width: 25%;
@@ -13,5 +18,26 @@
 		width: 75%;
 		padding: 16px;
 		
+	}
+	dt {
+		font-size: 12px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	dd {
+		margin-left: 0px;
+		margin-bottom: 16px;
+		font-weight: 100;
+	}
+	h1 {
+		margin: 16px 0px;
+		font-size: 32px;
+	}
+	h2 {
+		font-size: 24px;
+	}
+	p {
+		font-size: 18px;
+		font-family: georgia;
 	}
 }
