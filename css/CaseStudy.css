@@ -10,6 +10,11 @@
 		@media (min-width: 640px) {
 			display: flex;
 		}
+		img {
+			width: auto;
+			border: 4px solid black;
+			box-sizing: border-box;
+		}
 	}
 	aside {
 		width: 25%;
@@ -29,16 +34,5 @@
 		margin-left: 0px;
 		margin-bottom: 16px;
 		font-weight: 100;
-	}
-	h1 {
-		margin: 16px 0px;
-		font-size: 32px;
-	}
-	h2 {
-		font-size: 24px;
-	}
-	p {
-		font-size: 18px;
-		font-family: georgia;
 	}
 }

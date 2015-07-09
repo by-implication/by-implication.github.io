@@ -82,7 +82,7 @@ button {
 	align-items: center;
 	justify-content: center;
 	min-height: 24vw;
-	color: rgba(black, 0.4);
+	color: color(black a(40%));
 	h1 {
 		font-weight: 100;
 	}
