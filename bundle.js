@@ -75,19 +75,19 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _Index2 = _interopRequireDefault(_Index);
 
-	var _About = __webpack_require__(210);
+	var _About = __webpack_require__(211);
 
 	var _About2 = _interopRequireDefault(_About);
 
-	var _Contact = __webpack_require__(217);
+	var _Contact = __webpack_require__(218);
 
 	var _Contact2 = _interopRequireDefault(_Contact);
 
-	var _Wrapper = __webpack_require__(236);
+	var _Wrapper = __webpack_require__(237);
 
 	var _Wrapper2 = _interopRequireDefault(_Wrapper);
 
-	var _CaseStudy = __webpack_require__(253);
+	var _CaseStudy = __webpack_require__(254);
 
 	var _CaseStudy2 = _interopRequireDefault(_CaseStudy);
 
@@ -38624,7 +38624,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			url: "/",
 			imageSrc: "/data/portfolio/website.svg",
 			caseStudy: __webpack_require__(208),
-			headerImg: __webpack_require__(209),
+			headerImg: __webpack_require__(210),
 			resources: [_jsEnums.resources.design, _jsEnums.resources.dev],
 			involvement: ["official"],
 			externalInvolvement: ["internal"]
@@ -38722,18 +38722,24 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 208 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "<h1 id=\"the-by-implication-website\">The By Implication Website</h1>\n<p>The portfolio and public-facing site of By Implication. </p>\n<h2 id=\"background\">Background</h2>\n<p>Four years overdue, and it&#39;s finally here. And yet, this is still something of a temporary website. (But then again, so was the original.) This context provided a good number of constraints to work with: time couldn&#39;t be wasted on pretty complexities; no parallax, no fancy toolbar animations based on scroll position; everything had to be simple, clean, and responsive. We also needed the site to be served statically to allow for SEO and performance. Thank goodness for React.</p>\n<h2 id=\"approach\">Approach</h2>\n<p>Lorem Ipsum</p>\n";
+	module.exports = "<h1 id=\"the-by-implication-website\">The By Implication Website</h1>\n<p>The portfolio and public-facing site of <a href=\"/\">By Implication</a>. (Yes, this link links to this site.)</p>\n<h2 id=\"background\">Background</h2>\n<p>Four years overdue, and it&#39;s finally here. And yet, this is still something of a temporary website. (But then again, so was the original.) It turns out that while designing for other people can be anywhere from easy to challenging, designing a website for your own firm can be downright impossible. Not because of any lack of skill or talent—there is simply too much investment in the project. As they say, a Doctor that operates on himself has a fool for a patient. But alas, we cannot afford another design agency, and so we must, for the time being, be fools.</p>\n<h2 id=\"approach\">Approach</h2>\n<p>We had a good set of limitations to work with: the site had to be simple because presumably it would be replaced sometime in the future (But still hold its own in the long run, given our propensity for keeping temporary websites), it had to be search engine indexable (which meant we had to be conscientious about the web technologies we used), and it had to perform all the functions one would expect from a portfolio site.</p>\n<h3 id=\"simplicity\">Simplicity</h3>\n<p>Toolbars can be tricky: Because they scale with the width of your medium, at first glance it seems you have a lot of space to work with, when you really don&#39;t. It&#39;s become standard practice to put anywhere between 4 and 8 items on a toolbar. The consequence for mobile widths, however, is that the designer has to hide some or all of the items behind a menu that a previously invisible button on the toolbar will open. This adds an unacceptable level of complexity to a site.</p>\n<p>Our solution was to reduce the number of items on a toolbar, combining the items that make sense to be combined. We ended up with a total of 3 toolbar items: About, Home (represented by our logo) and Contact. This further simplified our site, leaving us to deal with only three major views. The contents of these views will be discussed later.</p>\n<p><img src=\"" + __webpack_require__(209) + "\" alt=\"this\"></p>\n<h3 id=\"indexability\">Indexability</h3>\n<p>SEO in the age of single page apps and javascript frameworks is well documented, so we won&#39;t discuss that here. We used </p>\n";
 
 /***/ },
 /* 209 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "c0d77a1e8562411919d77e39b197a2b3.png"
+	module.exports = __webpack_require__.p + "81c18a80caf2c738b655c7d1d101d3f7.png"
 
 /***/ },
 /* 210 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "c0d77a1e8562411919d77e39b197a2b3.png"
+
+/***/ },
+/* 211 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38754,7 +38760,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-	var _cssAboutCss = __webpack_require__(211);
+	var _cssAboutCss = __webpack_require__(212);
 
 	var _cssAboutCss2 = _interopRequireDefault(_cssAboutCss);
 
@@ -38762,11 +38768,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _PersonCard = __webpack_require__(213);
+	var _PersonCard = __webpack_require__(214);
 
 	var _PersonCard2 = _interopRequireDefault(_PersonCard);
 
-	var _dataPeopleData = __webpack_require__(216);
+	var _dataPeopleData = __webpack_require__(217);
 
 	var _dataPeopleData2 = _interopRequireDefault(_dataPeopleData);
 
@@ -38838,14 +38844,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports["default"];
 
 /***/ },
-/* 211 */
+/* 212 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 212 */,
-/* 213 */
+/* 213 */,
+/* 214 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38864,7 +38870,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-	var _cssPersonCardCss = __webpack_require__(214);
+	var _cssPersonCardCss = __webpack_require__(215);
 
 	var _cssPersonCardCss2 = _interopRequireDefault(_cssPersonCardCss);
 
@@ -38913,14 +38919,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports["default"];
 
 /***/ },
-/* 214 */
+/* 215 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 215 */,
-/* 216 */
+/* 216 */,
+/* 217 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -38988,7 +38994,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports["default"];
 
 /***/ },
-/* 217 */
+/* 218 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -39011,7 +39017,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _reactGoogleMaps = __webpack_require__(218);
+	var _reactGoogleMaps = __webpack_require__(219);
 
 	var Contact = (function (_React$Component) {
 		function Contact(props) {
@@ -39106,7 +39112,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports["default"];
 
 /***/ },
-/* 218 */
+/* 219 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -39117,39 +39123,39 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-	var _GoogleMaps = __webpack_require__(219);
+	var _GoogleMaps = __webpack_require__(220);
 
 	var _GoogleMaps2 = _interopRequireDefault(_GoogleMaps);
 
-	var _Circle = __webpack_require__(224);
+	var _Circle = __webpack_require__(225);
 
 	var _Circle2 = _interopRequireDefault(_Circle);
 
-	var _DirectionsRenderer = __webpack_require__(227);
+	var _DirectionsRenderer = __webpack_require__(228);
 
 	var _DirectionsRenderer2 = _interopRequireDefault(_DirectionsRenderer);
 
-	var _DrawingManager = __webpack_require__(229);
+	var _DrawingManager = __webpack_require__(230);
 
 	var _DrawingManager2 = _interopRequireDefault(_DrawingManager);
 
-	var _InfoWindow = __webpack_require__(230);
+	var _InfoWindow = __webpack_require__(231);
 
 	var _InfoWindow2 = _interopRequireDefault(_InfoWindow);
 
-	var _Marker = __webpack_require__(231);
+	var _Marker = __webpack_require__(232);
 
 	var _Marker2 = _interopRequireDefault(_Marker);
 
-	var _OverlayView = __webpack_require__(232);
+	var _OverlayView = __webpack_require__(233);
 
 	var _OverlayView2 = _interopRequireDefault(_OverlayView);
 
-	var _Polygon = __webpack_require__(234);
+	var _Polygon = __webpack_require__(235);
 
 	var _Polygon2 = _interopRequireDefault(_Polygon);
 
-	var _Polyline = __webpack_require__(235);
+	var _Polyline = __webpack_require__(236);
 
 	var _Polyline2 = _interopRequireDefault(_Polyline);
 
@@ -39164,7 +39170,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.Polyline = _Polyline2["default"];
 
 /***/ },
-/* 219 */
+/* 220 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -39191,19 +39197,19 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _internalsEventComponent = __webpack_require__(220);
+	var _internalsEventComponent = __webpack_require__(221);
 
 	var _internalsEventComponent2 = _interopRequireDefault(_internalsEventComponent);
 
-	var _internalsVirtualContainer = __webpack_require__(221);
+	var _internalsVirtualContainer = __webpack_require__(222);
 
 	var _internalsVirtualContainer2 = _interopRequireDefault(_internalsVirtualContainer);
 
-	var _internalsExposeGetters = __webpack_require__(222);
+	var _internalsExposeGetters = __webpack_require__(223);
 
 	var _internalsExposeGetters2 = _interopRequireDefault(_internalsExposeGetters);
 
-	var _internalsCreateRegisterEvents = __webpack_require__(223);
+	var _internalsCreateRegisterEvents = __webpack_require__(224);
 
 	var _internalsCreateRegisterEvents2 = _interopRequireDefault(_internalsCreateRegisterEvents);
 
@@ -39351,7 +39357,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports["default"];
 
 /***/ },
-/* 220 */
+/* 221 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -39450,7 +39456,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports["default"];
 
 /***/ },
-/* 221 */
+/* 222 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -39525,7 +39531,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	// https://github.com/facebook/react/issues/1752#issuecomment-47818166
 
 /***/ },
-/* 222 */
+/* 223 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -39545,7 +39551,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports["default"];
 
 /***/ },
-/* 223 */
+/* 224 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -39597,7 +39603,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports["default"];
 
 /***/ },
-/* 224 */
+/* 225 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -39614,11 +39620,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-	var _internalsSimpleChildComponent = __webpack_require__(225);
+	var _internalsSimpleChildComponent = __webpack_require__(226);
 
 	var _internalsSimpleChildComponent2 = _interopRequireDefault(_internalsSimpleChildComponent);
 
-	var _internalsCreateRegisterEvents = __webpack_require__(223);
+	var _internalsCreateRegisterEvents = __webpack_require__(224);
 
 	var _internalsCreateRegisterEvents2 = _interopRequireDefault(_internalsCreateRegisterEvents);
 
@@ -39642,7 +39648,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports["default"];
 
 /***/ },
-/* 225 */
+/* 226 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -39673,15 +39679,15 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _reactLibWarning2 = _interopRequireDefault(_reactLibWarning);
 
-	var _objectPath = __webpack_require__(226);
+	var _objectPath = __webpack_require__(227);
 
 	var _objectPath2 = _interopRequireDefault(_objectPath);
 
-	var _EventComponent2 = __webpack_require__(220);
+	var _EventComponent2 = __webpack_require__(221);
 
 	var _EventComponent3 = _interopRequireDefault(_EventComponent2);
 
-	var _exposeGetters = __webpack_require__(222);
+	var _exposeGetters = __webpack_require__(223);
 
 	var _exposeGetters2 = _interopRequireDefault(_exposeGetters);
 
@@ -39771,7 +39777,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports["default"];
 
 /***/ },
-/* 226 */
+/* 227 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (root, factory){
@@ -40055,7 +40061,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 227 */
+/* 228 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -40072,15 +40078,15 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-	var _internalsSimpleChildComponent = __webpack_require__(225);
+	var _internalsSimpleChildComponent = __webpack_require__(226);
 
 	var _internalsSimpleChildComponent2 = _interopRequireDefault(_internalsSimpleChildComponent);
 
-	var _internalsCreateRegisterEvents = __webpack_require__(223);
+	var _internalsCreateRegisterEvents = __webpack_require__(224);
 
 	var _internalsCreateRegisterEvents2 = _interopRequireDefault(_internalsCreateRegisterEvents);
 
-	var _internalsBASIC_EVENT_NAMES = __webpack_require__(228);
+	var _internalsBASIC_EVENT_NAMES = __webpack_require__(229);
 
 	var _internalsBASIC_EVENT_NAMES2 = _interopRequireDefault(_internalsBASIC_EVENT_NAMES);
 
@@ -40104,7 +40110,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports["default"];
 
 /***/ },
-/* 228 */
+/* 229 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -40118,7 +40124,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports["default"];
 
 /***/ },
-/* 229 */
+/* 230 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -40135,11 +40141,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-	var _internalsSimpleChildComponent = __webpack_require__(225);
+	var _internalsSimpleChildComponent = __webpack_require__(226);
 
 	var _internalsSimpleChildComponent2 = _interopRequireDefault(_internalsSimpleChildComponent);
 
-	var _internalsCreateRegisterEvents = __webpack_require__(223);
+	var _internalsCreateRegisterEvents = __webpack_require__(224);
 
 	var _internalsCreateRegisterEvents2 = _interopRequireDefault(_internalsCreateRegisterEvents);
 
@@ -40163,7 +40169,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports["default"];
 
 /***/ },
-/* 230 */
+/* 231 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -40188,11 +40194,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _internalsSimpleChildComponent = __webpack_require__(225);
+	var _internalsSimpleChildComponent = __webpack_require__(226);
 
 	var _internalsSimpleChildComponent2 = _interopRequireDefault(_internalsSimpleChildComponent);
 
-	var _internalsCreateRegisterEvents = __webpack_require__(223);
+	var _internalsCreateRegisterEvents = __webpack_require__(224);
 
 	var _internalsCreateRegisterEvents2 = _interopRequireDefault(_internalsCreateRegisterEvents);
 
@@ -40233,7 +40239,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports["default"];
 
 /***/ },
-/* 231 */
+/* 232 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -40256,15 +40262,15 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _internalsSimpleChildComponent = __webpack_require__(225);
+	var _internalsSimpleChildComponent = __webpack_require__(226);
 
 	var _internalsSimpleChildComponent2 = _interopRequireDefault(_internalsSimpleChildComponent);
 
-	var _internalsCreateRegisterEvents = __webpack_require__(223);
+	var _internalsCreateRegisterEvents = __webpack_require__(224);
 
 	var _internalsCreateRegisterEvents2 = _interopRequireDefault(_internalsCreateRegisterEvents);
 
-	var _InfoWindow = __webpack_require__(230);
+	var _InfoWindow = __webpack_require__(231);
 
 	var _InfoWindow2 = _interopRequireDefault(_InfoWindow);
 
@@ -40323,7 +40329,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports["default"];
 
 /***/ },
-/* 232 */
+/* 233 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -40348,19 +40354,19 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _internalsSimpleChildComponent = __webpack_require__(225);
+	var _internalsSimpleChildComponent = __webpack_require__(226);
 
 	var _internalsSimpleChildComponent2 = _interopRequireDefault(_internalsSimpleChildComponent);
 
-	var _internalsCreateOverlayViewProxy = __webpack_require__(233);
+	var _internalsCreateOverlayViewProxy = __webpack_require__(234);
 
 	var _internalsCreateOverlayViewProxy2 = _interopRequireDefault(_internalsCreateOverlayViewProxy);
 
-	var _internalsCreateRegisterEvents = __webpack_require__(223);
+	var _internalsCreateRegisterEvents = __webpack_require__(224);
 
 	var _internalsCreateRegisterEvents2 = _interopRequireDefault(_internalsCreateRegisterEvents);
 
-	var _internalsExposeGetters = __webpack_require__(222);
+	var _internalsExposeGetters = __webpack_require__(223);
 
 	var _internalsExposeGetters2 = _interopRequireDefault(_internalsExposeGetters);
 
@@ -40419,7 +40425,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports["default"];
 
 /***/ },
-/* 233 */
+/* 234 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -40559,7 +40565,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports["default"];
 
 /***/ },
-/* 234 */
+/* 235 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -40576,15 +40582,15 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-	var _internalsSimpleChildComponent = __webpack_require__(225);
+	var _internalsSimpleChildComponent = __webpack_require__(226);
 
 	var _internalsSimpleChildComponent2 = _interopRequireDefault(_internalsSimpleChildComponent);
 
-	var _internalsCreateRegisterEvents = __webpack_require__(223);
+	var _internalsCreateRegisterEvents = __webpack_require__(224);
 
 	var _internalsCreateRegisterEvents2 = _interopRequireDefault(_internalsCreateRegisterEvents);
 
-	var _internalsBASIC_EVENT_NAMES = __webpack_require__(228);
+	var _internalsBASIC_EVENT_NAMES = __webpack_require__(229);
 
 	var _internalsBASIC_EVENT_NAMES2 = _interopRequireDefault(_internalsBASIC_EVENT_NAMES);
 
@@ -40608,7 +40614,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports["default"];
 
 /***/ },
-/* 235 */
+/* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -40625,15 +40631,15 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-	var _internalsSimpleChildComponent = __webpack_require__(225);
+	var _internalsSimpleChildComponent = __webpack_require__(226);
 
 	var _internalsSimpleChildComponent2 = _interopRequireDefault(_internalsSimpleChildComponent);
 
-	var _internalsCreateRegisterEvents = __webpack_require__(223);
+	var _internalsCreateRegisterEvents = __webpack_require__(224);
 
 	var _internalsCreateRegisterEvents2 = _interopRequireDefault(_internalsCreateRegisterEvents);
 
-	var _internalsBASIC_EVENT_NAMES = __webpack_require__(228);
+	var _internalsBASIC_EVENT_NAMES = __webpack_require__(229);
 
 	var _internalsBASIC_EVENT_NAMES2 = _interopRequireDefault(_internalsBASIC_EVENT_NAMES);
 
@@ -40657,7 +40663,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports["default"];
 
 /***/ },
-/* 236 */
+/* 237 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -40676,11 +40682,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-	var _cssMainCss = __webpack_require__(237);
+	var _cssMainCss = __webpack_require__(238);
 
 	var _cssMainCss2 = _interopRequireDefault(_cssMainCss);
 
-	var _iconsStyleCss = __webpack_require__(239);
+	var _iconsStyleCss = __webpack_require__(240);
 
 	var _iconsStyleCss2 = _interopRequireDefault(_iconsStyleCss);
 
@@ -40692,7 +40698,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _reactRouter2 = _interopRequireDefault(_reactRouter);
 
-	var _Toolbar = __webpack_require__(247);
+	var _Toolbar = __webpack_require__(248);
 
 	var _Toolbar2 = _interopRequireDefault(_Toolbar);
 
@@ -40763,27 +40769,27 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports["default"];
 
 /***/ },
-/* 237 */
+/* 238 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 238 */,
-/* 239 */
+/* 239 */,
+/* 240 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 240 */,
 /* 241 */,
 /* 242 */,
 /* 243 */,
 /* 244 */,
 /* 245 */,
 /* 246 */,
-/* 247 */
+/* 247 */,
+/* 248 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -40802,7 +40808,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-	var _cssToolbarCss = __webpack_require__(248);
+	var _cssToolbarCss = __webpack_require__(249);
 
 	var _cssToolbarCss2 = _interopRequireDefault(_cssToolbarCss);
 
@@ -40816,7 +40822,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _reactRouter = __webpack_require__(157);
 
-	var _Buttons = __webpack_require__(250);
+	var _Buttons = __webpack_require__(251);
 
 	var Toolbar = (function (_React$Component) {
 		function Toolbar(props) {
@@ -40883,14 +40889,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports["default"];
 
 /***/ },
-/* 248 */
+/* 249 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 249 */,
-/* 250 */
+/* 250 */,
+/* 251 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -40909,7 +40915,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-	var _cssButtonsCss = __webpack_require__(251);
+	var _cssButtonsCss = __webpack_require__(252);
 
 	var _cssButtonsCss2 = _interopRequireDefault(_cssButtonsCss);
 
@@ -40979,14 +40985,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.TextButton = TextButton;
 
 /***/ },
-/* 251 */
+/* 252 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 252 */,
-/* 253 */
+/* 253 */,
+/* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -41005,7 +41011,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-	var _cssCaseStudyCss = __webpack_require__(254);
+	var _cssCaseStudyCss = __webpack_require__(255);
 
 	var _cssCaseStudyCss2 = _interopRequireDefault(_cssCaseStudyCss);
 
@@ -41098,7 +41104,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports["default"];
 
 /***/ },
-/* 254 */
+/* 255 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
