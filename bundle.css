@@ -663,10 +663,22 @@ button {
 .CaseStudy aside {
 	width: 25%;
 	padding: 16px;
+	box-sizing: border-box;
+}
+@media (max-width: 640px) {
+	.CaseStudy aside {
+		width: 100%;
+	}
 }
 .CaseStudy article {
 	width: 75%;
 	padding: 16px;
+	box-sizing: border-box;
+}
+@media (max-width: 640px) {
+	.CaseStudy article {
+		width: 100%;
+	}
 }
 .CaseStudy dt {
 	font-size: 12px;
