@@ -20,11 +20,18 @@
 	aside {
 		width: 25%;
 		padding: 16px;
+		box-sizing: border-box;
+		@media (max-width: 640px) {
+			width: 100%;
+		}
 	}
 	article {
 		width: 75%;
 		padding: 16px;
-		
+		box-sizing: border-box;
+		@media (max-width: 640px) {
+			width: 100%;
+		}
 	}
 	dt {
 		font-size: 12px;
