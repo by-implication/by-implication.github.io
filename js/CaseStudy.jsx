@@ -20,7 +20,7 @@ export default class CaseStudy extends React.Component {
 			<div className="CaseStudy">
 				{ 
 					data.headerImg
-						? <img className="headerimg" src={ data.headerImg } />
+						? <div className="headerimg" style={{backgroundImage: `url(${data.headerImg})`}} />
 						: <div className="headerimg" style={{backgroundColor: data.color || "#eee"}} />
 				}
 				
