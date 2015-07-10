@@ -1,6 +1,7 @@
 import CaseStudyStyles from "../css/CaseStudy.css";
 
 import React from 'react';
+import classnames from "classnames";
 import portfolioData from "../data/portfolio-data";
 
 export default class CaseStudy extends React.Component {
@@ -18,11 +19,9 @@ export default class CaseStudy extends React.Component {
 
 		return (
 			<div className="CaseStudy">
-				{ 
-					data.headerImg
-						? <div className="headerimg" style={{backgroundImage: `url(${data.headerImg})`}} />
-						: <div className="headerimg placeholder" style={{backgroundImage: `url(${data.imageSrc})`}} />
-				}
+				<div 
+					className={ classnames("headerimg", !data.headerImg && "placeholder") } 
+					style={{backgroundImage: `url(${data.headerImg || data.imageSrc})`}} />
 				
 				<div className="content">
 					<aside className="meta">
