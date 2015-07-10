@@ -9,6 +9,9 @@
 		@media (max-width: 640px) {
 			height: 50vw;
 		}
+		&.placeholder {
+			background-position: 50% 20%;
+		}
 	}
 	.content {
 		max-width: 960px;
