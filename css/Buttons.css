@@ -10,6 +10,7 @@
 	background-color: transparent;
 	outline: none;
 	text-align: center;
+	text-decoration: none;
 	&.IconButton .Button {
 		box-sizing: border-box;
 		border-radius: 50%;

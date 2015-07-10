@@ -3,6 +3,7 @@ import CaseStudyStyles from "../css/CaseStudy.css";
 import React from 'react';
 import classnames from "classnames";
 import portfolioData from "../data/portfolio-data";
+import {TextButton} from "./Buttons";
 
 export default class CaseStudy extends React.Component {
 	componentDidMount() {
@@ -26,12 +27,13 @@ export default class CaseStudy extends React.Component {
 				<div className="content">
 					<aside className="meta">
 						<dl>
-							<dt>Author</dt>
-							<dd>Levi Tan Ong</dd>
 							<dt>Date</dt>
 							<dd>July 6, 2015</dd>
 							<dt>Resources</dt>
 							<dd>{ data.resources.join(", ") }</dd>
+							<TextButton component="a" href={ data.url } target="_blank" className="primary">
+								Visit
+							</TextButton>
 						</dl>
 					</aside>
 					{ 
