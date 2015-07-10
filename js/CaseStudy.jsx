@@ -25,10 +25,10 @@ export default class CaseStudy extends React.Component {
 		const data = portfolioData[this.props.params.id];
 
 		const defaultWriteup = (
-			<article>
+			<section>
 				<h1>{ data.name }</h1>
 				<p>We're currently writing up the writeup for this project. In the meantime, have a look at the screenshots below!</p>
-			</article>
+			</section>
 		)
 
 		return (
