@@ -42,6 +42,15 @@
 			width: 100%;
 		}
 	}
+	section {
+		padding: 0px;
+	}
+	.image-gallery {
+		display: flex-wrap;
+		img {
+			width: 50%;
+		}
+	}
 	dt {
 		font-size: 12px;
 		font-weight: bold;
