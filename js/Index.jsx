@@ -46,8 +46,7 @@ export default class Index extends React.Component {
 				"unofficial": "on our own",
 				"official": "together",
 				"internal": "ourselves",
-				"client": "clients",
-				"partnership": "partners"
+				"client": "clients"
 			}
 			return (
 				<span 
@@ -74,7 +73,7 @@ export default class Index extends React.Component {
 							We like building things { InvFilter("unofficial") } and { InvFilter("official") }. 
 						</p>
 						<p>
-							Mostly, we build for { XInvFilter("internal") }, but we build for { XInvFilter("client") } and { XInvFilter("partnership") } too. 
+							Mostly, we build for { XInvFilter("internal") }, but we build for { XInvFilter("client") } too. 
 						</p>
 					</div>
 				</section>

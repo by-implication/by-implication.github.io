@@ -59,7 +59,7 @@ export default {
 		color: "#b3485d",
 		resources: [resources.design, resources.bizdev, resources.dev],
 		involvement: ["official"],
-		externalInvolvement: ["client", "partnership"]
+		externalInvolvement: ["client"]
 	},
 	plotypus: {
 		name: "Plotypus",
