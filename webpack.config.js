@@ -14,7 +14,16 @@ var routePaths = [
   "/",
   "/about/",
   "/contact/",
-  "/portfolio/website/"
+  "/portfolio/",
+  "/portfolio/website/",
+  "/portfolio/storylark/",
+  "/portfolio/sakay/",
+  "/portfolio/openrecon/",
+  "/portfolio/wildfire/",
+  "/portfolio/sari/",
+  "/portfolio/plotypus/",
+  "/portfolio/popeye/",
+  "/portfolio/torch/",
 ];
 
 module.exports = {

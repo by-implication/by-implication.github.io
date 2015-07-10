@@ -7,7 +7,7 @@ export default {
 		url: "/",
 		imageSrc: "/data/portfolio/website.svg",
 		caseStudy: require("./portfolio-casestudy/website/casestudy.md"),
-		headerImg: require("./portfolio-casestudy/website/header.png"),
+		headerImg: "/data/portfolio-casestudy/website/header.png",
 		resources: [resources.design, resources.dev],
 		involvement: ["official"],
 		externalInvolvement: ["internal"]
@@ -17,6 +17,7 @@ export default {
 		id: "storylark",
 		url: "https://storylark.ph/",
 		imageSrc: "/data/portfolio/storylark.png",
+		color: "#7eb8bf",
 		resources: [resources.design, resources.bizdev, resources.dev],
 		involvement: ["official"],
 		externalInvolvement: ["internal"]
@@ -26,6 +27,7 @@ export default {
 		id: "sakay",
 		url: "http://sakay.ph/",
 		imageSrc: "/data/portfolio/sakayph.svg",
+		color: "#2c6c47",
 		resources: [resources.design, resources.bizdev, resources.dev],
 		involvement: ["official"],
 		externalInvolvement: ["internal"]
@@ -35,6 +37,7 @@ export default {
 		id: "openrecon",
 		url: "http://openreconstruction.gov.ph/",
 		imageSrc: "/data/portfolio/openrecon.svg",
+		color: "#236396",
 		resources: [resources.design, resources.bizdev, resources.dev],
 		involvement: ["official"],
 		externalInvolvement: ["client"]
@@ -43,6 +46,7 @@ export default {
 		name: "Wildfire",
 		id: "wildfire",
 		imageSrc: "/data/portfolio/wildfire.svg",
+		color: "#d0011b",
 		resources: [resources.design, resources.dev],
 		involvement: ["official"],
 		externalInvolvement: ["internal"]
@@ -52,6 +56,7 @@ export default {
 		id: "sari",
 		url: "http://sari.ph",
 		imageSrc: "/data/portfolio/sari.svg",
+		color: "#b3485d",
 		resources: [resources.design, resources.bizdev, resources.dev],
 		involvement: ["official"],
 		externalInvolvement: ["client", "partnership"]
@@ -61,6 +66,7 @@ export default {
 		id: "plotypus",
 		url: "http://plotypus.levitanong.com/",
 		imageSrc: "/data/portfolio/plotypus.svg",
+		color: "#2c142b",
 		resources: [resources.design, resources.dev],
 		involvement: ["unofficial"],
 		externalInvolvement: ["internal"]
@@ -70,6 +76,7 @@ export default {
 		id: "popeye",
 		url: "http://plotypus.levitanong.com/",
 		imageSrc: "/data/portfolio/popeye.svg",
+		color: "#fcbc4a",
 		resources: [resources.design, resources.dev],
 		involvement: ["unofficial"],
 		externalInvolvement: ["internal"]
@@ -78,6 +85,7 @@ export default {
 		name: "Torch",
 		id: "torch",
 		imageSrc: "/data/portfolio/torch.svg",
+		color: "#82174b",
 		resources: [resources.design, resources.dev],
 		involvement: ["unofficial"],
 		externalInvolvement: ["internal"]

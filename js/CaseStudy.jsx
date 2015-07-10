@@ -5,18 +5,25 @@ import portfolioData from "../data/portfolio-data";
 
 export default class CaseStudy extends React.Component {
 	componentDidMount() {
-		const id = this.props.params.id; 
-		this.setState({
-			id: id, 
-			writeup: portfolioData[id].caseStudy,
-			resources: portfolioData[id].resources,
-			headerImg: portfolioData[id].headerImg || ""
-		});
 	}
 	render() {
+		const data = portfolioData[this.props.params.id];
+
+		const defaultWriteup = (
+			<article>
+				<h1>{ data.name }</h1>
+				<p>We're currently writing up the writeup for this project. In the meantime, have a look at the screenshots below!</p>
+			</article>
+		)
+
 		return (
 			<div className="CaseStudy">
-				<img className="headerimg" src={ this.state && this.state.headerImg } />
+				{ 
+					data.headerImg
+						? <img className="headerimg" src={ data.headerImg } />
+						: <div className="headerimg" style={{backgroundColor: data.color || "#eee"}} />
+				}
+				
 				<div className="content">
 					<aside className="meta">
 						<dl>
@@ -25,10 +32,14 @@ export default class CaseStudy extends React.Component {
 							<dt>Date</dt>
 							<dd>July 6, 2015</dd>
 							<dt>Resources</dt>
-							<dd>{ this.state && this.state.resources.join(", ") }</dd>
+							<dd>{ data.resources.join(", ") }</dd>
 						</dl>
 					</aside>
-					{ this.state && <article dangerouslySetInnerHTML={ {__html: this.state.writeup } }/> }
+					{ 
+						data.caseStudy
+							? <article dangerouslySetInnerHTML={ {__html: data.caseStudy } }/> 
+							: defaultWriteup
+					}
 				</div>
 			</div>
 		);
