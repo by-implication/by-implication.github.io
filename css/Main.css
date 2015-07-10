@@ -89,11 +89,10 @@ button {
 
 .filter-group {
 	font-weight: 100;
-	font-size: 24px;
 	line-height: 32px;
 	margin-bottom: 64px;
 	p {
-		margin: 16px 0px;
+		font-size: 24px;
 	}
 	.filter {
 		transition: box-shadow, 0.2s;
