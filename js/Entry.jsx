@@ -10,7 +10,8 @@ const Routes = (
 	<Route path="/" handler={ Wrapper }>
 		<Route name="about" path="about/" handler={ About } />
 		<Route name="contact" path="contact/" handler={ Contact } />
-		<Route name="caseStudy" path="/portfolio/:id/" handler={ CaseStudy } />
+		<Route name="portfolio" path="portfolio/" handler={ Index } />
+		<Route name="caseStudy" path="portfolio/:id/" handler={ CaseStudy } />
 		<DefaultRoute name="index" handler={ Index } />
 	</Route>
 )

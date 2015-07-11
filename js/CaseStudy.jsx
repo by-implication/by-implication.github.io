@@ -3,14 +3,20 @@ import CaseStudyStyles from "../css/CaseStudy.css";
 import React from 'react';
 import classnames from "classnames";
 import portfolioData from "../data/portfolio-data";
+import Modal from "./Modal";
 import {TextButton} from "./Buttons";
 
 export default class CaseStudy extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			images: []
+			images: [],
+			imageModalOpened: false
 		}
+		this.toggleImageModal = this.toggleImageModal.bind(this);
+	}
+	toggleImageModal() {
+		this.setState({imageModalOpened: !this.state.imageModalOpened});
 	}
 	componentDidMount() {	
 		const context = require.context("../data/portfolio-casestudy/", true, /\.*/);
@@ -21,6 +27,7 @@ export default class CaseStudy extends React.Component {
 		this.setState({images: images});
 		// console.log(this.state.images);
 	}
+
 	render() {
 		const data = portfolioData[this.props.params.id];
 
@@ -30,6 +37,14 @@ export default class CaseStudy extends React.Component {
 				<p>We're currently writing up the writeup for this project. In the meantime, have a look at the screenshots below!</p>
 			</section>
 		)
+
+		const images = this.state.images.map((x, i) => (
+			<div 
+				key={"image" + i} 
+				className="image-tile" 
+				onClick={ this.toggleImageModal } 
+				style={ {backgroundImage: `url(${x})`} } />
+		));
 
 		return (
 			<div className="CaseStudy">
@@ -50,16 +65,17 @@ export default class CaseStudy extends React.Component {
 						</dl>
 					</aside>
 					<article>
-						{ 
-							data.caseStudy
-								? <section dangerouslySetInnerHTML={ {__html: data.caseStudy } }/> 
-								: defaultWriteup
-						}				
+						{ data.caseStudy ? (<section dangerouslySetInnerHTML={ {__html: data.caseStudy } }/>)  : defaultWriteup }				
 						<section className="image-gallery">
-							{ this.state && this.state.images.map((x, i) => <div className="image-tile" key={"image" + i} style={ {backgroundImage: `url(${x})`} } />) }
+							{ this.state && images }
 						</section>
 					</article>
 				</div>
+				<Modal opened={ this.state.imageModalOpened } onClose={ this.toggleImageModal } >
+					<div>
+						wat
+					</div>
+				</Modal>
 			</div>
 		);
 	}
