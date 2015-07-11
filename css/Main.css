@@ -84,16 +84,17 @@ button {
 	min-height: 24vw;
 	h1 {
 		font-weight: 100;
+		@media (max-width: 640px) {
+			font-size: 32px;
+		}
 	}
 }
 
 .filter-group {
 	font-weight: 100;
 	line-height: 32px;
-	margin-bottom: 64px;
-	p {
-		font-size: 24px;
-	}
+	margin-bottom: 32px;
+	font-size: 24px;
 	.filter {
 		transition: box-shadow, 0.2s;
 		display: inline-block;
@@ -107,6 +108,10 @@ button {
 		&.active {
 			background-color: $contrast1;
 		}
+	}
+	@media (max-width: 640px) {
+		font-size: 18px;
+		line-height: 24px;
 	}
 }
 
