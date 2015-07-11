@@ -56,7 +56,7 @@ export default class CaseStudy extends React.Component {
 								: defaultWriteup
 						}				
 						<section className="image-gallery">
-							{ this.state && this.state.images.map((x, i) => <img key={"image" + i} src={x} />) }
+							{ this.state && this.state.images.map((x, i) => <div className="image-tile" key={"image" + i} style={ {backgroundImage: `url(${x})`} } />) }
 						</section>
 					</article>
 				</div>

@@ -45,12 +45,6 @@
 	section {
 		padding: 0px;
 	}
-	.image-gallery {
-		display: flex-wrap;
-		img {
-			width: 50%;
-		}
-	}
 	dt {
 		font-size: 12px;
 		font-weight: bold;
@@ -60,5 +54,15 @@
 		margin-left: 0px;
 		margin-bottom: 16px;
 		font-weight: 100;
+	}
+	.image-gallery {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.image-tile {
+		width: 192px;
+		height: 192px;
+		background-size: cover;
+		background-position: center;
 	}
 }
