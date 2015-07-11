@@ -19,11 +19,8 @@ export default class Modal extends LayeredComponent {
     }
   }
   renderLayer() {
-    const classes = classnames("Modal", this.props.className);
-    const opened = this.props.opened;
-
     const modal = (
-      <div className={ classes }>
+      <div className={ classnames("Modal", this.props.className) }>
         <div className="modal-overlay" onClick={ this.onOverlayClick } />
         <div className="modal-body">
           { this.props.children }
@@ -32,7 +29,7 @@ export default class Modal extends LayeredComponent {
     )
     return (
       <ReactCSSTransitionGroup transitionName="PortalModalTransition" component="div">
-        { opened && modal }
+        { this.props.opened && modal }
       </ReactCSSTransitionGroup>
     )
   }

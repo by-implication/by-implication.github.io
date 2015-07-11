@@ -67,3 +67,13 @@
 		cursor: pointer;
 	}
 }
+.image-modal {
+	/*background-size: contain;*/
+	.modal-body {
+		max-height: calc(100% - 48px);
+		max-width: calc(100% - 48px);
+	}
+	img {
+		width: 100%;
+	}
+}

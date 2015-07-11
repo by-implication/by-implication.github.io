@@ -1,5 +1,5 @@
 import React from 'react';
-import {GoogleMaps, Marker} from "react-google-maps";
+// import {GoogleMaps, Marker} from "react-google-maps";
 
 export default class Contact extends React.Component {
 	constructor(props) {
@@ -16,14 +16,14 @@ export default class Contact extends React.Component {
 		return (
 			<section id="Contact">
 				<div style={{height: 320, width: "100%"}}>
-					<GoogleMaps 
-						ref="map"
-						containerProps={{style: {height: "100%", width: "100%"}}}
-						googleMapsApi={ "undefined" !== typeof google ? google.maps : null } 
-						zoom={17} 
-						center={ location }>
-						<Marker position={ location } key="marker" animation={ 2 } />
-					</GoogleMaps>
+					{/*<GoogleMaps 
+											ref="map"
+											containerProps={{style: {height: "100%", width: "100%"}}}
+											googleMapsApi={ "undefined" !== typeof google ? google.maps : null } 
+											zoom={17} 
+											center={ location }>
+											<Marker position={ location } key="marker" animation={ 2 } />
+										</GoogleMaps>*/}
 				</div>
 				<ul className="contact-methods">
 					<li>

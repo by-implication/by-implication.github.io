@@ -14,9 +14,9 @@ class Wrapper extends React.Component {
 					<title>By Implication</title>
 					<meta charSet="utf-8" /> 
 					<meta name="viewport" content="width=device-width, initial-scale=1" />
-					<link href='http://fonts.googleapis.com/css?family=Roboto:300,700,400' rel='stylesheet' type='text/css' />
+					{/*<link href='http://fonts.googleapis.com/css?family=Roboto:300,700,400' rel='stylesheet' type='text/css' />*/}
 					<link href="/bundle.css" rel='stylesheet' type='text/css' />
-					<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+					{/*<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>*/}
 				</head>
 				<body>
 					<Toolbar />

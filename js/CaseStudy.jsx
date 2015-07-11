@@ -11,12 +11,17 @@ export default class CaseStudy extends React.Component {
 		super(props);
 		this.state = {
 			images: [],
-			imageModalOpened: false
+			imageModalOpened: false,
+			currentImageUrl: null
 		}
 		this.toggleImageModal = this.toggleImageModal.bind(this);
 	}
-	toggleImageModal() {
-		this.setState({imageModalOpened: !this.state.imageModalOpened});
+	toggleImageModal(image = null) {
+		console.log(image);
+		this.setState({
+			imageModalOpened: !this.state.imageModalOpened,
+			currentImageUrl: image
+		});
 	}
 	componentDidMount() {	
 		const context = require.context("../data/portfolio-casestudy/", true, /\.*/);
@@ -42,7 +47,7 @@ export default class CaseStudy extends React.Component {
 			<div 
 				key={"image" + i} 
 				className="image-tile" 
-				onClick={ this.toggleImageModal } 
+				onClick={ this.toggleImageModal.bind(this, x) } 
 				style={ {backgroundImage: `url(${x})`} } />
 		));
 
@@ -71,10 +76,8 @@ export default class CaseStudy extends React.Component {
 						</section>
 					</article>
 				</div>
-				<Modal opened={ this.state.imageModalOpened } onClose={ this.toggleImageModal } >
-					<div>
-						wat
-					</div>
+				<Modal className="image-modal" opened={ this.state.imageModalOpened } onClose={ this.toggleImageModal } >
+					<img src={this.state.currentImageUrl} />
 				</Modal>
 			</div>
 		);
