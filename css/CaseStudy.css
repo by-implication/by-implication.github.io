@@ -58,6 +58,7 @@
 	.image-gallery {
 		display: flex;
 		flex-wrap: wrap;
+		margin: -8px;
 	}
 	.image-tile {
 		width: 192px;
@@ -65,6 +66,8 @@
 		background-size: cover;
 		background-position: center;
 		cursor: pointer;
+		margin: 8px;
+		border: 1px solid black;
 	}
 }
 .image-modal {
