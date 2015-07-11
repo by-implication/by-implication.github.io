@@ -17,9 +17,7 @@ export default class CaseStudy extends React.Component {
 		this.toggleImageModal = this.toggleImageModal.bind(this);
 	}
 	toggleImageModal(image = null) {
-		console.log(image);
 		this.setState({
-			imageModalOpened: !this.state.imageModalOpened,
 			currentImageUrl: image
 		});
 	}
@@ -30,7 +28,6 @@ export default class CaseStudy extends React.Component {
 			.filter(x => RegExp(this.props.params.id + "/images").test(x))
 			.map(x => context(x));
 		this.setState({images: images});
-		// console.log(this.state.images);
 	}
 
 	render() {
@@ -76,7 +73,7 @@ export default class CaseStudy extends React.Component {
 						</section>
 					</article>
 				</div>
-				<Modal className="image-modal" opened={ this.state.imageModalOpened } onClose={ this.toggleImageModal } >
+				<Modal className="image-modal" opened={ !!this.state.currentImageUrl } onClose={ this.toggleImageModal } >
 					<img src={this.state.currentImageUrl} />
 				</Modal>
 			</div>
