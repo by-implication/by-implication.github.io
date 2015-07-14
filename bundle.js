@@ -38774,6 +38774,10 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _lodash = __webpack_require__(199);
+
+	var _lodash2 = _interopRequireDefault(_lodash);
+
 	var _PersonCard = __webpack_require__(214);
 
 	var _PersonCard2 = _interopRequireDefault(_PersonCard);
@@ -38794,7 +38798,7 @@ return /******/ (function(modules) { // webpackBootstrap
 		_createClass(About, [{
 			key: "render",
 			value: function render() {
-				var personnel = _dataPeopleData2["default"].map(function (person) {
+				var personnel = _lodash2["default"].sortBy(_dataPeopleData2["default"], "nickname").map(function (person) {
 					return _react2["default"].createElement(_PersonCard2["default"], _extends({ key: person.nickname }, person));
 				});
 
@@ -38899,7 +38903,7 @@ return /******/ (function(modules) { // webpackBootstrap
 				return _react2["default"].createElement(
 					"div",
 					{ className: "PersonCard" },
-					_react2["default"].createElement("img", { src: "http://api.adorable.io/avatars/192/" + this.props.nickname + "%40adorable.io" }),
+					_react2["default"].createElement("img", { className: "portrait", src: "/data/people/" + this.props.nickname + ".png" }),
 					_react2["default"].createElement(
 						"h4",
 						null,
@@ -38943,7 +38947,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports["default"] = [{
 		nickname: "Levi",
 		name: "Levi Tan Ong",
-		roles: "Designer, Developer"
+		roles: "Designer, Developer",
+		imgUrl: "/data/people/Levi.png"
 	}, {
 		nickname: "Phi",
 		name: "Philip Cheang",
@@ -38951,11 +38956,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	}, {
 		nickname: "Rodz",
 		name: "Rodrick Tan",
-		roles: "Designer, Business Analyst"
+		roles: "Designer, Business Analyst",
+		imgUrl: "/data/people/Rodz.png"
 	}, {
-		nickname: "Ken",
+		nickname: "Kenneth",
 		name: "Kenneth Yu",
-		roles: "Business Analyst"
+		roles: "Business Analyst",
+		imgUrl: "/data/people/Kenneth.png"
 	}, {
 		nickname: "Wil",
 		name: "Wilhansen Li",
@@ -38963,31 +38970,37 @@ return /******/ (function(modules) { // webpackBootstrap
 	}, {
 		nickname: "Pepe",
 		name: "Pepe Bawagan",
-		roles: "Developer, Clown"
+		roles: "Developer, Clown",
+		imgUrl: "/data/people/Pepe.png"
 	}, {
 		nickname: "Albert",
 		name: "Albert Dizon",
-		roles: "Developer"
+		roles: "Developer",
+		imgUrl: "/data/people/Albert.png"
 	}, {
-		nickname: "Seski",
+		nickname: "Sesky",
 		name: "Jonathan Sescon",
 		roles: "Developer"
 	}, {
 		nickname: "Mon",
 		name: "Monica Esquivel",
-		roles: "Artist, Designer"
+		roles: "Artist, Designer",
+		imgUrl: "/data/people/Mon.png"
 	}, {
 		nickname: "Patsy",
 		name: "Patricia Lascano",
-		roles: "Artist, Designer"
+		roles: "Artist, Designer",
+		imgUrl: "/data/people/Patsy.png"
 	}, {
 		nickname: "Alvin",
 		name: "Alvin Dumalus",
-		roles: "Developer"
+		roles: "Developer",
+		imgUrl: "/data/people/Alvin.png"
 	}, {
 		nickname: "Thomas",
 		name: "Thomas Dy",
-		roles: "Developer, Admin"
+		roles: "Developer, Admin",
+		imgUrl: "/data/people/Thomas.png"
 	}, {
 		nickname: "Jim",
 		name: "James Choa",
@@ -43504,29 +43517,37 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	var map = {
-		"./openrecon/images/full.png": 280,
-		"./openrecon/images/toolbar.png": 281,
-		"./plotypus/images/full.png": 282,
-		"./plotypus/images/toolbar.png": 283,
-		"./popeye/images/full.png": 284,
-		"./popeye/images/toolbar.png": 285,
-		"./sakay/images/full.png": 286,
-		"./sakay/images/toolbar.png": 287,
-		"./sari/images/full.png": 288,
-		"./sari/images/toolbar.png": 289,
-		"./storylark/images/comics.png": 290,
-		"./storylark/images/hero1.png": 291,
-		"./storylark/images/issueview.png": 292,
-		"./storylark/images/reader.png": 293,
-		"./storylark/images/titleview.png": 294,
-		"./torch/images/full.png": 295,
-		"./torch/images/toolbar.png": 296,
+		"./openrecon/images/landing1.png": 280,
+		"./openrecon/images/landing2.png": 281,
+		"./openrecon/images/landing3.png": 282,
+		"./openrecon/images/list.png": 283,
+		"./openrecon/images/viz.png": 284,
+		"./plotypus/images/doc1.png": 285,
+		"./plotypus/images/doc2.png": 286,
+		"./plotypus/images/landing.png": 287,
+		"./popeye/images/doc1.png": 288,
+		"./popeye/images/doc2.png": 289,
+		"./popeye/images/landing.png": 290,
+		"./sakay/images/embed.png": 291,
+		"./sakay/images/landing1.png": 292,
+		"./sakay/images/landing2.png": 293,
+		"./sakay/images/main.png": 294,
+		"./sakay/images/routeview.png": 295,
+		"./sari/images/full.png": 296,
+		"./sari/images/toolbar.png": 297,
+		"./storylark/images/comics.png": 298,
+		"./storylark/images/hero1.png": 299,
+		"./storylark/images/issueview.png": 300,
+		"./storylark/images/reader.png": 301,
+		"./storylark/images/titleview.png": 302,
+		"./torch/images/landing1.png": 303,
+		"./torch/images/landing2.png": 304,
 		"./website/casestudy.md": 208,
-		"./website/header.png": 297,
+		"./website/header.png": 305,
 		"./website/images/full.png": 209,
 		"./website/images/toolbar.png": 210,
-		"./wildfire/images/full.png": 298,
-		"./wildfire/images/toolbar.png": 299
+		"./wildfire/images/full.png": 306,
+		"./wildfire/images/toolbar.png": 307
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -43546,118 +43567,166 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 280 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "e8db3a1fae44c15d6bf22d714d8fca8a.png"
+	module.exports = __webpack_require__.p + "3b8d656ba2f2dbf479352c4dcf7d6a86.png"
 
 /***/ },
 /* 281 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "81c18a80caf2c738b655c7d1d101d3f7.png"
+	module.exports = __webpack_require__.p + "58d6d6f589cc2c4e354caf53c2418f5b.png"
 
 /***/ },
 /* 282 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "e8db3a1fae44c15d6bf22d714d8fca8a.png"
+	module.exports = __webpack_require__.p + "4a0058788bcb74476877aafac4b62e91.png"
 
 /***/ },
 /* 283 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "81c18a80caf2c738b655c7d1d101d3f7.png"
+	module.exports = __webpack_require__.p + "10a3ec96617cf036b886a09b516e1e81.png"
 
 /***/ },
 /* 284 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "e8db3a1fae44c15d6bf22d714d8fca8a.png"
+	module.exports = __webpack_require__.p + "ac6c292140bbadb1ec28113f80c249db.png"
 
 /***/ },
 /* 285 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "81c18a80caf2c738b655c7d1d101d3f7.png"
+	module.exports = __webpack_require__.p + "b4a3d806a3a3a1a7347e8a95b1583e03.png"
 
 /***/ },
 /* 286 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "e8db3a1fae44c15d6bf22d714d8fca8a.png"
+	module.exports = __webpack_require__.p + "159d16081252b8642c2f3cc1657ed013.png"
 
 /***/ },
 /* 287 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "81c18a80caf2c738b655c7d1d101d3f7.png"
+	module.exports = __webpack_require__.p + "a8b7512b82ba91e2f5bcd0950c84e175.png"
 
 /***/ },
 /* 288 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "e8db3a1fae44c15d6bf22d714d8fca8a.png"
+	module.exports = __webpack_require__.p + "95596ec0674018e06dbe302b22b2a41e.png"
 
 /***/ },
 /* 289 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "81c18a80caf2c738b655c7d1d101d3f7.png"
+	module.exports = __webpack_require__.p + "19d2208956a62aab9f4cc2a31edb2643.png"
 
 /***/ },
 /* 290 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "8b6c448de3dfd3b880a1dc151bf40815.png"
+	module.exports = __webpack_require__.p + "decbeea40da355f5758411fcb343b55a.png"
 
 /***/ },
 /* 291 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "747cf2f34f694a706945ebc840946490.png"
+	module.exports = __webpack_require__.p + "5f1e43e6e4d37542d62d8820f982ceb9.png"
 
 /***/ },
 /* 292 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "d5b15455afde0df6cb43857a71b6e04f.png"
+	module.exports = __webpack_require__.p + "b68500a9d4db79020b4b718ee1c776d4.png"
 
 /***/ },
 /* 293 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "b87e6e0075fd84fb48d7fb82ad66138d.png"
+	module.exports = __webpack_require__.p + "51bc988f9edb80db2145bb25338994f7.png"
 
 /***/ },
 /* 294 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "f575927e62d4f556f22d2646a2677b17.png"
+	module.exports = __webpack_require__.p + "2050f9d72123adacb7d1b2681f7e6f2a.png"
 
 /***/ },
 /* 295 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "e8db3a1fae44c15d6bf22d714d8fca8a.png"
+	module.exports = __webpack_require__.p + "e6da5c7f52348cd279dbb6e7aa11bebd.png"
 
 /***/ },
 /* 296 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "81c18a80caf2c738b655c7d1d101d3f7.png"
+	module.exports = __webpack_require__.p + "e8db3a1fae44c15d6bf22d714d8fca8a.png"
 
 /***/ },
 /* 297 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "c0d77a1e8562411919d77e39b197a2b3.png"
+	module.exports = __webpack_require__.p + "81c18a80caf2c738b655c7d1d101d3f7.png"
 
 /***/ },
 /* 298 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "e8db3a1fae44c15d6bf22d714d8fca8a.png"
+	module.exports = __webpack_require__.p + "8b6c448de3dfd3b880a1dc151bf40815.png"
 
 /***/ },
 /* 299 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "747cf2f34f694a706945ebc840946490.png"
+
+/***/ },
+/* 300 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "d5b15455afde0df6cb43857a71b6e04f.png"
+
+/***/ },
+/* 301 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "b87e6e0075fd84fb48d7fb82ad66138d.png"
+
+/***/ },
+/* 302 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "f575927e62d4f556f22d2646a2677b17.png"
+
+/***/ },
+/* 303 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "46d98b4ef80c42d464a1640e2827b08d.png"
+
+/***/ },
+/* 304 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "0ed4eddee06c7ddf0595a2062469ea03.png"
+
+/***/ },
+/* 305 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "c0d77a1e8562411919d77e39b197a2b3.png"
+
+/***/ },
+/* 306 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "e8db3a1fae44c15d6bf22d714d8fca8a.png"
+
+/***/ },
+/* 307 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "81c18a80caf2c738b655c7d1d101d3f7.png"
