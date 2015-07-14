@@ -57,8 +57,6 @@ export default class CaseStudy extends React.Component {
 				<div className="content">
 					<aside className="meta">
 						<dl>
-							<dt>Date</dt>
-							<dd>July 6, 2015</dd>
 							<dt>Resources</dt>
 							<dd>{ data.resources.join(", ") }</dd>
 							<TextButton component="a" href={ data.url } target="_blank" className="primary">

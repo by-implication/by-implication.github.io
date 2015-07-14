@@ -1,7 +1,7 @@
 # The By Implication Website
 The portfolio and public-facing site of [By Implication](/). (Yes, this link links to this site.)
 
-![this](./images/full.png)
+![this](./images/comparison.png)
 
 ## Background
 Four years overdue, and it's finally here. And yet, this is still something of a temporary website. (But then again, so was the original.) It turns out that while designing for other people can be anywhere from easy to challenging, designing a website for your own firm can be downright impossible. Not because of any lack of skill or talent—there is simply too much investment in the project. As they say, a Doctor that operates on himself has a fool for a patient. But alas, we cannot afford another design agency, and so we must, for the time being, be fools.
