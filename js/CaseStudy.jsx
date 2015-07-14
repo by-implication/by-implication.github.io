@@ -40,7 +40,7 @@ export default class CaseStudy extends React.Component {
 			</section>
 		)
 
-		const images = this.state.images.map((x, i) => (
+		const images = [data.imageSrc].concat(this.state.images).map((x, i) => (
 			<div 
 				key={"image" + i} 
 				className="image-tile" 
@@ -50,26 +50,25 @@ export default class CaseStudy extends React.Component {
 
 		return (
 			<div className="CaseStudy">
-				<div 
-					className={ classnames("headerimg", !data.headerImg && "placeholder") } 
-					style={{backgroundImage: `url(${data.headerImg || data.imageSrc})`}} />
+				{/*<div 
+									className={ classnames("headerimg", !data.headerImg && "placeholder") } 
+									style={{backgroundImage: `url(${data.headerImg || data.imageSrc})`}} />*/}
 				
 				<div className="content">
-					<aside className="meta">
+					<article className="meta">
 						<dl>
+							{ defaultWriteup }	
 							<dt>Resources</dt>
 							<dd>{ data.resources.join(", ") }</dd>
 							<TextButton component="a" href={ data.url } target="_blank" className="primary">
 								Visit
 							</TextButton>
 						</dl>
-					</aside>
-					<article>
-						{ data.caseStudy ? (<section dangerouslySetInnerHTML={ {__html: data.caseStudy } }/>)  : defaultWriteup }				
-						<section className="image-gallery">
-							{ this.state && images }
-						</section>
 					</article>
+									
+					<section className="image-gallery">
+						{ this.state && images }
+					</section>
 				</div>
 				<Modal className="image-modal" opened={ !!this.state.currentImageUrl } onClose={ this.toggleImageModal } >
 					<img src={this.state.currentImageUrl} />
