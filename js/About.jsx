@@ -1,12 +1,13 @@
 import AboutStyle from "../css/About.css";
 
 import React from 'react';
+import _ from "lodash";
 import PersonCard from "./PersonCard";
 import people from "../data/people-data";
 
 export default class About extends React.Component {
 	render() {
-		const personnel = people.map(person => {
+		const personnel = _.sortBy(people, "nickname").map(person => {
 			return <PersonCard key={ person.nickname } {...person}/>
 		});
 

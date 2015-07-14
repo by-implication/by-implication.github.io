@@ -5,9 +5,11 @@
 	align-items: center;
 	flex-direction: column;
 	margin: 16px;
-	img {
+	.portrait {
 		border-radius: 50%;
 		margin-bottom: 8px;
+		width: 192px;
+		height: 192px;
 	}
 	h4 {
 		font-weight: 100;
