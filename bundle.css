@@ -704,26 +704,9 @@ button {
 }.CaseStudy {
 	padding-top: 64px;
 	line-height: 1.5;
+	background-color: #eee;
 }
-.CaseStudy .headerimg {
-	width: 100%;
-	height: 20vw;
-	background-size: cover;
-	background-position: center;
-}
-@media (max-width: 640px) {
-	.CaseStudy .headerimg {
-		height: 50vw;
-	}
-}
-.CaseStudy .headerimg.placeholder {
-	background-position: 50% 30%;
-}
-.CaseStudy .content {
-	max-width: 960px;
-	margin: 0px auto;
-}
-@media (min-width: 640px) {
+@media (min-width: 768px) {
 	.CaseStudy .content {
 		display: -webkit-box;
 		display: -webkit-flex;
@@ -737,22 +720,21 @@ button {
 	border: 1px solid black;
 	box-sizing: border-box;
 }
-.CaseStudy aside {
-	width: 25%;
+.CaseStudy article {
 	padding: 16px;
 	box-sizing: border-box;
 }
-@media (max-width: 640px) {
-	.CaseStudy aside {
-		width: 100%;
+@media (min-width: 1024px) {
+	.CaseStudy article {
+		width: 25%;
 	}
 }
-.CaseStudy article {
-	width: 75%;
-	padding: 16px;
-	box-sizing: border-box;
+@media (max-width: 1023px) and (min-width: 768px) {
+	.CaseStudy article {
+		width: 33%;
+	}
 }
-@media (max-width: 640px) {
+@media (max-width: 767px) {
 	.CaseStudy article {
 		width: 100%;
 	}
@@ -771,6 +753,10 @@ button {
 	font-weight: 100;
 }
 .CaseStudy .image-gallery {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -778,16 +764,31 @@ button {
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	margin: -8px;
 }
 .CaseStudy .image-tile {
-	width: 192px;
-	height: 192px;
+	margin: 8px;
 	background-size: cover;
 	background-position: center;
 	cursor: pointer;
-	margin: 8px;
 	box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1) inset;
+}
+@media (min-width: 1024px) {
+	.CaseStudy .image-tile {
+		width: calc(33% - 16px);
+		height: calc(24vw - 16px);
+	}
+}
+@media (max-width: 1023px) and (min-width: 768px) {
+	.CaseStudy .image-tile {
+		width: calc(50% - 16px);
+		height: calc(32vw - 16px);
+	}
+}
+@media (max-width: 767px) {
+	.CaseStudy .image-tile {
+		width: calc(50% - 16px);
+		height: calc(49vw - 16px);
+	}
 }
 .image-modal .modal-body {
 	max-height: calc(100% - 48px);

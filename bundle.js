@@ -38736,7 +38736,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 209 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "e8db3a1fae44c15d6bf22d714d8fca8a.png"
+	module.exports = __webpack_require__.p + "a897b81df39cd11108c2399226a30a03.png"
 
 /***/ },
 /* 210 */
@@ -41111,7 +41111,7 @@ return /******/ (function(modules) { // webpackBootstrap
 					)
 				);
 
-				var images = this.state.images.map(function (x, i) {
+				var images = [data.imageSrc].concat(this.state.images).map(function (x, i) {
 					return _react2["default"].createElement("div", {
 						key: "image" + i,
 						className: "image-tile",
@@ -41122,28 +41122,16 @@ return /******/ (function(modules) { // webpackBootstrap
 				return _react2["default"].createElement(
 					"div",
 					{ className: "CaseStudy" },
-					_react2["default"].createElement("div", {
-						className: (0, _classnames2["default"])("headerimg", !data.headerImg && "placeholder"),
-						style: { backgroundImage: "url(" + (data.headerImg || data.imageSrc) + ")" } }),
 					_react2["default"].createElement(
 						"div",
 						{ className: "content" },
 						_react2["default"].createElement(
-							"aside",
+							"article",
 							{ className: "meta" },
 							_react2["default"].createElement(
 								"dl",
 								null,
-								_react2["default"].createElement(
-									"dt",
-									null,
-									"Date"
-								),
-								_react2["default"].createElement(
-									"dd",
-									null,
-									"July 6, 2015"
-								),
+								defaultWriteup,
 								_react2["default"].createElement(
 									"dt",
 									null,
@@ -41162,14 +41150,9 @@ return /******/ (function(modules) { // webpackBootstrap
 							)
 						),
 						_react2["default"].createElement(
-							"article",
-							null,
-							data.caseStudy ? _react2["default"].createElement("section", { dangerouslySetInnerHTML: { __html: data.caseStudy } }) : defaultWriteup,
-							_react2["default"].createElement(
-								"section",
-								{ className: "image-gallery" },
-								this.state && images
-							)
+							"section",
+							{ className: "image-gallery" },
+							this.state && images
 						)
 					),
 					_react2["default"].createElement(
@@ -41186,6 +41169,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports["default"] = CaseStudy;
 	module.exports = exports["default"];
+	/*<div 
+					className={ classnames("headerimg", !data.headerImg && "placeholder") } 
+					style={{backgroundImage: `url(${data.headerImg || data.imageSrc})`}} />*/
 
 /***/ },
 /* 255 */
@@ -43544,10 +43530,12 @@ return /******/ (function(modules) { // webpackBootstrap
 		"./torch/images/landing2.png": 304,
 		"./website/casestudy.md": 208,
 		"./website/header.png": 305,
-		"./website/images/full.png": 209,
+		"./website/images/comparison.png": 209,
+		"./website/images/full.png": 306,
+		"./website/images/people.png": 307,
 		"./website/images/toolbar.png": 210,
-		"./wildfire/images/full.png": 306,
-		"./wildfire/images/toolbar.png": 307
+		"./wildfire/images/full.png": 308,
+		"./wildfire/images/toolbar.png": 309
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -43727,6 +43715,18 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 307 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "04a67bcc63b620e144e2693087974b7c.png"
+
+/***/ },
+/* 308 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "e8db3a1fae44c15d6bf22d714d8fca8a.png"
+
+/***/ },
+/* 309 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "81c18a80caf2c738b655c7d1d101d3f7.png"
