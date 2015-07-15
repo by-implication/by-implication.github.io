@@ -28,7 +28,7 @@ export default class Modal extends LayeredComponent {
       </div>
     )
     return (
-      <ReactCSSTransitionGroup transitionName="PortalModalTransition" component="div">
+      <ReactCSSTransitionGroup transitionName="ModalTransition" component="div">
         { this.props.opened && modal }
       </ReactCSSTransitionGroup>
     )

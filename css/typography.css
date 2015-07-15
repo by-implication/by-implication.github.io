@@ -26,8 +26,7 @@ article {
 		font-size: 24px;
 	}
 	p {
-		font-size: 18px;
-		font-family: georgia;
+		font-weight: 100;
 	}
 }
 
@@ -58,7 +57,7 @@ article {
 		}
 		p {
 			font-size: 14px;
-			font-family: georgia;
+			font-weight: normal;
 		}
 	}
 }

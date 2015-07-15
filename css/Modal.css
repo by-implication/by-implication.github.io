@@ -28,7 +28,7 @@
   }
 }
 
-.PortalModalTransition-enter {
+.ModalTransition-enter {
   opacity: 0.01;
   .modal-body {
     transform: translateY(100%);
@@ -38,7 +38,7 @@
   }
 }
 
-.PortalModalTransition-enter.PortalModalTransition-enter-active {
+.ModalTransition-enter.ModalTransition-enter-active {
   opacity: 1;
   transition: opacity 0.3s;
   .modal-body {
@@ -51,7 +51,7 @@
   }
 }
 
-.PortalModalTransition-leave {
+.ModalTransition-leave {
   transition: opacity 0.3s;
   opacity: 1;
   .modal-body {
@@ -64,7 +64,7 @@
   }
 }
 
-.PortalModalTransition-leave.PortalModalTransition-leave-active {
+.ModalTransition-leave.ModalTransition-leave-active {
   opacity: 0;
   .modal-body {
     transform: translateY(100%);

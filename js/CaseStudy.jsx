@@ -4,7 +4,8 @@ import React from 'react';
 import classnames from "classnames";
 import portfolioData from "../data/portfolio-data";
 import Modal from "./Modal";
-import {TextButton} from "./Buttons";
+import Toolbar from "./Toolbar";
+import {TextButton, IconButton} from "./Buttons";
 
 export default class CaseStudy extends React.Component {
 	constructor(props) {
@@ -35,7 +36,7 @@ export default class CaseStudy extends React.Component {
 
 		const defaultWriteup = (
 			<section>
-				<h1>{ data.name }</h1>
+				<h2>{ data.name }</h2>
 				<p>We're currently writing up the writeup for this project. In the meantime, have a look at the screenshots below!</p>
 			</section>
 		)
@@ -50,14 +51,10 @@ export default class CaseStudy extends React.Component {
 
 		return (
 			<div className="CaseStudy">
-				{/*<div 
-									className={ classnames("headerimg", !data.headerImg && "placeholder") } 
-									style={{backgroundImage: `url(${data.headerImg || data.imageSrc})`}} />*/}
-				
 				<div className="content">
 					<article className="meta">
+						{ defaultWriteup }	
 						<dl>
-							{ defaultWriteup }	
 							<dt>Resources</dt>
 							<dd>{ data.resources.join(", ") }</dd>
 							<TextButton component="a" href={ data.url } target="_blank" className="primary">
@@ -70,7 +67,13 @@ export default class CaseStudy extends React.Component {
 						{ this.state && images }
 					</section>
 				</div>
-				<Modal className="image-modal" opened={ !!this.state.currentImageUrl } onClose={ this.toggleImageModal } >
+				<Modal className="image-modal" opened={ !!this.state.currentImageUrl } overlayClosesModal={ false }>
+					<div className="Toolbar">
+						<div className="spacer" />
+						<IconButton className="image-modal-close" onClick={ this.toggleImageModal.bind(this, null) }>
+							<span className="icon-close" />
+						</IconButton>
+					</div>
 					<img src={this.state.currentImageUrl} />
 				</Modal>
 			</div>
