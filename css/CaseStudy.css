@@ -79,6 +79,9 @@
 		padding: 16px 32px 32px;
 		box-sizing: border-box;
 	}
+	.modal-overlay {
+		background-color: color(black a(90%));
+	}
 	img {
 		flex-shrink: 0;
 		/*max-width: calc(100% - 64px);*/
