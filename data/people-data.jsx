@@ -3,79 +3,84 @@ export default [
 		nickname: "Levi",
 		name: "Levi Tan Ong",
 		roles: "Designer, Developer",
-		imgUrl: "/data/people/Levi.png"
+		link: "http://github.com/levitanong"
 	},
 	{
 		nickname: "Phi",
 		name: "Philip Cheang",
-		roles: "Designer, Developer"
+		roles: "Designer, Developer, Pixel Nudger",
+		link: "http://phi.ph",
 	},
 	{
 		nickname: "Rodz",
 		name: "Rodrick Tan",
-		roles: "Designer, Business Analyst",
-		imgUrl: "/data/people/Rodz.png"
+		roles: "Designer, Business Analyst, Money Counter",
 	},
 	{
 		nickname: "Kenneth",
 		name: "Kenneth Yu",
-		roles: "Business Analyst",
-		imgUrl: "/data/people/Kenneth.png"
+		roles: "Business Analyst, Strategy and Tactics",
+		link: "http://twitter.com/kennethgyu",
 	},
 	{
 		nickname: "Wil",
 		name: "Wilhansen Li",
-		roles: "Developer"
+		roles: "Developer, I Invented That",
+		link: "http://wilhansen.li"
 	},
 	{
 		nickname: "Pepe",
 		name: "Pepe Bawagan",
-		roles: "Developer, Clown",
-		imgUrl: "/data/people/Pepe.png"
+		roles: "Developer, Funarchist Frogrammer",
+		link: "http://syk0saje.com"
 	},
 	{
 		nickname: "Albert",
 		name: "Albert Dizon",
-		roles: "Developer",
-		imgUrl: "/data/people/Albert.png"
+		roles: "Possibly a Programmer",
 	},
 	{
 		nickname: "Sesky",
 		name: "Jonathan Sescon",
-		roles: "Developer"
+		roles: "Developer, Company Poet",
+		link: "https://github.com/jrsescon"
 	},
 	{
 		nickname: "Mon",
 		name: "Monica Esquivel",
-		roles: "Artist, Designer",
-		imgUrl: "/data/people/Mon.png"
+		roles: "Artist, Designer, The Girl Who Drew These Portraits",
 	},
 	{
 		nickname: "Patsy",
 		name: "Patricia Lascano",
-		roles: "Artist, Designer",
-		imgUrl: "/data/people/Patsy.png"
+		roles: "Artist, Designer, Bird Enthusiast",
 	},
 	{
 		nickname: "Alvin",
 		name: "Alvin Dumalus",
 		roles: "Developer",
-		imgUrl: "/data/people/Alvin.png"
+		link: "http://github.com/alvinfrancis"
 	},
 	{
 		nickname: "Thomas",
 		name: "Thomas Dy",
-		roles: "Developer, Admin",
-		imgUrl: "/data/people/Thomas.png"
+		roles: "Developer, Admin, DevOps",
+		link: "http://pleasantprogrammer.com"
 	},
 	{
 		nickname: "Jim",
 		name: "James Choa",
-		roles: "Developer, Admin"
+		roles: "Developer, Admin, The Security Specialist",
+		link: "https://github.com/trigger-happy"
 	},
 	{
 		nickname: "Fordz",
 		name: "Daniel Fordan",
-		roles: "Developer"
+		roles: "Developer, Soon-to-be Lawyer"
+	},
+	{
+		nickname: "Inna",
+		name: "Inna Tan",
+		roles: "Designer, New Girl"
 	}
 ];
