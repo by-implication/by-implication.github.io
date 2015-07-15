@@ -822,6 +822,9 @@ button {
 	padding: 16px 32px 32px;
 	box-sizing: border-box;
 }
+.Modal.image-modal .modal-overlay {
+	background-color: rgba(0, 0, 0, 0.9);
+}
 .Modal.image-modal img {
 	-webkit-flex-shrink: 0;
 	-ms-flex-negative: 0;
