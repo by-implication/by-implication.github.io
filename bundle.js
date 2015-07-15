@@ -41246,6 +41246,18 @@ return /******/ (function(modules) { // webpackBootstrap
 	      _get(Object.getPrototypeOf(Modal.prototype), "componentDidMount", this).call(this);
 	    }
 	  }, {
+	    key: "componentDidUpdate",
+	    value: function componentDidUpdate(prevProps, prevState) {
+	      _get(Object.getPrototypeOf(Modal.prototype), "componentDidUpdate", this).call(this, prevProps, prevState);
+	      if (typeof document !== "undefined") {
+	        if (!prevProps.opened && this.props.opened) {
+	          document.body.classList.add("modal-open");
+	        } else if (prevProps.opened && !this.props.opened) {
+	          document.body.classList.remove("modal-open");
+	        }
+	      }
+	    }
+	  }, {
 	    key: "onOverlayClick",
 	    value: function onOverlayClick() {
 	      if (this.props.overlayClosesModal) {
