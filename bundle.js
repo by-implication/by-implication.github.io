@@ -40881,7 +40881,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			value: function render() {
 				return _react2["default"].createElement(
 					"header",
-					{ className: (0, _classnames2["default"])("Toolbar", { scrolled: this.state.scrollTop >= 8 }) },
+					{ id: "main-toolbar", className: (0, _classnames2["default"])("Toolbar", { scrolled: this.state.scrollTop >= 8 }) },
 					_react2["default"].createElement(
 						_Buttons.TextButton,
 						{ component: _reactRouter.Link, to: "about" },
@@ -41050,6 +41050,10 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _Modal2 = _interopRequireDefault(_Modal);
 
+	var _Toolbar = __webpack_require__(248);
+
+	var _Toolbar2 = _interopRequireDefault(_Toolbar);
+
 	var _Buttons = __webpack_require__(251);
 
 	var CaseStudy = (function (_React$Component) {
@@ -41100,7 +41104,7 @@ return /******/ (function(modules) { // webpackBootstrap
 					"section",
 					null,
 					_react2["default"].createElement(
-						"h1",
+						"h2",
 						null,
 						data.name
 					),
@@ -41128,10 +41132,10 @@ return /******/ (function(modules) { // webpackBootstrap
 						_react2["default"].createElement(
 							"article",
 							{ className: "meta" },
+							defaultWriteup,
 							_react2["default"].createElement(
 								"dl",
 								null,
-								defaultWriteup,
 								_react2["default"].createElement(
 									"dt",
 									null,
@@ -41157,7 +41161,17 @@ return /******/ (function(modules) { // webpackBootstrap
 					),
 					_react2["default"].createElement(
 						_Modal2["default"],
-						{ className: "image-modal", opened: !!this.state.currentImageUrl, onClose: this.toggleImageModal },
+						{ className: "image-modal", opened: !!this.state.currentImageUrl, overlayClosesModal: false },
+						_react2["default"].createElement(
+							"div",
+							{ className: "Toolbar" },
+							_react2["default"].createElement("div", { className: "spacer" }),
+							_react2["default"].createElement(
+								_Buttons.IconButton,
+								{ className: "image-modal-close", onClick: this.toggleImageModal.bind(this, null) },
+								_react2["default"].createElement("span", { className: "icon-close" })
+							)
+						),
 						_react2["default"].createElement("img", { src: this.state.currentImageUrl })
 					)
 				);
@@ -41169,9 +41183,6 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports["default"] = CaseStudy;
 	module.exports = exports["default"];
-	/*<div 
-					className={ classnames("headerimg", !data.headerImg && "placeholder") } 
-					style={{backgroundImage: `url(${data.headerImg || data.imageSrc})`}} />*/
 
 /***/ },
 /* 255 */
@@ -41256,7 +41267,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      );
 	      return _reactAddons2["default"].createElement(
 	        ReactCSSTransitionGroup,
-	        { transitionName: "PortalModalTransition", component: "div" },
+	        { transitionName: "ModalTransition", component: "div" },
 	        this.props.opened && modal
 	      );
 	    }
