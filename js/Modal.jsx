@@ -13,6 +13,16 @@ export default class Modal extends LayeredComponent {
   componentDidMount() {
     super.componentDidMount();
   }
+  componentDidUpdate(prevProps, prevState) {
+    super.componentDidUpdate(prevProps, prevState);
+    if (typeof document !== "undefined") {
+      if (!prevProps.opened && this.props.opened) {
+        document.body.classList.add("modal-open");
+      } else if (prevProps.opened && !this.props.opened) {
+        document.body.classList.remove("modal-open");
+      }
+    }
+  }
   onOverlayClick() {
     if (this.props.overlayClosesModal) {
       this.props.onClose();

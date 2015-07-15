@@ -28,6 +28,10 @@
   }
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .ModalTransition-enter {
   opacity: 0.01;
   .modal-body {
