@@ -15,7 +15,7 @@ export default class Contact extends React.Component {
 		const location = {lat: 14.6108207, lng: 121.052544};
 		return (
 			<section id="Contact">
-				<div style={{height: 320, width: "100%"}}>
+				<div style={{height: 320, width: "100%", backgroundColor: "#eee"}}>
 					<GoogleMaps 
 						ref="map"
 						containerProps={{style: {height: "100%", width: "100%"}}}

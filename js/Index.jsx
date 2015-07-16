@@ -23,6 +23,9 @@ export default class Index extends React.Component {
 			externalInvolvement: []
 		}
 	}
+	// static willTransitionTo(transition, params, query, callback) {
+	// 	console.log(params);
+	// }
 	setFilter(filterName, filterValue) {
 		// if filterValue is inside this.state[filterName], remove it. otherwise, add it.
 		this.setState({[filterName]: _.contains(this.state[filterName], filterValue) 

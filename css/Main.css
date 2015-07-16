@@ -192,6 +192,26 @@ button {
 	}
 }
 
+.ViewTransition-enter {
+	transition-property: opacity;
+	transition-duration: 0.3s;
+  opacity: 0.01;
+}
+
+.ViewTransition-enter.ViewTransition-enter-active {
+  opacity: 1;
+}
+
+.ViewTransition-leave {
+	transition-property: opacity;
+	transition-duration: 0.3s;
+  opacity: 1;
+}
+
+.ViewTransition-leave.ViewTransition-leave-active {
+  opacity: 0.01;
+}
+
 .projects-enter {
 	transition-property: transform, opacity;
 	transition-duration: 0.3s;

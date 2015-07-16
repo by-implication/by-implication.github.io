@@ -1,12 +1,14 @@
 import MainStyles from "../css/Main.css";
 import IconStyles from "../icons/style.css";
 
-import React from "react";
+import React from "react/addons";
 import Router, {RouteHandler} from "react-router";
 import Toolbar from "./Toolbar";
+const ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
 // import Prism from "./prism";
 
 class Wrapper extends React.Component {
+	
 	render() {
 		return (
 			<html>
@@ -21,7 +23,9 @@ class Wrapper extends React.Component {
 				<body>
 					<Toolbar />
 					<main>
-						<RouteHandler />
+						<ReactCSSTransitionGroup transitionName="ViewTransition">
+							<RouteHandler key={ this.context.router.getCurrentPath() } />
+						</ReactCSSTransitionGroup>
 					</main>
 					<footer>
 						<blockquote>
@@ -35,6 +39,10 @@ class Wrapper extends React.Component {
 			
 		)
 	}
+}
+// some kind of undocumented react magic. context is a way of sharing data between components with the same required context.
+Wrapper.contextTypes = {
+  router: React.PropTypes.func.isRequired
 }
 
 export default Wrapper;
