@@ -1,7 +1,7 @@
 import React from 'react';
 import {GoogleMaps, Marker} from "react-google-maps";
 
-export default class Contact extends React.Component {
+export default class About extends React.Component {
 	constructor(props) {
 		super(props);
 	}
@@ -14,7 +14,7 @@ export default class Contact extends React.Component {
 	render() {
 		const location = {lat: 14.6108207, lng: 121.052544};
 		return (
-			<div className="view" id="Contact">
+			<div className="view" id="About">
 				<div className="writeup">
 					<p>By Implication is a software development firm based in Metro Manila.</p>
 					<p>We care about making the world a better place, helping people understand that world, and solving the challenging problems it has to offer.</p>

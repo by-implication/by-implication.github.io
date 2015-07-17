@@ -1,18 +1,16 @@
-import AboutStyle from "../css/About.css";
-
 import React from 'react';
 import _ from "lodash";
 import PersonCard from "./PersonCard";
 import people from "../data/people-data";
 
-export default class About extends React.Component {
+export default class People extends React.Component {
 	render() {
 		const personnel = _.sortBy(people, "nickname").map(person => {
 			return <PersonCard key={ person.nickname } {...person}/>
 		});
 
 		return (
-			<div className="view" id="About">
+			<div className="view" id="People">
 				<div className="writeup">
 					<p>Our people are some of the smartest, most talented, most valuable, most self-aggrandizing people we know.</p>
 				</div>
