@@ -66,8 +66,6 @@ export default class Index extends React.Component {
 
 		return (
 			<div className="view" id="Index">
-				<section id="hero">
-					<h1>We are By Implication.</h1>
 					<div className="filter-group">
 						<p>
 							We are a group of { ResFilter("design") }, { ResFilter("dev") }, and { ResFilter("bizdev") }.
@@ -79,7 +77,6 @@ export default class Index extends React.Component {
 							Mostly, we build for { XInvFilter("internal") }, but we build for { XInvFilter("client") } too. 
 						</p>
 					</div>
-				</section>
 
 				<div className="card-container">
 					{ projects }

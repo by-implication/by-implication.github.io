@@ -31,14 +31,14 @@ export default class Toolbar extends React.Component {
 	render() {
 		return (
 			<header id="main-toolbar" className={ classnames("Toolbar", {scrolled: this.state.scrollTop >= 8}) }>
-				<TextButton component={ Link } to="people">
-					People
+				<TextButton component={ Link } to="about">
+					About
 				</TextButton>
 				<IconButton component={ Link } id="logobutton" to="index">
 					<span id="logo" className="icon-bi-logo" />
 				</IconButton>
-				<TextButton component={ Link } to="about">
-					About
+				<TextButton component={ Link } to="people">
+					People
 				</TextButton>
 			</header>
 		)

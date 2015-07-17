@@ -16,7 +16,6 @@ export default class Contact extends React.Component {
 		return (
 			<div className="view" id="Contact">
 				<div className="writeup">
-					<h2>About Us</h2>
 					<p>By Implication is a software development firm based in Metro Manila.</p>
 					<p>We care about making the world a better place, helping people understand that world, and solving the challenging problems it has to offer.</p>
 				</div>
