@@ -1,6 +1,7 @@
 import React from "react";
 import Router, {DefaultRoute, Link, Route, RouteHandler} from "react-router";
 import Index from "./Index";
+import Portfolio from "./Portfolio";
 import People from "./People";
 import About from "./About";
 import Wrapper from "./Wrapper";
@@ -8,11 +9,13 @@ import CaseStudy from "./CaseStudy";
 
 const Routes = (
 	<Route path="/" handler={ Wrapper }>
-		<Route name="people" path="people/" handler={ People } />
-		<Route name="about" path="about/" handler={ About } />
-		<Route name="portfolio" path="portfolio/" handler={ Index } />
+		<Route name="index" path="/" handler={ Index }>		
+			<Route name="people" path="/people/" handler={ People } />
+			<Route name="about" path="/about/" handler={ About } />
+			<DefaultRoute name="portfolio" handler={ Portfolio } />
+		</Route>
 		<Route name="caseStudy" path="portfolio/:id/" handler={ CaseStudy } />
-		<DefaultRoute name="index" handler={ Index } />
+		{/*<DefaultRoute name="index" handler={ Index } />*/}
 	</Route>
 )
 

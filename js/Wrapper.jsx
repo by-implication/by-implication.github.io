@@ -10,6 +10,7 @@ const ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
 class Wrapper extends React.Component {
 	
 	render() {
+		console.log(this.context.router.getCurrentPath(), this.context.router.getCurrentRoutes());
 		return (
 			<html>
 				<head>
@@ -22,14 +23,9 @@ class Wrapper extends React.Component {
 				</head>
 				<body>
 					<Toolbar />
-					<main>
-						<div id="hero">
-							<h1>We are By Implication.</h1>
-						</div>
-						<ReactCSSTransitionGroup component="div" transitionName="ViewTransition">
-							<RouteHandler key={ this.context.router.getCurrentPath() } />
-						</ReactCSSTransitionGroup>
-					</main>
+					<ReactCSSTransitionGroup component="main" transitionName="ViewTransition">
+						<RouteHandler key={ this.context.router.getCurrentRoutes()[1].name } />
+					</ReactCSSTransitionGroup>
 					<footer>
 						&copy; 2015 By Implication, Inc.
 					</footer>

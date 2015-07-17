@@ -10,7 +10,7 @@ export default class People extends React.Component {
 		});
 
 		return (
-			<div className="view" id="People">
+			<div id="People">
 				<div className="writeup">
 					<p>Our people are some of the smartest, most talented, most valuable, most self-aggrandizing people we know.</p>
 				</div>

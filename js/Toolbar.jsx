@@ -34,7 +34,7 @@ export default class Toolbar extends React.Component {
 				<TextButton component={ Link } to="about">
 					About
 				</TextButton>
-				<IconButton component={ Link } id="logobutton" to="index">
+				<IconButton component={ Link } id="logobutton" to="portfolio">
 					<span id="logo" className="icon-bi-logo" />
 				</IconButton>
 				<TextButton component={ Link } to="people">
