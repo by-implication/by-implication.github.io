@@ -153,8 +153,6 @@
 
 .ProjectCard:hover .overlay {
 	opacity: 1;
-}#About {
-	padding-top: 64px;	
 }.PersonCard {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -170,6 +168,7 @@
 	    -ms-flex-direction: column;
 	        flex-direction: column;
 	margin: 16px;
+	max-width: 192px;
 }
 
 .PersonCard .portrait {
@@ -181,11 +180,25 @@
 
 .PersonCard h4 {
 	font-weight: 100;
-	margin: 0px;
+	margin: 8px 0px;
 }
 
 .PersonCard h5 {
+	text-align: center;
+	height: 36px;
 	margin: 0;
+}
+
+.PersonCard a.person-link {
+	-webkit-transition: box-shadow, 0.2s;
+	transition: box-shadow, 0.2s;
+	text-decoration: none;
+	color: #9E2A2B;
+	box-shadow: 0px 1px 0px #9E2A2B;
+}
+
+.PersonCard a.person-link:hover {
+	box-shadow: 0px 4px 0px #9E2A2B;
 }h1 {
 	font-size: 56px;
 }
@@ -254,20 +267,51 @@ article p {
 
 body {
 	font-family: "Roboto";
+	position: absolute;
+	width: 100%;
 	margin: 0px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	min-height: 100%;
 }
 
 main {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+	-webkit-flex-shrink: 0;
+	    -ms-flex-negative: 0;
+	        flex-shrink: 0;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	/*padding-top: 64px;*/
 }
 
-section {
-	padding: 16px;
-	box-sizing: border-box;
+.view {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
 }
 
-section#Contact {
-	padding: 64px 0px 0px 0px;
+#Contact {
+	padding: 0px;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -288,33 +332,48 @@ section#Contact {
 	width: 100%;
 }
 
-section#Contact .contact-methods {
+#Contact .contact-methods {
 	list-style: none;
-	padding: 0px;
+	max-width: 480px;
+	padding: 16px;
 	margin: 0px;
-	font-size: 24px;
+	box-sizing: border-box;
+	font-size: 18px;
 	font-weight: 100;
-	margin: 32px;
-}
-
-section#Contact .contact-methods li {
 	margin-bottom: 32px;
+	/*margin: 32px;*/
 }
 
-section#Contact .contact-methods li .icon {
+#Contact .contact-methods li .icon {
 	margin-right: 16px;
 }
 
-section#Contact .contact-methods li a {
+#Contact .contact-methods li a {
 	color: #335C67;
 	text-decoration: none;
 }
 
-#Index {
-	padding-top: 64px;
+#Contact .contact-methods li + li {
+	margin-top: 16px;
 }
 
+#Quote blockquote {
+	max-width: 480px;
+	padding: 32px;
+	box-sizing: border-box;
+	font-weight: 100;
+}
+
+#Quote cite {
+	margin-top: 8px;
+	display: block;
+}
 footer {
+	padding: 16px;
+	box-sizing: border-box;
+	-webkit-flex-shrink: 0;
+	    -ms-flex-negative: 0;
+	        flex-shrink: 0;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -333,18 +392,6 @@ footer {
 	color: white;
 }
 
-footer blockquote {
-	max-width: 480px;
-	padding: 32px;
-	box-sizing: border-box;
-	font-weight: 100;
-}
-
-footer cite {
-	margin-top: 8px;
-	display: block;
-}
-
 button {
 	font-family: "Roboto";
 }
@@ -357,27 +404,13 @@ button {
 }
 
 #hero {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	min-height: 24vw;
+	padding-top: 64px;
 }
 
 #hero h1 {
+	text-align: center;
+	margin-top: 64px;
+	margin-bottom: 0px;
 	font-weight: 100;
 }
 
@@ -390,8 +423,11 @@ button {
 .filter-group {
 	font-weight: 100;
 	line-height: 32px;
-	margin-bottom: 32px;
 	font-size: 24px;
+	max-width: 720px;
+	margin: 0px auto 32px;
+	padding: 16px;
+	box-sizing: border-box;
 }
 
 .filter-group .filter {
@@ -483,14 +519,6 @@ button {
 	-ms-flex-pack: center;
 	justify-content: center;
 }
-#About h1 {
-	text-align: center;
-}
-#About p {
-	font-size: 18px;
-	font-weight: 100;
-	max-width: 400px;
-}
 #About section {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -505,6 +533,19 @@ button {
 	-webkit-align-items: center;
 	-ms-flex-align: center;
 	align-items: center;
+}
+.writeup {
+	max-width: 480px;
+	box-sizing: border-box;
+	padding: 16px;
+	margin: 0px auto;
+}
+.writeup h2 {
+	text-align: center;
+}
+.writeup p {
+	font-size: 18px;
+	font-weight: 100;
 }
 .ClientAndPartnerCard .image {
 	display: -webkit-box;
@@ -521,6 +562,30 @@ button {
 .ClientAndPartnerCard .image img {
 	max-width: 128px;
 	max-height: 128px * 0.707;
+}
+
+.ViewTransition-enter {
+	-webkit-transition-property: opacity;
+	        transition-property: opacity;
+	-webkit-transition-duration: 0.3s;
+	        transition-duration: 0.3s;
+  opacity: 0.01;
+}
+
+.ViewTransition-enter.ViewTransition-enter-active {
+  opacity: 1;
+}
+
+.ViewTransition-leave {
+	-webkit-transition-property: opacity;
+	        transition-property: opacity;
+	-webkit-transition-duration: 0.3s;
+	        transition-duration: 0.3s;
+  opacity: 1;
+}
+
+.ViewTransition-leave.ViewTransition-leave-active {
+  opacity: 0.01;
 }
 
 .projects-enter {
