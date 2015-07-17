@@ -31,34 +31,34 @@ main {
 	align-items: center;
 	justify-content: center;
 	width: 100%;
-	.contact-methods {	
-		list-style: none;
-		max-width: 480px;
-		padding: 16px;
-		margin: 0px;
-		box-sizing: border-box;
-		font-size: 18px;
-		font-weight: 100;
-		margin-bottom: 32px;
-		/*margin: 32px;*/
-		li {
-			.icon {
-				margin-right: 16px;
-			}
-			a {
-				color: $contrast2;
-				text-decoration: none;
-			}
-			& + li {
-				margin-top: 16px;
-			}
+}
+.contact-methods {	
+	list-style: none;
+	width: 560px;
+	padding: 16px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-size: 18px;
+	font-weight: 100;
+	margin-bottom: 32px;
+	/*margin: 32px;*/
+	li {
+		.icon {
+			margin-right: 16px;
+		}
+		a {
+			color: $contrast2;
+			text-decoration: none;
+		}
+		& + li {
+			margin-top: 16px;
 		}
 	}
 }
 
 #Quote {
 	blockquote {
-		max-width: 480px;
+		max-width: 560px;
 		padding: 32px;
 		box-sizing: border-box;
 		font-weight: 100;
@@ -98,6 +98,7 @@ button {
 		margin-top: 64px;
 		margin-bottom: 0px;
 		font-weight: 100;
+		font-size: 54px;
 		@media (max-width: 640px) {
 			font-size: 32px;
 		}
@@ -189,7 +190,7 @@ button {
 	}
 }
 .writeup {
-	max-width: 480px;
+	width: 560px;
 	box-sizing: border-box;
 	padding: 16px;
 	margin: 0px auto;
@@ -201,16 +202,10 @@ button {
 		font-weight: 100;
 	}
 }
-.ClientAndPartnerCard {
-	.image {
-		display: flex;
-		align-items: center;
-		width: 128px;
-		height: 128px * 0.707;
-		img {
-			max-width: 128px;
-			max-height: 128px * 0.707;
-		}
+
+@media (max-width: 560px) {
+	.writeup, .contact-methods, #Quote blockquote {
+		width: 100%;
 	}
 }
 
@@ -231,29 +226,5 @@ button {
 }
 
 .ViewTransition-leave.ViewTransition-leave-active {
-  opacity: 0.01;
-}
-
-.projects-enter {
-	transition-property: transform, opacity;
-	transition-duration: 0.3s;
-	transform: scale(0);
-  opacity: 0.01;
-}
-
-.projects-enter.projects-enter-active {
-  transform: scale(1);
-  opacity: 1;
-}
-
-.projects-leave {
-	transition-property: transform, opacity;
-	transition-duration: 0.3s;
-  transform: scale(1);
-  opacity: 1;
-}
-
-.projects-leave.projects-leave-active {
-	transform: scale(0);
   opacity: 0.01;
 }
