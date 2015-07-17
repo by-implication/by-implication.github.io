@@ -68,7 +68,7 @@ footer {
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
-	background-color: #333;
+	background-color: $main;
 	color: white;
 }
 
@@ -146,9 +146,6 @@ button {
 	}
 	&.scrolled {
 		box-shadow: 0px 8px 4px color(black a(20%));
-		a {
-			color: #333;
-		}
 	}
 }
 
