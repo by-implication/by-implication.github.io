@@ -1,40 +1,53 @@
-import AboutStyle from "../css/About.css";
-
 import React from 'react';
-import _ from "lodash";
-import PersonCard from "./PersonCard";
-import people from "../data/people-data";
+import {GoogleMaps, Marker} from "react-google-maps";
 
-export default class About extends React.Component {
+export default class Contact extends React.Component {
+	constructor(props) {
+		super(props);
+	}
+	componentDidMount() {
+		// replace content of example@email.com.
+		const email = "&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#098;&#121;&#105;&#109;&#112;&#108;&#105;&#099;&#097;&#116;&#105;&#111;&#110;&#046;&#099;&#111;&#109;";
+		React.findDOMNode(this.refs.email).innerHTML = email;
+		React.findDOMNode(this.refs.email).setAttribute("href", "mailto:contact@byimplication.com");
+	}
 	render() {
-		const personnel = _.sortBy(people, "nickname").map(person => {
-			return <PersonCard key={ person.nickname } {...person}/>
-		});
-
+		const location = {lat: 14.6108207, lng: 121.052544};
 		return (
-			<div className="view" id="About">
-				<section id="TheCompany">
-					<div className="writeup">
-						<h2>The Company</h2>
-						<p>By Implication is a software development firm based in Metro Manila.</p>
-						<p>We care about making the world a better place, helping people understand that world, and solving the challenging problems it has to offer.</p>
-					</div>
-				</section>
-				<section id="ThePeople">
-					<div className="writeup">
-						<h2>The People</h2>
-						<p>Our people are some of the smartest, most talented, most valuable, most self-aggrandizing people we know.</p>
-					</div>
-					<div className="card-container People">
-						{ personnel }
-					</div>
-				</section>
-				<section id="Quote">
-					<blockquote>
-						Perfection is finally attained not when there is no longer anything to add, but when there is no longer anything to take away.
-						<cite>-Antoine de Saint Exupéry</cite>
-					</blockquote>
-				</section>
+			<div className="view" id="Contact">
+				<div className="writeup">
+					<h2>About Us</h2>
+					<p>By Implication is a software development firm based in Metro Manila.</p>
+					<p>We care about making the world a better place, helping people understand that world, and solving the challenging problems it has to offer.</p>
+				</div>
+				<ul className="contact-methods">
+					<li>
+						<span className="icon icon-email" />
+						<a ref="email" href="mailto:goToHellSpamBots@email.com">goToHellSpamBots@email.com</a>
+					</li>
+					<li>
+						<span className="icon icon-map" />
+						<a target="_blank" href="https://www.google.com.ph/maps/place/Sari+Software+%2F+By+Implication/@14.6108207,121.052544,17z/data=!4m6!1m3!3m2!1s0x3397b7c333fb31cd:0x85fb97a6a4763727!2sSari+Software+%2F+By+Implication!3m1!1s0x3397b7c333fb31cd:0x85fb97a6a4763727?hl=en">6c 2nd Avenue, Brgy. Bagong Lipunan ng Crame, QC</a>
+					</li>
+					<li>
+						<span className="icon icon-twitter" />
+						<a target="_blank" href="https://twitter.com/byimplication">@byimplication</a>
+					</li>
+					<li>
+						<span className="icon icon-facebook-square" />
+						<a target="_blank" href="https://www.facebook.com/byimplication">facebook/byimplication</a>
+					</li>
+				</ul>
+				<div style={{height: 320, width: "100%", backgroundColor: "#eee"}}>
+					<GoogleMaps 
+						ref="map"
+						containerProps={{style: {height: "100%", width: "100%"}}}
+						googleMapsApi={ "undefined" !== typeof google ? google.maps : null } 
+						zoom={17} 
+						center={ location }>
+						<Marker position={ location } key="marker" animation={ 2 } />
+					</GoogleMaps>
+				</div>
 			</div>
 		);
 	}

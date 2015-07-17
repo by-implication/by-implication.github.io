@@ -13,7 +13,7 @@ var path = require("path");
 var routePaths = [
   "/",
   "/about/",
-  "/contact/",
+  "/people/",
   "/portfolio/",
   "/portfolio/website/",
   "/portfolio/storylark/",

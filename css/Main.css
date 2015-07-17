@@ -24,11 +24,6 @@ main {
 	flex: 1;
 }
 
-section {
-	padding: 16px;
-	box-sizing: border-box;
-}
-
 #Contact {
 	padding: 64px 0px 0px 0px;
 	display: flex;
@@ -38,11 +33,14 @@ section {
 	width: 100%;
 	.contact-methods {	
 		list-style: none;
-		padding: 0px;
+		max-width: 480px;
+		padding: 16px;
 		margin: 0px;
-		font-size: 24px;
+		box-sizing: border-box;
+		font-size: 18px;
 		font-weight: 100;
-		margin: 32px;
+		margin-bottom: 32px;
+		/*margin: 32px;*/
 		li {
 			.icon {
 				margin-right: 16px;
@@ -52,7 +50,7 @@ section {
 				text-decoration: none;
 			}
 			& + li {
-				margin-top: 32px;
+				margin-top: 16px;
 			}
 		}
 	}
@@ -82,8 +80,8 @@ footer {
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
-	background-color: #eee;
-	color: color(black a(40%));
+	background-color: #333;
+	color: white;
 }
 
 button {
@@ -186,23 +184,22 @@ button {
 	}
 }
 #About {
-	h1 {
-		text-align: center;
-	}
-	p {
-		font-size: 18px;
-		font-weight: 100;
-	}
 	section {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
-	.writeup {
-		max-width: 480px;
-		h2 {
-			text-align: center;
-		}
+}
+.writeup {
+	max-width: 480px;
+	box-sizing: border-box;
+	padding: 16px;
+	h2 {
+		text-align: center;
+	}
+	p {
+		font-size: 18px;
+		font-weight: 100;
 	}
 }
 .ClientAndPartnerCard {
