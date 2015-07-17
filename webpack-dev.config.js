@@ -1,4 +1,4 @@
-var config = require('./webpack-base.config.js');
+var config = require('./webpack.config.js');
 
 module.exports = config({
 	dev: true,
