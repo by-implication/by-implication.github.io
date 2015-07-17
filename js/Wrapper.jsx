@@ -22,16 +22,15 @@ class Wrapper extends React.Component {
 				</head>
 				<body>
 					<Toolbar />
-					<main>
-						<ReactCSSTransitionGroup transitionName="ViewTransition">
-							<RouteHandler key={ this.context.router.getCurrentPath() } />
-						</ReactCSSTransitionGroup>
-					</main>
+					<ReactCSSTransitionGroup component="main" transitionName="ViewTransition">
+						<RouteHandler key={ this.context.router.getCurrentPath() } />
+					</ReactCSSTransitionGroup>
 					<footer>
-						<blockquote>
-							Perfection is finally attained not when there is no longer anything to add, but when there is no longer anything to take away.
-							<cite>-Antoine de Saint Exupéry</cite>
-						</blockquote>
+						&copy; 2015 By Implication, Inc.
+						{/*<blockquote>
+													Perfection is finally attained not when there is no longer anything to add, but when there is no longer anything to take away.
+													<cite>-Antoine de Saint Exupéry</cite>
+												</blockquote>*/}
 					</footer>
 					<script src="/bundle.js" />
 				</body>

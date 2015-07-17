@@ -14,7 +14,7 @@ export default class Contact extends React.Component {
 	render() {
 		const location = {lat: 14.6108207, lng: 121.052544};
 		return (
-			<section id="Contact">
+			<div className="view" id="Contact">
 				<div style={{height: 320, width: "100%", backgroundColor: "#eee"}}>
 					<GoogleMaps 
 						ref="map"
@@ -43,7 +43,7 @@ export default class Contact extends React.Component {
 						<a target="_blank" href="https://www.facebook.com/byimplication">facebook/byimplication</a>
 					</li>
 				</ul>
-			</section>
+			</div>
 		);
 	}
 }

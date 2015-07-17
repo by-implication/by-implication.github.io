@@ -50,7 +50,7 @@ export default class CaseStudy extends React.Component {
 		));
 
 		return (
-			<div className="CaseStudy">
+			<div className="CaseStudy view">
 				<div className="content">
 					<article className="meta">
 						{ defaultWriteup }	

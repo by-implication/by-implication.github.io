@@ -65,7 +65,7 @@ export default class Index extends React.Component {
 		const XInvFilter = Filter.bind(this, "externalInvolvement");
 
 		return (
-			<div id="Index">
+			<div className="view" id="Index">
 				<section id="hero">
 					<h1>We are By Implication.</h1>
 					<div className="filter-group">

@@ -12,7 +12,7 @@ export default class About extends React.Component {
 		});
 
 		return (
-			<div id="About">
+			<div className="view" id="About">
 				<section id="TheCompany">
 					<h2>The Company</h2>
 					<p>By Implication is a software development firm based in Metro Manila.</p>
