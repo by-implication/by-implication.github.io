@@ -25,7 +25,7 @@ class Wrapper extends React.Component {
 					<meta name="city" content="Manila, Philippines" />
 					<meta name="geo.placename" content="Manila, Philippines" />
 					<meta name="geo.region" content="PH-00" />
-					<link href='http://fonts.googleapis.com/css?family=Roboto:300,700,400' rel='stylesheet' type='text/css' />
+					<link href="//fonts.googleapis.com/css?family=Roboto:300,700,400" rel="stylesheet" type="text/css" />
 					<link href="/bundle.css" rel='stylesheet' type='text/css' />
 					<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
 				</head>
