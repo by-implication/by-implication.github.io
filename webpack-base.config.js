@@ -41,7 +41,7 @@ module.exports = function(options) {
     );
   }
   return {
-  	entry: path.resolve(__dirname, "js/entry.jsx"),
+  	entry: path.resolve(__dirname, "js/Entry.jsx"),
   	output: {
   		filename: "bundle.js",
   		path: __dirname,
