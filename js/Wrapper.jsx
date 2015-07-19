@@ -2,25 +2,56 @@ import MainStyles from "../css/Main.css";
 import IconStyles from "../icons/style.css";
 
 import React from "react/addons";
+import _ from "lodash";
 import Router, {RouteHandler} from "react-router";
 import Toolbar from "./Toolbar";
 const ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
 // import Prism from "./prism";
 
 class Wrapper extends React.Component {
-
+	constructor(props) {
+		super(props);
+	}
+	meta(routeName) {
+		switch(routeName) {
+			case "storylark":
+				return {
+					description: "The best in digital indie comics",
+					titleSuffix: " | Storylark"
+				};
+				break;
+			case "openrecon":
+				return {
+					description: "Tracking taxpayer money spent on post-disaster reconstruction in the Philippines",
+					titleSuffix: " | Open Reconstruction"
+				};
+				break;
+			default:
+				return {
+					description: "Award-winning independent software development + design firm from Manila, Philippines. Creators: Wildfire, Storylark, Sakay.ph, Open Reconstruction, and more.",
+					titleSuffix: ""
+				};
+		}
+	}
 	render() {
-		console.log(this.context.router.getCurrentPath(), this.context.router.getCurrentRoutes());
+		const routeName = 
+			this.context.router.getCurrentParams().id || 
+			_.last(this.context.router.getCurrentRoutes()).name;
+
+		const meta = this.meta(routeName);
+		
+		const title = "By Implication" + meta.titleSuffix;
+
 		return (
 			<html>
 				<head>
-					<title>By Implication</title>
+					<title>{ title }</title>
 					<meta charSet="utf-8" />
 					{ /* TODO: change dynamically */ }
 					<meta name="viewport" content="width=device-width, initial-scale=1" />
 					<meta name="copyright" content="Copyright, By Implication" />
-					<meta name="author" content="Levi Tan Ong, Philip Cheang, Monica Esquivel, by Implication" />
-					<meta name="description" content="Award-winning independent software development + design firm from Manila, Philippines. Creators: Wildfire, Storylark, Sakay.ph, Open Reconstruction, and more." />
+					<meta name="author" content="By Implication" />
+					<meta name="description" content={ meta.description } />
 					{ /* TODO: change per page */ }
 					<meta name="city" content="Manila, Philippines" />
 					<meta name="geo.placename" content="Manila, Philippines" />
