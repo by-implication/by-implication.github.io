@@ -24,14 +24,19 @@ class Wrapper extends React.Component {
 					description: "Tracking taxpayer money spent on post-disaster reconstruction in the Philippines.",
 					titlePrefix: "Open Reconstruction – Portfolio – "
 				};
+			case "sakay":
+				return {
+					description: "Commuting made easy: Transit directions for jeepneys, buses, and trains in Metro Manila. Top 10 in Navigation on App Store + Google Play.",
+					titlePrefix: "Sakay.ph – Portfolio – "
+				};
 			case "about":
 				return {
-					description: "Learn how to stalk us. I mean, how to get in touch, where to find our office, and what we stand for.",
+					description: "Learn how to stalk us. I mean, how to get in touch, where to find our office, who we’ve worked with, and what we stand for.",
 					titlePrefix: "About – "
 				};
 			case "people":
 				return {
-					description: "Meet the faces behind our team. Or at least, really good drawings of them.",
+					description: "Meet the beautiful faces behind our talented team. Or at least, some really good drawings of them.",
 					titlePrefix: "People – "
 				};
 			default:
