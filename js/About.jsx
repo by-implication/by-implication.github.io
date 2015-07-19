@@ -16,7 +16,7 @@ export default class About extends React.Component {
 		return (
 			<div id="About">
 				<div className="writeup">
-					<p>By Implication is a software development firm based in Metro Manila.</p>
+					<p>By Implication is an independent, award-winning software development firm based in Metro Manila, Philippines.</p>
 					<p>We care about making the world a better place, helping people understand that world, and solving the challenging problems it has to offer.</p>
 				</div>
 				<ul className="contact-methods">
@@ -26,7 +26,7 @@ export default class About extends React.Component {
 					</li>
 					<li>
 						<span className="icon icon-map" />
-						<a target="_blank" href="https://www.google.com.ph/maps/place/Sari+Software+%2F+By+Implication/@14.6108207,121.052544,17z/data=!4m6!1m3!3m2!1s0x3397b7c333fb31cd:0x85fb97a6a4763727!2sSari+Software+%2F+By+Implication!3m1!1s0x3397b7c333fb31cd:0x85fb97a6a4763727?hl=en">6c 2nd Avenue, Brgy. Bagong Lipunan ng Crame, QC</a>
+						<a target="_blank" href="https://www.google.com.ph/maps/place/Sari+Software+%2F+By+Implication/@14.6108207,121.052544,17z/data=!4m6!1m3!3m2!1s0x3397b7c333fb31cd:0x85fb97a6a4763727!2sSari+Software+%2F+By+Implication!3m1!1s0x3397b7c333fb31cd:0x85fb97a6a4763727?hl=en">6C 2nd Avenue, Brgy. Bagong Lipunan ng Crame, QC</a>
 					</li>
 					<li>
 						<span className="icon icon-twitter" />
@@ -38,11 +38,11 @@ export default class About extends React.Component {
 					</li>
 				</ul>
 				<div style={{height: 320, width: "100%", backgroundColor: "#eee"}}>
-					<GoogleMaps 
+					<GoogleMaps
 						ref="map"
 						containerProps={{style: {height: "100%", width: "100%"}}}
-						googleMapsApi={ "undefined" !== typeof google ? google.maps : null } 
-						zoom={17} 
+						googleMapsApi={ "undefined" !== typeof google ? google.maps : null }
+						zoom={17}
 						center={ location }>
 						<Marker position={ location } key="marker" animation={ 2 } />
 					</GoogleMaps>
