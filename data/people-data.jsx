@@ -2,7 +2,7 @@ var data = [
 	{
 		nickname: "Levi",
 		name: "Levi Tan Ong",
-		roles: "Designer, Developer",
+		roles: "Designer, Developer, Token Bald Guy",
 		link: "http://github.com/levitanong"
 	},
 	{
@@ -48,7 +48,7 @@ var data = [
 	{
 		nickname: "Mon",
 		name: "Monica Esquivel",
-		roles: "Artist, Designer, The Girl Who Drew These Portraits",
+		roles: "Artist, Designer, I Drew These Portraits",
 	},
 	{
 		nickname: "Patsy",
@@ -58,19 +58,19 @@ var data = [
 	{
 		nickname: "Alvin",
 		name: "Alvin Dumalus",
-		roles: "Developer",
+		roles: "Developer, I Beat Your High Score",
 		link: "http://github.com/alvinfrancis"
 	},
 	{
 		nickname: "Thomas",
 		name: "Thomas Dy",
-		roles: "Developer, Admin, DevOps",
+		roles: "Pleasant Programmer, Infra, DevOps",
 		link: "http://pleasantprogrammer.com"
 	},
 	{
 		nickname: "Jim",
 		name: "James Choa",
-		roles: "Developer, Admin, The Security Specialist",
+		roles: "Developer, Infra, The Security Specialist",
 		link: "https://github.com/trigger-happy"
 	},
 	{
