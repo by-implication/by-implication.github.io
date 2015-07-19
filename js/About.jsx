@@ -16,6 +16,7 @@ export default class About extends React.Component {
 		document.getElementById("map-container").addEventListener("click",function (){
 			_.map(document.querySelectorAll(".gm-style"), function(el){
 				el.style.pointerEvents = "auto";
+				document.getElementById("map-container").style.cursor = "auto";
 			})
 		},false);
 

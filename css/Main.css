@@ -213,6 +213,10 @@ button {
 	make sure to reenable with javascript */
 }
 
+#map-container {
+	cursor: pointer;
+}
+
 .directions {
 	position: absolute;
 	top: -22px;
