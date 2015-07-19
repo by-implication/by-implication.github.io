@@ -1,1 +1,0 @@
-# by-implication.github.io
