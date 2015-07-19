@@ -6,6 +6,7 @@
 	.content {
 		@media (min-width: 768px) {
 			display: flex;
+			align-items: flex-start;
 		}
 		img {
 			width: auto;
