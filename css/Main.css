@@ -74,10 +74,23 @@ footer {
 }
 
 #hiring {
+	font-weight: 100;
 	margin: 0 auto;
 	max-width: 560px;
+	h3 {
+		font-weight: 100;
+	}
 	div {
 		padding: 64px 32px;
+	}
+	a {
+		color: $main;
+		text-decoration: none;
+		border-bottom: 1px solid color($main a(0.3));
+		transition: all 0.2s;
+		&:hover {
+			border-bottom: 1px solid $main;
+		}
 	}
 }
 
