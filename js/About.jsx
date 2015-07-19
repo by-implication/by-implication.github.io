@@ -37,7 +37,7 @@ export default class About extends React.Component {
 						<a target="_blank" href="https://www.facebook.com/byimplication">facebook/byimplication</a>
 					</li>
 				</ul>
-				<div style={{height: 320, width: "100%", backgroundColor: "#eee"}}>
+				<div style={{height: 340, width: "100%", backgroundColor: "#eee", position: "relative", marginTop: 50}}>
 					<GoogleMaps
 						ref="map"
 						containerProps={{style: {height: "100%", width: "100%"}}}
@@ -46,6 +46,9 @@ export default class About extends React.Component {
 						center={ location }>
 						<Marker position={ location } key="marker" animation={ 2 } />
 					</GoogleMaps>
+					<div className="directions">
+						<a target="_blank" href="https://maps.google.com/maps?q=by+implication&hl=en&ll=14.610973,121.053329&spn=0.011794,0.019333&sll=14.613153,121.064873&sspn=0.188699,0.309334&hq=by+implication&t=m&z=16&iwloc=A">Google Maps</a><a target="_blank" href="http://waze.to/hwdw54egew">Waze</a><a target="_blank" href="http://sakay.ph/?to=14.610823,121.052496&">Sakay.ph</a>
+					</div>
 				</div>
 				<section id="Quote">
 					<blockquote>
