@@ -16,18 +16,24 @@ class Wrapper extends React.Component {
 		switch(routeName) {
 			case "storylark":
 				return {
-					description: "The best in digital indie comics",
-					titleSuffix: " | Storylark"
+					description: "The best in digital indie comics. Also cute birds. Hatched, By Implication.",
 					titlePrefix: "Storylark – Portfolio – "
 				};
-				break;
 			case "openrecon":
 				return {
-					description: "Tracking taxpayer money spent on post-disaster reconstruction in the Philippines",
-					titleSuffix: " | Open Reconstruction"
+					description: "Tracking taxpayer money spent on post-disaster reconstruction in the Philippines.",
 					titlePrefix: "Open Reconstruction – Portfolio – "
 				};
-				break;
+			case "about":
+				return {
+					description: "Learn how to stalk us. I mean, how to get in touch, where to find our office, and what we stand for.",
+					titlePrefix: "About – "
+				};
+			case "people":
+				return {
+					description: "Meet the faces behind our team. Or at least, really good drawings of them.",
+					titlePrefix: "People – "
+				};
 			default:
 				return {
 					description: "Award-winning independent software development + design firm from Manila, Philippines. Creators: Wildfire, Storylark, Sakay.ph, Open Reconstruction, and more.",
