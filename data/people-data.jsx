@@ -1,4 +1,4 @@
-export default [
+var data = [
 	{
 		nickname: "Levi",
 		name: "Levi Tan Ong",
@@ -84,3 +84,7 @@ export default [
 		roles: "Designer, New Girl"
 	}
 ];
+data.forEach(function(person) {
+	person.imageSrc = require('./people/'+person.nickname+'.png');
+});
+export default data;

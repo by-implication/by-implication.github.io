@@ -8,7 +8,7 @@ export default class PersonCard extends React.Component {
 	render() {
 		return (
 			<div className="PersonCard">
-				<img className="portrait" src={ `/data/people/${this.props.nickname}.png` } />
+				<img className="portrait" src={ this.props.imageSrc } />
 				<h4>
 					{
 						this.props.link
