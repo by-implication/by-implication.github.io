@@ -9,20 +9,20 @@ export default class About extends React.Component {
 		// replace content of example@email.com.
 		const email = "&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#098;&#121;&#105;&#109;&#112;&#108;&#105;&#099;&#097;&#116;&#105;&#111;&#110;&#046;&#099;&#111;&#109;";
 		React.findDOMNode(this.refs.email).innerHTML = email;
-		React.findDOMNode(this.refs.email).setAttribute("href", "mailto:contact@byimplication.com");
+		React.findDOMNode(this.refs.email).setAttribute("href", "mailto:" + React.findDOMNode(this.refs.email).innerHTML);
 	}
 	render() {
 		const location = {lat: 14.6108207, lng: 121.052544};
 		return (
 			<div id="About">
 				<div className="writeup">
-					<p>By Implication is an independent, award-winning software development firm based in Metro Manila, Philippines.</p>
+					<p>By Implication is an independent, award-winning software development and design firm in Metro Manila, Philippines.</p>
 					<p>We care about making the world a better place, helping people understand that world, and solving the challenging problems it has to offer.</p>
 				</div>
 				<ul className="contact-methods">
 					<li>
 						<span className="icon icon-email" />
-						<a ref="email" href="mailto:goToHellSpamBots@email.com">goToHellSpamBots@email.com</a>
+						<a ref="email" href="#">contact &#x40; this domain</a>
 					</li>
 					<li>
 						<span className="icon icon-map" />
