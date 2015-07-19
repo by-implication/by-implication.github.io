@@ -224,24 +224,11 @@ button {
 	margin-right: auto;
 	left: 0;
 	right: 0;
-	font-weight: 100;
 	text-align: center;
 	height: 100px;
 	width: 400px;
-	/*box-shadow: 0 2px 4px rgba(0,0,0,0.5);*/
 	margin: 0 auto;
 	padding: 0;
-	/*&:after {
-		content: "";
-		position: absolute;
-		bottom: -25px;
-		left: 125px;
-		width: 0;
-		height: 0;
-		border-top: 25px solid $dark;
-		border-left: 25px solid transparent;
-		border-right: 25px solid transparent;
-	}*/
 	p {
 		font-size: 14px;
 		padding: 0;
@@ -257,7 +244,6 @@ button {
 		color: white;
 		font-weight: 100;
 		padding: 13px 20px;
-		/*border-bottom: 1px solid black;*/
 		&:nth-child(1) {
 			background: $dark;
 		}
