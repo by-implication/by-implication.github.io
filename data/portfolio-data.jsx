@@ -5,6 +5,7 @@ export default {
 		name: "This Website",
 		id: "website",
 		url: "/",
+		writeup: require("./portfolio-casestudy/website/writeup.md"),
 		imageSrc: require("./portfolio/website.svg"),
 		caseStudy: require("./portfolio-casestudy/website/casestudy.md"),
 		resources: [resources.design, resources.dev],

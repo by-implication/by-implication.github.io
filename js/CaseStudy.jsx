@@ -22,7 +22,7 @@ export default class CaseStudy extends React.Component {
 			currentImageUrl: image
 		});
 	}
-	componentDidMount() {	
+	componentDidMount() {
 		const context = require.context("../data/portfolio-casestudy/", true, /\.*/);
 		const images = context
 			.keys()
@@ -37,15 +37,15 @@ export default class CaseStudy extends React.Component {
 		const defaultWriteup = (
 			<section>
 				<h2>{ data.name }</h2>
-				<p>We're currently writing up the writeup for this project. In the meantime, have a look at the screenshots below!</p>
+				<p>We're currently writing up the writeup for this project. In the meantime, have a look at these screenshots!</p>
 			</section>
 		)
 
 		const images = [data.imageSrc].concat(this.state.images).map((x, i) => (
-			<div 
-				key={"image" + i} 
-				className="image-tile" 
-				onClick={ this.toggleImageModal.bind(this, x) } 
+			<div
+				key={"image" + i}
+				className="image-tile"
+				onClick={ this.toggleImageModal.bind(this, x) }
 				style={ {backgroundImage: `url(${x})`} } />
 		));
 
@@ -53,7 +53,7 @@ export default class CaseStudy extends React.Component {
 			<div className="CaseStudy view">
 				<div className="content">
 					<article className="meta">
-						{ defaultWriteup }	
+							{ data.caseStudy ? <section dangerouslySetInnerHTML={  {__html: data.writeup } }/> : defaultWriteup }
 						<dl>
 							<dt>Resources</dt>
 							<dd>{ data.resources.join(", ") }</dd>
@@ -62,7 +62,7 @@ export default class CaseStudy extends React.Component {
 							</TextButton>
 						</dl>
 					</article>
-									
+
 					<section className="image-gallery">
 						{ this.state && images }
 					</section>
