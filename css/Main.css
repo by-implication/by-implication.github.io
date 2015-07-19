@@ -207,6 +207,12 @@ button {
 	}
 }
 
+.gm-style {
+	pointer-events: none;
+	/* this disables scrolling on the map.
+	make sure to reenable with javascript */
+}
+
 .directions {
 	position: absolute;
 	top: -22px;
