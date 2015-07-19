@@ -28,6 +28,8 @@ export default {
 		name: "Sakay.ph",
 		id: "sakay",
 		url: "http://sakay.ph/",
+		writeup: require("./portfolio-casestudy/sakay/writeup.md"),
+		caseStudy: require("./portfolio-casestudy/website/casestudy.md"),
 		imageSrc: require("./portfolio/sakayph.svg"),
 		color: "#2c6c47",
 		resources: [resources.design, resources.bizdev, resources.dev],
