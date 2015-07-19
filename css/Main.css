@@ -25,7 +25,7 @@ main {
 	padding-top: 64px;
 }
 
-.contact-methods {	
+.contact-methods {
 	list-style: none;
 	width: 560px;
 	padding: 16px;
@@ -73,6 +73,14 @@ footer {
 	color: white;
 }
 
+#hiring {
+	margin: 0 auto;
+	max-width: 560px;
+	div {
+		padding: 64px 32px;
+	}
+}
+
 button {
 	font-family: "Roboto";
 }
@@ -113,7 +121,7 @@ button {
 		margin-bottom: 4px;
 		cursor: pointer;
 		&:hover {
-			box-shadow: 0px 4px 0px black;		
+			box-shadow: 0px 4px 0px black;
 		}
 		&.active {
 			background-color: $contrast1;
