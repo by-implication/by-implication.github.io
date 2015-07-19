@@ -25,7 +25,7 @@ var data = [
 	{
 		nickname: "Wil",
 		name: "Wilhansen Li",
-		roles: "Developer, I Invented That",
+		roles: "Developer, “I Invented That”",
 		link: "http://wilhansen.li"
 	},
 	{
@@ -48,7 +48,7 @@ var data = [
 	{
 		nickname: "Mon",
 		name: "Monica Esquivel",
-		roles: "Artist, Designer, I Drew These Portraits",
+		roles: "Artist, Designer, “I Drew These Portraits”",
 	},
 	{
 		nickname: "Patsy",
@@ -58,7 +58,7 @@ var data = [
 	{
 		nickname: "Alvin",
 		name: "Alvin Dumalus",
-		roles: "Developer, I Beat Your High Score",
+		roles: "Developer, “I Beat Your High Score”",
 		link: "http://github.com/alvinfrancis"
 	},
 	{
