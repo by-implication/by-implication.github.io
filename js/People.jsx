@@ -17,6 +17,17 @@ export default class People extends React.Component {
 				<div className="card-container People">
 					{ personnel }
 				</div>
+				<section id="hiring">
+					<div>
+						<h3>Interested in joining us?</h3>
+						<p title="parang relationship lang. chos!">
+							We’re not looking for anyone right now, but you’re welcome to change our minds.
+						</p>
+						<p>
+							If you feel you have what it takes, visit <a href="http://work.byimplication.com">work.byimplication.com</a> for employment or internship opportunities. We’d love to hear from you!
+						</p>
+					</div>
+				</section>
 				<section id="Quote">
 					<blockquote>
 						Perfection is finally attained not when there is no longer anything to add, but when there is no longer anything to take away.
