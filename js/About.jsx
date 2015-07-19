@@ -17,7 +17,7 @@ export default class About extends React.Component {
 			<div id="About">
 				<div className="writeup">
 					<p>By Implication is an independent, award-winning software development and design firm in Metro Manila, Philippines.</p>
-					<p>We care about making the world a better place, helping people understand that world, and solving the challenging problems it has to offer.</p>
+					<p>We care about making the world a better place, helping people understand that world, and solving the challenging problems that world has to offer.</p>
 				</div>
 				<ul className="contact-methods">
 					<li>
