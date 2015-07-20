@@ -11,7 +11,7 @@ var ga = require('react-ga');
 
 const Routes = (
 	<Route path="/" handler={ Wrapper }>
-		<Route name="index" path="/" handler={ Index }>		
+		<Route name="index" path="/" handler={ Index }>
 			<Route name="people" path="/people/" handler={ People } />
 			<Route name="about" path="/about/" handler={ About } />
 			<DefaultRoute name="portfolio" handler={ Portfolio } />
@@ -22,7 +22,9 @@ const Routes = (
 )
 
 if (typeof document !== "undefined") {
+	ga.initialize('UA-17669165-1');
 	Router.run(Routes, Router.HistoryLocation, Handler => {
+		ga.pageview(Router.HistoryLocation.getCurrentPath());
 		React.render(<Handler />, document);
 	})
 }
