@@ -53,7 +53,7 @@ export default class CaseStudy extends React.Component {
 			<div className="CaseStudy view">
 				<div className="content">
 					<article className="meta">
-							{ data.caseStudy ? <section dangerouslySetInnerHTML={  {__html: data.writeup } }/> : defaultWriteup }
+							{ data.writeup ? <section dangerouslySetInnerHTML={  {__html: data.writeup } }/> : defaultWriteup }
 						<dl>
 							<dt>Resources</dt>
 							<dd>{ data.resources.join(", ") }</dd>
