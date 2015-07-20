@@ -15,7 +15,7 @@ export default class ProjectCard extends React.Component {
 				}
 				<div className="overlay">
 					<div className="more" >
-						<h3>See More</h3>
+						<h3>{ this.props.name }</h3>
 					</div>
 				</div>
 

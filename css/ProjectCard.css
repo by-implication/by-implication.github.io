@@ -12,7 +12,7 @@
 		opacity: 0.2;
 		transform: scale(0.8);
 	}
-	
+
 	@media (min-width: 769px) {
 		width: 25%;
 		height: 24vw;
@@ -47,10 +47,6 @@
 		transition-duration: 0.3s;
 		transform: scale(0);
 		align-items: center;
-		height: 50%;
-		width: 50%;
-		border-radius: 50%;
-		background-color: $main;
 		color: white;
 		text-decoration: none;
 		box-sizing: border-box;
@@ -86,7 +82,7 @@
 		padding: 16px;
 		box-sizing: border-box;
 	}
-	
+
 	&:hover {
 		.more {
 			transform: scale(1);
