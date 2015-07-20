@@ -7,6 +7,8 @@ import About from "./About";
 import Wrapper from "./Wrapper";
 import CaseStudy from "./CaseStudy";
 
+var ga = require('react-ga');
+
 const Routes = (
 	<Route path="/" handler={ Wrapper }>
 		<Route name="index" path="/" handler={ Index }>		
