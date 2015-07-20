@@ -16,43 +16,54 @@ class Wrapper extends React.Component {
 		switch(routeName) {
 			case "storylark":
 				return {
-					description: "The best in digital indie comics",
-					titleSuffix: " | Storylark"
+					description: "The best in digital indie comics. Also cute birds. Hatched, By Implication.",
+					titlePrefix: "Storylark – Portfolio – "
 				};
-				break;
 			case "openrecon":
 				return {
-					description: "Tracking taxpayer money spent on post-disaster reconstruction in the Philippines",
-					titleSuffix: " | Open Reconstruction"
+					description: "Tracking taxpayer money spent on post-disaster reconstruction in the Philippines.",
+					titlePrefix: "Open Reconstruction – Portfolio – "
 				};
-				break;
+			case "sakay":
+				return {
+					description: "Commuting made easy: Transit directions for jeepneys, buses, and trains in Metro Manila. Top 10 in Navigation on App Store + Google Play.",
+					titlePrefix: "Sakay.ph – Portfolio – "
+				};
+			case "about":
+				return {
+					description: "Learn how to stalk us. I mean, how to get in touch, where to find our office, who we’ve worked with, and what we stand for.",
+					titlePrefix: "About – "
+				};
+			case "people":
+				return {
+					description: "Meet the beautiful faces behind our talented team. Or at least, some really good drawings of them.",
+					titlePrefix: "People – "
+				};
 			default:
 				return {
 					description: "Award-winning independent software development + design firm from Manila, Philippines. Creators: Wildfire, Storylark, Sakay.ph, Open Reconstruction, and more.",
-					titleSuffix: ""
+					titlePrefix: ""
 				};
 		}
 	}
 	render() {
-		const routeName = 
-			this.context.router.getCurrentParams().id || 
+		const routeName =
+			this.context.router.getCurrentParams().id ||
 			_.last(this.context.router.getCurrentRoutes()).name;
 
 		const meta = this.meta(routeName);
-		
-		const title = "By Implication" + meta.titleSuffix;
+
+		const title =  meta.titlePrefix + "By Implication";
 
 		return (
 			<html>
 				<head>
 					<title>{ title }</title>
 					<meta charSet="utf-8" />
-					{ /* TODO: change dynamically */ }
 					<meta name="viewport" content="width=device-width, initial-scale=1" />
 					<meta name="copyright" content="Copyright, By Implication" />
 					<meta name="author" content="By Implication" />
 					<meta name="description" content={ meta.description } />
-					{ /* TODO: change per page */ }
 					<meta name="city" content="Manila, Philippines" />
 					<meta name="geo.placename" content="Manila, Philippines" />
 					<meta name="geo.region" content="PH-00" />

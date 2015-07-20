@@ -10,6 +10,16 @@ export default class About extends React.Component {
 		const email = "&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#098;&#121;&#105;&#109;&#112;&#108;&#105;&#099;&#097;&#116;&#105;&#111;&#110;&#046;&#099;&#111;&#109;";
 		React.findDOMNode(this.refs.email).innerHTML = email;
 		React.findDOMNode(this.refs.email).setAttribute("href", "mailto:" + React.findDOMNode(this.refs.email).innerHTML);
+
+		// enable scroll (and other pointer-related) events on the map once you click on it.
+
+		document.getElementById("map-container").addEventListener("click",function (){
+			_.map(document.querySelectorAll(".gm-style"), function(el){
+				el.style.pointerEvents = "auto";
+				document.getElementById("map-container").style.cursor = "auto";
+			})
+		},false);
+
 	}
 	render() {
 		const location = {lat: 14.6108207, lng: 121.052544};
@@ -37,7 +47,7 @@ export default class About extends React.Component {
 						<a target="_blank" href="https://www.facebook.com/byimplication">facebook/byimplication</a>
 					</li>
 				</ul>
-				<div style={{height: 340, width: "100%", backgroundColor: "#eee", position: "relative", marginTop: 50}}>
+				<div id="map-container" style={{height: 340, width: "100%", backgroundColor: "#eee", position: "relative", marginTop: 50}}>
 					<GoogleMaps
 						ref="map"
 						containerProps={{style: {height: "100%", width: "100%"}}}
