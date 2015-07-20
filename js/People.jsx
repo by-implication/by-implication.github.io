@@ -12,12 +12,14 @@ export default class People extends React.Component {
 		return (
 			<div id="People">
 				<div className="writeup">
-					<p>Our people are some of the smartest, most talented, most valuable, and most self-aggrandizing people we know.</p>
 					<p>
-						Individually, our people feature in newspapers and magazines, speak in conferences local and abroad, teach at universities, win awards, and organize movements.
+						Our people are some of the smartest, most talented, most valuable, and most unbearably self-hyping people we know.
 					</p>
 					<p>
-						Together, we play games, make bad jokes, and goof off a lot. Along the way, we manage to build beautiful and efficient things, and have some fun too.
+						Individually, they feature in the news, speak at conferences, teach at universities, win awards, and organize movements.
+					</p>
+					<p>
+						Together, we play video games, make bad jokes, and goof off a lot. Along the way, we somehow manage to build things that are beautiful, efficient, and sometimes, fun.
 					</p>
 				</div>
 				<div className="card-container People">
