@@ -1,4 +1,4 @@
-import CaseStudyStyles from "../css/CaseStudy.css";
+import ProjectStyles from "../css/Project.css";
 
 import React from 'react';
 import classnames from "classnames";
@@ -7,7 +7,7 @@ import Modal from "./Modal";
 import Toolbar from "./Toolbar";
 import {TextButton, IconButton} from "./Buttons";
 
-export default class CaseStudy extends React.Component {
+export default class Project extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -50,7 +50,7 @@ export default class CaseStudy extends React.Component {
 		));
 
 		return (
-			<div className="CaseStudy view">
+			<div className="Project view">
 				<div className="content">
 					<article className="meta">
 							{ data.writeup ? <section dangerouslySetInnerHTML={  {__html: data.writeup } }/> : defaultWriteup }

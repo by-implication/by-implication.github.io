@@ -8,7 +8,7 @@ import {Link} from "react-router";
 export default class ProjectCard extends React.Component {
 	render() {
 		return (
-			<Link className={ classnames("ProjectCard", this.props.className) } to="caseStudy" params={_.pick(this.props, "id")}>
+			<Link className={ classnames("ProjectCard", this.props.className) } to="project" params={_.pick(this.props, "id")}>
 				{
 					this.props.imageSrc && (
 						<div className="image" style={ {backgroundImage: `url(${this.props.imageSrc})`} } />)
