@@ -23,7 +23,7 @@ export default class CaseStudy extends React.Component {
 		});
 	}
 	componentDidMount() {
-		const context = require.context("../data/portfolio-casestudy/", true, /\.*/);
+		const context = require.context("../data/portfolio/", true, /\.*/);
 		const images = context
 			.keys()
 			.filter(x => RegExp(this.props.params.id + "/images").test(x))
