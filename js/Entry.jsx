@@ -5,7 +5,7 @@ import Portfolio from "./Portfolio";
 import People from "./People";
 import About from "./About";
 import Wrapper from "./Wrapper";
-import CaseStudy from "./CaseStudy";
+import Project from "./Project";
 
 var ga = require('react-ga');
 
@@ -14,9 +14,9 @@ const Routes = (
 		<Route name="index" path="/" handler={ Index }>
 			<Route name="people" path="/people/" handler={ People } />
 			<Route name="about" path="/about/" handler={ About } />
-			<DefaultRoute name="portfolio" handler={ Portfolio } />
+			<DefaultRoute name="portfolio" path="/" handler={ Portfolio } />
 		</Route>
-		<Route name="caseStudy" path="portfolio/:id/" handler={ CaseStudy } />
+		<Route name="project" path="portfolio/:id/" handler={ Project } />
 		{/*<DefaultRoute name="index" handler={ Index } />*/}
 	</Route>
 )
