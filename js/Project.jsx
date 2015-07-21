@@ -30,6 +30,17 @@ export default class Project extends React.Component {
 			.filter(x => RegExp(this.props.params.id + "/images").test(x))
 			.map(x => context(x));
 		this.setState({images: images});
+
+		if (typeof window !== "undefined" && typeof document !== "undefined") {
+			setTimeout(x => {
+				const grid = React.findDOMNode(this.refs.imageGallery);
+				const msnry = new Masonry(grid, {
+					itemSelector: ".image-tile",
+					gutter: 8,
+					percentPosition: true,
+				});
+			}, 200)
+		}
 	}
 
 	render() {
@@ -41,13 +52,14 @@ export default class Project extends React.Component {
 				<p>We're currently writing up the writeup for this project. In the meantime, have a look at these screenshots!</p>
 			</section>
 		)
-
+		// style={ {backgroundImage: `url(${x})`} }
 		const images = [data.imageSrc].concat(this.state.images).map((x, i) => (
 			<div
 				key={"image" + i}
 				className="image-tile"
-				onClick={ this.toggleImageModal.bind(this, x) }
-				style={ {backgroundImage: `url(${x})`} } />
+				onClick={ this.toggleImageModal.bind(this, x) }>
+				<img src={ x } />
+			</div>
 		));
 
 		return (
@@ -64,7 +76,7 @@ export default class Project extends React.Component {
 						</dl>
 					</article>
 
-					<section className="image-gallery">
+					<section ref="imageGallery" className="image-gallery">
 						{ this.state && images }
 					</section>
 				</div>
