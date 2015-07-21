@@ -14,10 +14,11 @@ const Routes = (
 		<Route name="index" path="/" handler={ Index }>
 			<Route name="people" path="/people/" handler={ People } />
 			<Route name="about" path="/about/" handler={ About } />
-			<DefaultRoute name="portfolio" path="/" handler={ Portfolio } />
+			<Route name="portfolio" path="/" handler={ Portfolio } />
+			<Route path="/portfolio/" handler={ Portfolio } />
+			<DefaultRoute handler={ Portfolio } />
 		</Route>
 		<Route name="project" path="portfolio/:id/" handler={ Project } />
-		{/*<DefaultRoute name="index" handler={ Index } />*/}
 	</Route>
 )
 

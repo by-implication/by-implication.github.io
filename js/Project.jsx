@@ -5,6 +5,7 @@ import classnames from "classnames";
 import portfolioData from "../data/portfolio-data";
 import Modal from "./Modal";
 import Toolbar from "./Toolbar";
+
 import {TextButton, IconButton} from "./Buttons";
 
 export default class Project extends React.Component {
