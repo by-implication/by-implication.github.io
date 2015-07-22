@@ -47,6 +47,8 @@ export default {
 	wildfire: {
 		name: "Wildfire",
 		id: "wildfire",
+		url: "http://wildfire.byimplication.com/",
+		writeup: require("./portfolio/wildfire/writeup.md"),
 		imageSrc: require("./portfolio/wildfire/thumb.svg"),
 		color: "#d0011b",
 		resources: [resources.design, resources.dev],
