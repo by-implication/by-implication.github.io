@@ -54,9 +54,10 @@ export default {
 		externalInvolvement: ["internal"]
 	},
 	sari: {
-		name: "Sari",
+		name: "Sari Software",
 		id: "sari",
 		url: "http://sari.ph",
+		writeup: require("./portfolio/sari/writeup.md"),
 		imageSrc: require("./portfolio/sari/thumb.svg"),
 		color: "#b3485d",
 		resources: [resources.design, resources.bizdev, resources.dev],
