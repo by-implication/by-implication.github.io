@@ -11,12 +11,20 @@ import {TextButton, IconButton} from "./Buttons";
 export default class Project extends React.Component {
 	constructor(props) {
 		super(props);
+
+		const context = require.context("../data/portfolio/", true, /\.*/);
+		const images = context
+			.keys()
+			.filter(x => RegExp(this.props.params.id + "/images").test(x))
+			.map(x => context(x));
+
 		this.state = {
-			images: [],
+			images: images,
 			imageModalOpened: false,
 			currentImageUrl: null
 		}
 		this.toggleImageModal = this.toggleImageModal.bind(this);
+		this.componentDidMount = this.componentDidMount.bind(this);
 	}
 	toggleImageModal(image = null) {
 		this.setState({
@@ -24,12 +32,6 @@ export default class Project extends React.Component {
 		});
 	}
 	componentDidMount() {
-		const context = require.context("../data/portfolio/", true, /\.*/);
-		const images = context
-			.keys()
-			.filter(x => RegExp(this.props.params.id + "/images").test(x))
-			.map(x => context(x));
-		this.setState({images: images});
 
 		if (typeof window !== "undefined" && typeof document !== "undefined") {
 			setTimeout(x => {
@@ -39,7 +41,7 @@ export default class Project extends React.Component {
 					gutter: 8,
 					percentPosition: true,
 				});
-			}, 200)
+			}, 100);
 		}
 	}
 
