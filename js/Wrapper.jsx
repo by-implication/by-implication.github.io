@@ -6,7 +6,6 @@ import _ from "lodash";
 import Router, {RouteHandler} from "react-router";
 import Toolbar from "./Toolbar";
 const ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
-// import Prism from "./prism";
 
 class Wrapper extends React.Component {
 	constructor(props) {
@@ -70,7 +69,6 @@ class Wrapper extends React.Component {
 					<link href="//fonts.googleapis.com/css?family=Roboto:300,700,400" rel="stylesheet" type="text/css" />
 					<link href="/bundle.css" rel='stylesheet' type='text/css' />
 					<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
-					<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.1/masonry.pkgd.min.js"></script>
 				</head>
 				<body>
 					<Toolbar />
