@@ -19,6 +19,7 @@
   "dependencies": {
     "chroma-js": "^1.0.1",
     "classnames": "^2.1.2",
+    "fastclick": "^1.0.6",
     "lodash": "^3.9.3",
     "masonry-layout": "^3.3.1",
     "node-bourbon": "^4.2.3",

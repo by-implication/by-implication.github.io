@@ -7,4 +7,4 @@ Originally built by [Thomas](http://pleasantprogrammer.com) and [Phi](http://twi
 
 In February 2015, we relaunched with new branding, a new interface, and mobile apps.
 
-The app and website are very well-received, having served over 500,000 users so far, and have been featured on the news several times.
+The app and website are very well-received; we've served over 500,000 users so far, and have been featured in the news several times.

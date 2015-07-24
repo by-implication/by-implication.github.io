@@ -47,6 +47,8 @@ export default {
 	wildfire: {
 		name: "Wildfire",
 		id: "wildfire",
+		url: "http://wildfire.byimplication.com/",
+		writeup: require("./portfolio/wildfire/writeup.md"),
 		imageSrc: require("./portfolio/wildfire/thumb.svg"),
 		color: "#d0011b",
 		resources: [resources.design, resources.dev],
@@ -54,9 +56,10 @@ export default {
 		externalInvolvement: ["internal"]
 	},
 	sari: {
-		name: "Sari",
+		name: "Sari Software",
 		id: "sari",
 		url: "http://sari.ph",
+		writeup: require("./portfolio/sari/writeup.md"),
 		imageSrc: require("./portfolio/sari/thumb.svg"),
 		color: "#b3485d",
 		resources: [resources.design, resources.bizdev, resources.dev],
