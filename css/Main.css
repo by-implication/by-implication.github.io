@@ -260,21 +260,25 @@ button {
 }
 
 .ViewTransition-enter {
-	transition-property: opacity;
-	transition-duration: 0.3s;
+	transform: translateY(12px);
   opacity: 0.01;
 }
 
 .ViewTransition-enter.ViewTransition-enter-active {
+	transition-property: all;
+	transition-duration: 0.4s;
   opacity: 1;
+	transform: translateY(0px)
 }
 
 .ViewTransition-leave {
-	transition-property: opacity;
-	transition-duration: 0.3s;
+	transform: translateY(0px);
   opacity: 1;
 }
 
 .ViewTransition-leave.ViewTransition-leave-active {
+	transition-property: all;
+	transition-duration: 0.4s;
   opacity: 0.01;
+	transform: translateY(12px)
 }
