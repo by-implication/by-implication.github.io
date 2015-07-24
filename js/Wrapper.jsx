@@ -86,7 +86,7 @@ class Wrapper extends React.Component {
 					<footer>
 						&copy; 2015 By Implication, Inc.
 					</footer>
-					<script src="/bundle.js" />
+					<script async src="/bundle.js" />
 				</body>
 			</html>
 
