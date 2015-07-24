@@ -9,7 +9,9 @@ export default {
 		imageSrc: require("./portfolio/website/thumb.svg"),
 		resources: [resources.design, resources.dev],
 		involvement: ["official"],
-		externalInvolvement: ["internal"]
+		externalInvolvement: ["internal"],
+		from: "mid 2015",
+		to: "present"
 	},
 	storylark: {
 		name: "Storylark",
@@ -20,7 +22,9 @@ export default {
 		color: "#7eb8bf",
 		resources: [resources.design, resources.bizdev, resources.dev],
 		involvement: ["official"],
-		externalInvolvement: ["internal"]
+		externalInvolvement: ["internal"],
+		from: "2011",
+		to: "mid 2015"
 	},
 	sakay: {
 		name: "Sakay.ph",
@@ -31,7 +35,9 @@ export default {
 		color: "#2c6c47",
 		resources: [resources.design, resources.bizdev, resources.dev],
 		involvement: ["official"],
-		externalInvolvement: ["internal"]
+		externalInvolvement: ["internal"],
+		from: "late 2013",
+		to: "present"
 	},
 	openrecon: {
 		name: "Open Reconstruction",
@@ -42,7 +48,9 @@ export default {
 		color: "#236396",
 		resources: [resources.design, resources.bizdev, resources.dev],
 		involvement: ["official"],
-		externalInvolvement: ["client"]
+		externalInvolvement: ["client"],
+		from: "early 2014",
+		to: "late-2014"
 	},
 	wildfire: {
 		name: "Wildfire",
@@ -53,7 +61,9 @@ export default {
 		color: "#d0011b",
 		resources: [resources.design, resources.dev],
 		involvement: ["official"],
-		externalInvolvement: ["internal"]
+		externalInvolvement: ["internal"],
+		from: "early 2010",
+		to: "late 2010"
 	},
 	sari: {
 		name: "Sari Software",
@@ -64,7 +74,9 @@ export default {
 		color: "#b3485d",
 		resources: [resources.design, resources.bizdev, resources.dev],
 		involvement: ["official"],
-		externalInvolvement: ["client"]
+		externalInvolvement: ["client"],
+		from: "late 2011",
+		to: "present"
 	},
 	plotypus: {
 		name: "Plotypus",
@@ -74,7 +86,9 @@ export default {
 		color: "#2c142b",
 		resources: [resources.design, resources.dev],
 		involvement: ["unofficial"],
-		externalInvolvement: ["internal"]
+		externalInvolvement: ["internal"],
+		from: "mid 2015",
+		to: "present"
 	},
 	popeye: {
 		name: "Popeye",
@@ -84,7 +98,9 @@ export default {
 		color: "#fcbc4a",
 		resources: [resources.design, resources.dev],
 		involvement: ["unofficial"],
-		externalInvolvement: ["internal"]
+		externalInvolvement: ["internal"],
+		from: "mid 2015",
+		to: "present"
 	},
 	torch: {
 		name: "Torch",
@@ -93,6 +109,8 @@ export default {
 		color: "#82174b",
 		resources: [resources.design, resources.dev],
 		involvement: ["unofficial"],
-		externalInvolvement: ["internal"]
+		externalInvolvement: ["internal"],
+		from: "early 2015",
+		to: "present"
 	}
 };

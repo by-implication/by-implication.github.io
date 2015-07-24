@@ -10,11 +10,6 @@ const ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
 class Wrapper extends React.Component {
 	constructor(props) {
 		super(props);
-		// if (typeof document !== "undefined") {
-		// 	const fastclick = require("fastclick");
-		// 	console.log(document.body);
-		// 	fastclick(document.body);
-		// }
 	}
 	componentDidMount() {
 		if (typeof window !== "undefined") {

@@ -58,6 +58,8 @@ export default class Project extends React.Component {
 						<dl>
 							<dt>Resources</dt>
 							<dd>{ data.resources.join(", ") }</dd>
+							<dt>Timeframe</dt>
+							<dd>From { data.from } to { data.to }</dd>
 							<TextButton component="a" href={ data.url } target="_blank" className="primary">
 								Visit
 							</TextButton>
