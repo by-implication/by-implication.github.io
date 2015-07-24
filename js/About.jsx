@@ -1,27 +1,36 @@
 import React from 'react';
+import classnames from "classnames";
 import {GoogleMaps, Marker} from "react-google-maps";
 
 export default class About extends React.Component {
 	constructor(props) {
 		super(props);
-		this.mapClick = this.mapClick.bind(this);
+		this.state = {
+			mapActive: false
+		}
+		this.mapContainerClick = this.mapContainerClick.bind(this);
 	}
 	componentDidMount() {
 		// replace content of example@email.com.
 		const email = "&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#098;&#121;&#105;&#109;&#112;&#108;&#105;&#099;&#097;&#116;&#105;&#111;&#110;&#046;&#099;&#111;&#109;";
 		React.findDOMNode(this.refs.email).innerHTML = email;
-		React.findDOMNode(this.refs.email).setAttribute("href", "mailto:" + React.findDOMNode(this.refs.email).innerHTML);
+		React.findDOMNode(this.refs.email).setAttribute("href", "mailto:" + React.findDOMNode(this.refs.email).innerHTML);		
 
-		// enable scroll (and other pointer-related) events on the map once you click on it.
-
+		if (typeof document !== "undefined") {
+			document.addEventListener("click", (x) => {
+				if (this.state.mapActive) {
+					this.setState({mapActive: false});
+				}
+			});
+		}
 	}
-	mapContainerClick() {
-		const mapContainerNode = React.findDOMNode(this.refs.mapContainer);
-		
-		_.map(document.querySelectorAll(".gm-style"), (el) => {
-			el.style.pointerEvents = "auto";
-			mapContainerNode.style.cursor = "auto";
-		});
+	mapContainerClick(event) {
+		// enable scroll (and other pointer-related) events on the map once you click on it.
+		event.stopPropagation();
+		event.nativeEvent.stopImmediatePropagation();
+		if (!this.state.mapActive) {
+			this.setState({mapActive: true});
+		}
 	}
 	render() {
 		const location = {lat: 14.6108207, lng: 121.052544};
@@ -49,7 +58,12 @@ export default class About extends React.Component {
 						<a target="_blank" href="https://www.facebook.com/byimplication">facebook/byimplication</a>
 					</li>
 				</ul>
-				<div ref="mapContainer" style={{height: 340, width: "100%", backgroundColor: "#eee", position: "relative", marginTop: 50}} onClick={ this.mapContainerClick }>
+				<div 
+					id="map-container" 
+					ref="mapContainer" 
+					style={{height: 340, width: "100%", backgroundColor: "#eee", position: "relative", marginTop: 50}} 
+					onClick={ this.mapContainerClick }
+					className={ classnames({active: this.state.mapActive}) }>
 					<GoogleMaps
 						ref="map"
 						containerProps={{style: {height: "100%", width: "100%"}}}

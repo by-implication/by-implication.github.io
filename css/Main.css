@@ -207,14 +207,17 @@ button {
 	}
 }
 
-.gm-style {
-	pointer-events: none;
-	/* this disables scrolling on the map.
-	make sure to reenable with javascript */
-}
-
 #map-container {
 	cursor: pointer;
+	.gm-style {
+		pointer-events: none;
+	}
+	&.active {
+		cursor: auto;
+		.gm-style {
+			pointer-events: auto;
+		}
+	}
 }
 
 .directions {
