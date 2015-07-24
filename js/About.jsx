@@ -9,6 +9,7 @@ export default class About extends React.Component {
 			mapActive: false
 		}
 		this.mapContainerClick = this.mapContainerClick.bind(this);
+		// this.mapContainerMouseOut = this.mapContainerMouseOut.bind(this);
 	}
 	componentDidMount() {
 		// replace content of example@email.com.
@@ -32,6 +33,15 @@ export default class About extends React.Component {
 			this.setState({mapActive: true});
 		}
 	}
+
+	// can't make this work at the moment because mouseout triggers presumably because of pointer-events: none.
+	//
+	// mapContainerMouseOut(event) {
+	// 	console.log("wat");
+	// 	// if (this.state.mapActive) {
+	// 	// 	this.setState({mapActive: false});
+	// 	// }
+	// }
 	render() {
 		const location = {lat: 14.6108207, lng: 121.052544};
 		return (
