@@ -256,6 +256,12 @@ button {
 	}
 }
 
+/* preloader */
+body:after {
+  content: url(../data/people/Albert.png) url(../data/people/Alvin.png) url(../data/people/Inna.png) url(../data/people/Jim.png) url(../data/people/Kenneth.png) url(../data/portfolio/storylark/thumb.png);
+  display: none;
+}
+
 @media (max-width: 560px) {
 	.writeup, .contact-methods, #Quote blockquote {
 		width: 100%;
