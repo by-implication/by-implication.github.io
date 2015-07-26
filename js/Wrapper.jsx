@@ -74,7 +74,6 @@ class Wrapper extends React.Component {
 					<meta name="city" content="Manila, Philippines" />
 					<meta name="geo.placename" content="Manila, Philippines" />
 					<meta name="geo.region" content="PH-00" />
-					<link href="//fonts.googleapis.com/css?family=Roboto:300,700,400" rel="stylesheet" type="text/css" />
 					<link href="/bundle.css" rel='stylesheet' type='text/css' />
 				</head>
 				<body>
@@ -85,6 +84,7 @@ class Wrapper extends React.Component {
 					<footer>
 						&copy; 2015 By Implication, Inc.
 					</footer>
+					<link rel="stylesheet" property="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,700,400" />
 					<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
 					<script src="/bundle.js" />
 				</body>
