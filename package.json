@@ -53,5 +53,8 @@
     "url-loader": "^0.5.6",
     "webpack": "^1.9.12",
     "webpack-dev-server": "^1.9.0"
+  },
+  "jshintConfig": {
+    "esnext":      true
   }
 }
