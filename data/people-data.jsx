@@ -73,11 +73,11 @@ var data = [
 		roles: "Developer, Infra, The Security Specialist",
 		link: "https://github.com/trigger-happy"
 	},
-	{
-		nickname: "Fordz",
-		name: "Daniel Fordan",
-		roles: "Developer, Soon-to-be Lawyer"
-	},
+	// {
+	// 	nickname: "Fordz",
+	// 	name: "Daniel Fordan",
+	// 	roles: "Developer, Soon-to-be Lawyer"
+	// },
 	{
 		nickname: "Inna",
 		name: "Inna Tan",
