@@ -2,17 +2,21 @@ import PersonCardStyle from "../css/PersonCard.css";
 import React from 'react';
 import classnames from "classnames";
 
-
 export default class PersonCard extends React.Component {
 	constructor(props) {
 		super(props);
 	}
 
 	render() {
-		var personContent;
+		const badge = (
+			<figure className="founder-badge">
+				<span>★</span><span>Founder</span>
+			</figure>
+		)
 		const cardContent = (
 			<div className="cardContent">
-				<img className="portrait" src={ this.props.imageSrc } alt={ "A nice photo of " + this.props.nickname + "." } title={ "A nice photo of " + this.props.nickname + "." } />
+				<img className={ classnames("portrait", {"founder": this.props.founder} ) } src={ this.props.imageSrc } alt={ "A nice photo of " + this.props.nickname + "." } title={ "A nice photo of " + this.props.nickname + "." } />
+				{ this.props.founder && badge }
 				<h4>
 					<span className={ classnames({"person-link": this.props.link}) }>
 					{ this.props.name }

@@ -3,30 +3,35 @@ var data = [
 		nickname: "Levi",
 		name: "Levi Tan Ong",
 		roles: "Designer, Developer, Token Bald Guy",
-		link: "http://github.com/levitanong"
+		link: "http://github.com/levitanong",
+		founder: true
 	},
 	{
 		nickname: "Phi",
 		name: "Philip Cheang",
-		roles: "Designer, Developer, Pixel Nudger",
+		roles: "Designer, Developer, Obsessive Pixel Nudger",
 		link: "http://phi.ph",
+		founder: true
 	},
 	{
 		nickname: "Rodz",
 		name: "Rodrick Tan",
 		roles: "Designer, Business Analyst, Money Counter",
+		founder: true
 	},
 	{
 		nickname: "Kenneth",
 		name: "Kenneth Yu",
 		roles: "Business Analyst, Strategy and Tactics",
 		link: "http://twitter.com/kennethgyu",
+		founder: true
 	},
 	{
 		nickname: "Wil",
 		name: "Wilhansen Li",
 		roles: "Developer, “I Invented That”",
-		link: "http://wilhansen.li"
+		link: "http://wilhansen.li",
+		founder: true
 	},
 	{
 		nickname: "Pepe",
