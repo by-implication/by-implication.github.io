@@ -14,7 +14,7 @@ export default class PersonCard extends React.Component {
 			</figure>
 		)
 		const cardContent = (
-			<div className="cardContent">
+			<div className="cardContent" key={ this.props.nickname }>
 				<img className={ classnames("portrait", {"founder": this.props.founder} ) } src={ this.props.imageSrc } alt={ "A nice photo of " + this.props.nickname + "." } title={ "A nice photo of " + this.props.nickname + "." } />
 				{ this.props.founder && badge }
 				<h4>
