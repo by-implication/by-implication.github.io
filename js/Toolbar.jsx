@@ -30,16 +30,19 @@ export default class Toolbar extends React.Component {
 	}
 	render() {
 		return (
-			<header id="main-toolbar" className={ classnames("Toolbar", {scrolled: this.state.scrollTop >= 8}) }>
-				<TextButton component={ Link } to="about">
-					About
-				</TextButton>
-				<IconButton component={ Link } id="logobutton" to="portfolio">
-					<span id="logo" className="icon-bi-logo" />
-				</IconButton>
-				<TextButton component={ Link } to="people">
-					People
-				</TextButton>
+			<header>
+				<nav id="main-toolbar" className={ classnames("Toolbar", {scrolled: this.state.scrollTop >= 8}) }>
+					<TextButton component={ Link } to="about">
+						About
+					</TextButton>
+					<IconButton component={ Link } id="logobutton" to="portfolio">
+						<span id="logo" className="icon-bi-logo" />
+						<span id="logo-seo">Home and Portfolio</span>
+					</IconButton>
+					<TextButton component={ Link } to="people">
+						People
+					</TextButton>
+				</nav>
 			</header>
 		)
 	}

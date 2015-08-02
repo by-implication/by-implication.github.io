@@ -60,10 +60,10 @@ export default class Project extends React.Component {
 							<dd>{ data.resources.join(", ") }</dd>
 							<dt>Timeframe</dt>
 							<dd>From { data.from } to { data.to }</dd>
-							<TextButton component="a" href={ data.url } target="_blank" className="primary">
-								Visit
-							</TextButton>
 						</dl>
+						<TextButton component="a" href={ data.url } target="_blank" className="primary">
+							Visit
+						</TextButton>
 					</article>
 
 					<section className="image-gallery">

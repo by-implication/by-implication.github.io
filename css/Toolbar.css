@@ -31,4 +31,10 @@
 		font-weight: 100;
 		margin: 0px 16px;
 	}
+	#logo-seo {
+		text-indent: -9999px;
+		direction: ltr;
+		display: inline-block;
+		position: absolute;
+	}
 }
