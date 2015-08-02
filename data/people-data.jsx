@@ -86,7 +86,8 @@ var data = [
 	{
 		nickname: "Inna",
 		name: "Inna Tan",
-		roles: "Designer, New Girl"
+		roles: "Designer, New Girl",
+		link: "http://innatan.com"
 	}
 ];
 data.forEach(function(person) {
