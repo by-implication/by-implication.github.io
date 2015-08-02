@@ -32,6 +32,8 @@
 		margin: 0px 16px;
 	}
 	#logo-seo {
+		width: 1px;
+		overflow: hidden;
 		text-indent: -9999px;
 		direction: ltr;
 		display: inline-block;
