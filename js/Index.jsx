@@ -12,7 +12,7 @@ export default class Index extends React.Component {
 		return (
 			<div className="view" id="Index">
 				<div id="hero">
-					<h1>We are By Implication.</h1>
+					<h1>We are <em>By Implication.</em></h1>
 				</div>
 				<ReactCSSTransitionGroup component="div" transitionName="ViewTransition">
 					<RouteHandler key={ this.context.router.getCurrentPath() }/>
