@@ -36,6 +36,11 @@ class Wrapper extends React.Component {
 					description: "Commuting made easy: Transit directions for jeepneys, buses, and trains in Metro Manila. Top 10 in Navigation on App Store + Google Play.",
 					titlePrefix: "Sakay.ph – Portfolio – "
 				};
+			case "sari":
+				return {
+					description: "Sari Software is building apps for the bottom of the pyramid. We are providing a solid foundation for their design and technology.",
+					titlePrefix: "Sari Software – Porfolio – "
+				};
 			case "about":
 				return {
 					description: "Learn how to stalk us. I mean, how to get in touch, where to find our office, who we’ve worked with, and what we stand for.",
