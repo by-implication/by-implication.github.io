@@ -38,9 +38,6 @@
 		background-position: center;
 		overflow: hidden;
 	}
-	.info {
-		padding: 16px;
-	}
 	.more {
 		display: flex;
 		transition-property: transform, opacity;
@@ -51,6 +48,9 @@
 		text-decoration: none;
 		box-sizing: border-box;
 		padding: 8px;
+		@media (max-width: 340px) {
+			padding: 0;
+		}
 		h3 {
 			width: 100%;
 			text-align: center;
@@ -80,6 +80,9 @@
 		width: 100%;
 		color: white;
 		padding: 16px;
+		@media (max-width: 340px) {
+			padding: 0;
+		}
 		box-sizing: border-box;
 	}
 
