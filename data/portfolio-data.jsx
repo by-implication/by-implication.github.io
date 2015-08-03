@@ -93,7 +93,7 @@ export default {
 	popeye: {
 		name: "Popeye",
 		id: "popeye",
-		url: "http://plotypus.levitanong.com/",
+		url: "http://popeye.levitanong.com/",
 		imageSrc: require("./portfolio/popeye/thumb.svg"),
 		color: "#fcbc4a",
 		resources: [resources.design, resources.dev],
