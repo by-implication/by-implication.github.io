@@ -77,6 +77,7 @@ class Wrapper extends React.Component {
 					<meta name="author" content="By Implication" />
 					<meta name="description" content={ meta.description } />
 					<meta name="city" content="Manila, Philippines" />
+					<meta property="og:image" content={require('../data/etc/fb-preview.png')} />
 					<meta name="geo.placename" content="Manila, Philippines" />
 					<meta name="geo.region" content="PH-00" />
 					<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,700,400" />
