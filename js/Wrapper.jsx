@@ -67,7 +67,9 @@ class Wrapper extends React.Component {
 
 		const title =  meta.titlePrefix + "By Implication";
 
-		const ogPreview = <meta property="og:image" content={require('../data/etc/fb-preview.png')} />
+		const domain = "https://byimplication.com";
+
+		const ogPreview = <meta property="og:image" content={domain + require('../data/etc/fb-preview.png')} />
 
 		return (
 			<html>
