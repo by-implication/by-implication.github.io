@@ -105,6 +105,7 @@ export default {
 	torch: {
 		name: "Torch",
 		id: "torch",
+		url: "http://torchapps.github.io"
 		imageSrc: require("./portfolio/torch/thumb.svg"),
 		color: "#82174b",
 		resources: [resources.design, resources.dev],
