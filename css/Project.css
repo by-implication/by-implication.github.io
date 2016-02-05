@@ -23,7 +23,7 @@
 		h2 {
 			margin: 0;
 		}
-		a {
+		section a {
 			color: $dark;
 			text-decoration: none;
 			border-bottom: 1px solid $main;
