@@ -113,5 +113,17 @@ export default {
 		externalInvolvement: ["internal"],
 		from: "early 2015",
 		to: "present"
+	},
+	badger: {
+		name: "Budget Badger",
+		id: "badger",
+		url: "http://budgetbadger.ph/about",
+		writeup: require("./portfolio/badger/writeup.md"),
+		imageSrc: require("./portfolio/badger/thumb.svg"),
+		resources: [resources.design, resources.dev],
+		involvement: ["official"],
+		externalInvolvement: ["internal"],
+		from: "late 2013",
+		to: "early 2014"
 	}
 };
