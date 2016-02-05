@@ -24,6 +24,7 @@ var routePaths = [
   "/portfolio/plotypus/",
   "/portfolio/popeye/",
   "/portfolio/torch/",
+  "/portfolio/badger/",
 ];
 
 module.exports = function(options) {
