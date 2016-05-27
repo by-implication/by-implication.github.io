@@ -33,7 +33,6 @@ main {
 	box-sizing: border-box;
 	font-size: 18px;
 	font-weight: 100;
-	margin-bottom: 32px;
 	li {
 		.icon {
 			margin-right: 16px;
@@ -51,7 +50,7 @@ main {
 #Quote {
 	blockquote {
 		max-width: 560px;
-		padding: 64px 32px;
+		padding: 64px 16px;
 		box-sizing: border-box;
 		font-weight: 100;
 		margin: 0px auto;
@@ -263,7 +262,7 @@ button {
 
 /* preloader */
 body:after {
-  content: url(../data/people/Albert.png) url(../data/people/Alvin.png) url(../data/people/Inna.png) url(../data/people/Jim.png) url(../data/people/Kenneth.png) url(../data/portfolio/storylark/thumb.png);
+  content: url(../data/people/Albert.png) url(../data/people/Alvin.png) url(../data/people/Jim.png) url(../data/people/Kenneth.png) url(../data/portfolio/storylark/thumb.png);
   display: none;
 }
 

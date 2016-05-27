@@ -77,18 +77,12 @@ var data = [
 		name: "James Choa",
 		roles: "Developer, Infra, The Security Specialist",
 		link: "https://github.com/trigger-happy"
-	},
+	}
 	// {
 	// 	nickname: "Fordz",
 	// 	name: "Daniel Fordan",
 	// 	roles: "Developer, Soon-to-be Lawyer"
 	// },
-	{
-		nickname: "Inna",
-		name: "Inna Tan",
-		roles: "Designer, New Girl",
-		link: "http://innatan.com"
-	}
 ];
 data.forEach(function(person) {
 	person.imageSrc = require('./people/'+person.nickname+'.png');
