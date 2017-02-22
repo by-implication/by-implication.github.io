@@ -5,7 +5,7 @@ import people from "../data/people-data";
 
 export default class People extends React.Component {
 	render() {
-		const personnel = _.sortBy(people, "nickname").map(person => {
+		const personnel = _.sortBy(people, "name").map(person => {
 			return <PersonCard key={ person.nickname } {...person}/>
 		});
 
