@@ -35,7 +35,7 @@ var data = [
 	},
 	{
 		nickname: "Pepe",
-		name: "Pepe Bawagan",
+		name: "Jose Bawagan",
 		roles: "Developer, Funarchist Frogrammer",
 		link: "http://syk0saje.com"
 	},
@@ -50,11 +50,11 @@ var data = [
 		roles: "Developer, Company Poet",
 		link: "https://github.com/jrsescon"
 	},
-	{
-		nickname: "Mon",
-		name: "Monica Esquivel",
-		roles: "Artist, Designer, “I Drew These Portraits”",
-	},
+	// {
+	// 	nickname: "Mon",
+	// 	name: "Monica Esquivel",
+	// 	roles: "Artist, Designer, “I Drew These Portraits”",
+	// },
 	{
 		nickname: "Patsy",
 		name: "Patricia Lascano",
@@ -77,7 +77,23 @@ var data = [
 		name: "James Choa",
 		roles: "Developer, Infra, The Security Specialist",
 		link: "https://github.com/trigger-happy"
-	}
+	},
+	{
+		nickname: "Enzo",
+		name: "Lorenzo Vergara",
+		roles: "Developer, “It’s a bug, but I like it.”",
+	},
+	{
+		nickname: "Jay",
+		name: "J Joseph Ugalino",
+		roles: "Developer, Professional Annoyance",
+		link: "https://github.com/jthestupidkid"
+	},
+	{
+		nickname: "Oscar",
+		name: "Oscar Silva",
+		roles: "Employee, Goat"
+	},
 	// {
 	// 	nickname: "Fordz",
 	// 	name: "Daniel Fordan",
