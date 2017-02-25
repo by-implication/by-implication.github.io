@@ -76,7 +76,7 @@ export default {
 		involvement: ["official"],
 		externalInvolvement: ["client"],
 		from: "late 2011",
-		to: "present"
+		to: "early 2016"
 	},
 	plotypus: {
 		name: "Plotypus",
