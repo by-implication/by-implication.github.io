@@ -38,7 +38,7 @@ export default class Modal extends LayeredComponent {
       </div>
     )
     return (
-      <ReactCSSTransitionGroup transitionName="ModalTransition" component="div">
+      <ReactCSSTransitionGroup transitionName="ModalTransition" component="div" transitionEnterTimeout={300} transitionLeaveTimeout={300}>
         { this.props.opened && modal }
       </ReactCSSTransitionGroup>
     )

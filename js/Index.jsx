@@ -14,7 +14,7 @@ export default class Index extends React.Component {
 				<div id="hero">
 					<h1>We are <em>By Implication.</em></h1>
 				</div>
-				<ReactCSSTransitionGroup component="div" transitionName="ViewTransition">
+				<ReactCSSTransitionGroup component="div" transitionName="ViewTransition" transitionEnterTimeout={400} transitionLeaveTimeout={400}>
 					<RouteHandler key={ this.context.router.getCurrentPath() }/>
 				</ReactCSSTransitionGroup>
 			</div>

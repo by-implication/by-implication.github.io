@@ -89,7 +89,7 @@ class Wrapper extends React.Component {
 				</head>
 				<body>
 					<Toolbar />
-					<ReactCSSTransitionGroup component="main" transitionName="ViewTransition">
+					<ReactCSSTransitionGroup component="main" transitionName="ViewTransition" transitionEnterTimeout={400} transitionLeaveTimeout={400}>
 						<RouteHandler key={ this.context.router.getCurrentRoutes()[1].name } />
 					</ReactCSSTransitionGroup>
 					<footer>
