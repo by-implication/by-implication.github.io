@@ -9,6 +9,7 @@ development: deps
 prerender: deps
 	-rm -r build
 	./node_modules/.bin/webpack --config webpack-prerender.config.js --progress --colors
+	cp data/etc/favicon.ico build
 
 github: prerender
 	git add -f build
