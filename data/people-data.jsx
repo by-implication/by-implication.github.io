@@ -33,12 +33,12 @@ var data = [
 		link: "http://wilhansen.li",
 		founder: true
 	},
-	{
-		nickname: "Pepe",
-		name: "Jose Bawagan",
-		roles: "Developer, Funarchist Frogrammer",
-		link: "http://syk0saje.com"
-	},
+	// {
+	// 	nickname: "Pepe",
+	// 	name: "Jose Bawagan",
+	// 	roles: "Developer, Funarchist Frogrammer",
+	// 	link: "http://syk0saje.com"
+	// },
 	{
 		nickname: "Albert",
 		name: "Albert Dizon",
@@ -55,23 +55,23 @@ var data = [
 	// 	name: "Monica Esquivel",
 	// 	roles: "Artist, Designer, “I Drew These Portraits”",
 	// },
-	{
-		nickname: "Patsy",
-		name: "Patricia Lascano",
-		roles: "Artist, Designer, Bird Enthusiast",
-	},
+	// {
+	// 	nickname: "Patsy",
+	// 	name: "Patricia Lascano",
+	// 	roles: "Artist, Designer, Bird Enthusiast",
+	// },
 	{
 		nickname: "Alvin",
 		name: "Alvin Dumalus",
 		roles: "Developer, “I Beat Your High Score”",
 		link: "http://github.com/alvinfrancis"
 	},
-	{
-		nickname: "Thomas",
-		name: "Thomas Dy",
-		roles: "Pleasant Programmer, Infra, DevOps",
-		link: "http://pleasantprogrammer.com"
-	},
+	// {
+	// 	nickname: "Thomas",
+	// 	name: "Thomas Dy",
+	// 	roles: "Pleasant Programmer, Infra, DevOps",
+	// 	link: "http://pleasantprogrammer.com"
+	// },
 	{
 		nickname: "Jim",
 		name: "James Choa",
@@ -94,6 +94,16 @@ var data = [
 		name: "Oscar Silva",
 		roles: "Employee, Goat"
 	},
+	{
+		nickname: "Pierre",
+		name: "Pierre Chavez",
+		roles: "Designer, Maker of Pretty Things"
+	},
+	{
+		nickname: "Pao",
+		name: "Marie Frances Salvan",
+		roles: "Research, Data Analyst, Cat Herder"
+	}
 	// {
 	// 	nickname: "Fordz",
 	// 	name: "Daniel Fordan",
