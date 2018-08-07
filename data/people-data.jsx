@@ -97,7 +97,8 @@ var data = [
 	{
 		nickname: "Pierre",
 		name: "Pierre Chavez",
-		roles: "Designer, Maker of Pretty Things"
+		roles: "Designer, Maker of Pretty Things",
+		link: "https://instagram.com/madebypierre"
 	},
 	{
 		nickname: "Pao",
