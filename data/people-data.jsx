@@ -87,7 +87,7 @@ var data = [
 		nickname: "Jay",
 		name: "J Joseph Ugalino",
 		roles: "Developer, Professional Annoyance",
-		link: "https://github.com/jthestupidkid"
+		link: "https://github.com/notj"
 	},
 	{
 		nickname: "Oscar",
@@ -102,8 +102,8 @@ var data = [
 	},
 	{
 		nickname: "Pao",
-		name: "Marie Frances Salvan",
-		roles: "Research, Data Analyst, Cat Herder"
+		name: "M Frances Salvan",
+		roles: "Researcher, Data Analyst, Cat Herder"
 	}
 	// {
 	// 	nickname: "Fordz",
