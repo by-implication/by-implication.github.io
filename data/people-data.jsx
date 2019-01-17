@@ -83,12 +83,12 @@ var data = [
 		name: "Lorenzo Vergara",
 		roles: "Developer, “It’s a bug, but I like it.”",
 	},
-	{
-		nickname: "Jay",
-		name: "J Joseph Ugalino",
-		roles: "Developer, Professional Annoyance",
-		link: "https://github.com/notj"
-	},
+	// {
+	// 	nickname: "Jay",
+	// 	name: "J Joseph Ugalino",
+	// 	roles: "Developer, Professional Annoyance",
+	// 	link: "https://github.com/notj"
+	// },
 	{
 		nickname: "Oscar",
 		name: "Oscar Silva",
@@ -102,9 +102,20 @@ var data = [
 	},
 	{
 		nickname: "Pao",
-		name: "M Frances Salvan",
+		name: "M. Frances Salvan",
 		roles: "Researcher, Data Analyst, Cat Herder"
-	}
+	},
+	{
+		nickname: "Kim",
+		name: "Katrina Lachica",
+		roles: "Designer, Source of all Food, “Do you even lift?”"
+	},
+	{
+		nickname: "Floyd",
+		name: "Floyd Tiogangco",
+		roles: "Marketing, Token Extrovert, Voice of the People",
+		link: "https://fb.com/flydsctt"
+	},
 	// {
 	// 	nickname: "Fordz",
 	// 	name: "Daniel Fordan",
