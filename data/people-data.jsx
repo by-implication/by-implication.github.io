@@ -102,7 +102,7 @@ var data = [
 	},
 	{
 		nickname: "Pao",
-		name: "M. Frances Salvan",
+		name: "Marie Frances Salvan",
 		roles: "Researcher, Data Analyst, Cat Herder"
 	},
 	{
@@ -110,11 +110,23 @@ var data = [
 		name: "Katrina Lachica",
 		roles: "Designer, Source of all Food, “Do you even lift?”"
 	},
+	// {
+	// 	nickname: "Floyd",
+	// 	name: "Floyd Tiogangco",
+	// 	roles: "Marketing, Token Extrovert, Voice of the People",
+	// 	link: "https://fb.com/flydsctt"
+	// },
 	{
-		nickname: "Floyd",
-		name: "Floyd Tiogangco",
-		roles: "Marketing, Token Extrovert, Voice of the People",
-		link: "https://fb.com/flydsctt"
+		nickname: "Zeus",
+		name: "Zeus Echavez",
+		roles: "Infra, Ops, Multi-stan (don't tell Hera)",
+		// link: "https://something.com"
+	},
+	{
+		nickname: "Melvin",
+		name: "Melvin Luis Mendoza",
+		roles: "Developer, Biker, Crocheter, Bumbler",
+		// link: "https://something.com"
 	},
 	// {
 	// 	nickname: "Fordz",
