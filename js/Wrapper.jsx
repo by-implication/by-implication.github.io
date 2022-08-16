@@ -93,7 +93,7 @@ class Wrapper extends React.Component {
 						<RouteHandler key={ this.context.router.getCurrentRoutes()[1].name } />
 					</ReactCSSTransitionGroup>
 					<footer>
-						&copy; 2019 By Implication, Inc.
+						&copy; 2022 By Implication, Inc.
 					</footer>
 					<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
 					<script src="/bundle.js" />

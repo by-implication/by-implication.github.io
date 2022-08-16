@@ -69,7 +69,7 @@ export default class Index extends React.Component {
 						We like building things { InvFilter("unofficial") } and { InvFilter("official") }. 
 					</p>
 					<p>
-						Mostly, we build for { XInvFilter("internal") }, but we build for { XInvFilter("client") } too. 
+						We make great stuff, both for { XInvFilter("internal") }, and for { XInvFilter("client") }.
 					</p>
 				</div>
 				<div className="card-container">

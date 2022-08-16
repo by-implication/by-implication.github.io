@@ -6,13 +6,13 @@ var data = [
 		link: "http://github.com/levitanong",
 		founder: true
 	},
-	{
-		nickname: "Phi",
-		name: "Philip Cheang",
-		roles: "Designer, Developer, Obsessive Pixel Nudger",
-		link: "http://phi.ph",
-		founder: true
-	},
+	// {
+	// 	nickname: "Phi",
+	// 	name: "Philip Cheang",
+	// 	roles: "Designer, Developer, Obsessive Pixel Nudger",
+	// 	link: "http://phi.ph",
+	// 	founder: true
+	// },
 	{
 		nickname: "Rodz",
 		name: "Rodrick Tan",
