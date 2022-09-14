@@ -31,7 +31,7 @@ export default class Toolbar extends React.Component {
 	render() {
 		return (
 			<header>
-				<div style={{backgroundColor: "#FB687D", position: 'fixed', width: '100%', top: '0', height: '3em', textAlign: 'center', zIndex: '10', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center'}}><span>By Implication is now </span><a href="https://bonitotech.com" style={{ paddingLeft: '0.25em', color: 'white' }}>Bonito Tech<img src={require('../icons/bonito-logo-white.svg')} style={{ height: '1.5em', verticalAlign: 'top', paddingLeft: '5px' }} /></a></div>
+				<div style={{backgroundColor: "#FB687D", position: 'fixed', width: '100%', top: '0', height: '3em', textAlign: 'center', zIndex: '10', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center'}}><span>By Implication is now </span><a href="https://bonitotech.com" style={{ paddingLeft: '0.25em', color: 'white' }}>Bonito Tech<img src={require('../icons/bonito-logo-white.svg')} style={{ height: '1.5em', verticalAlign: 'bottom', paddingLeft: '5px' }} /></a></div>
 				<nav id="main-toolbar" style={{top: '3em'}} className={ classnames("Toolbar", {scrolled: this.state.scrollTop >= 8}) }>
 					<TextButton component={ Link } to="about">
 						About
